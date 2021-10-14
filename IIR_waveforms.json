@@ -1,0 +1,9 @@
+{signal: [
+  {name: 'CLK', wave: 'p.......'},
+  {name: 'VIN', wave: '01..01.x'},
+  {name: 'DIN', wave: 'x345x78x', data: ['IN0', 'IN1', 'IN2', 'IN3', 'IN4']},
+  {name: 'DOUT', wave: 'xx345x78', data: ['OUT0', 'OUT1', 'OUT2', 'OUT3', 'OUT4']},
+  {},
+  {name: 'DOUT', wave: 'xx345x78', data: ['OUT0', 'OUT1', 'OUT2', 'OUT3', 'OUT4']}
+], config: {hscale: 2}
+}
