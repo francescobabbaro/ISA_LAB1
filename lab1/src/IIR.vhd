@@ -25,7 +25,7 @@ entity IIR is
         VOUT       : out std_logic);
 end entity IIR;
 
-architecture behavioural of IIR is
+architecture structural of IIR is
 
     -----------------------component declaration----------------------------------------------
     component two_complement_Nbit
@@ -221,4 +221,4 @@ begin
             Q     => VOUT
         );
 
-end architecture behavioural;
+end architecture structural;

@@ -1,0 +1,1 @@
+vcd2saif -input ../netlist/backannotation/vcd/iir_syn.vcd -output ../netlist/backannotation/saif/iir_syn.saif
