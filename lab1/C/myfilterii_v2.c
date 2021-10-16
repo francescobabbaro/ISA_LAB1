@@ -45,9 +45,7 @@ int myfilter(int x)
   int y; /// output sample
   int fb, ff; /// feed-back and feed-forward results
   int fb_mult;
-  int fb_add;
   int ff_mult;
-  int ff_add;
   int b0_mult;
 
   /// clean the buffer
