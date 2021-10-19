@@ -24,12 +24,9 @@ end data_maker;
 architecture beh of data_maker is
 
     constant tco : time := 5 ns;        -- delay
-    constant Ts  : time := 10 ns;       -- clock period
 
     signal sEndSim   : std_logic;
     signal END_SIM_i : std_logic_vector(0 to 10);
-    --signal needed to create the process in which VIN switch from active to not active
-    --signal VOUT_i    : std_logic;
 
 begin                                   -- beh
 

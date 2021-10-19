@@ -50,12 +50,12 @@ fprintf(fp, '%d\n', yq);
 fclose(fp);
 
 %% evaluate the THD of the C implementation
-fp=fopen('../C/results_c.txt', 'r');
+fp=fopen('result_C.txt', 'r');
 yc = fscanf(fp, '%d\n');
 yc = yc';
 fclose(fp);
 
-figure(4);
+figure(3);
 thd(yc, fs);
 title('THD $-37.31 dB$','interpreter','latex', 'fontsize', 20)
 xlabel('Frequency (kHz)','interpreter','latex', 'fontsize', 12)
