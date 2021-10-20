@@ -1,1 +1,2 @@
-vcd2saif -input ../netlist/backannotation/vcd/iir_syn.vcd -output ../netlist/backannotation/saif/iir_syn.saif
+vcd2saif -input ../netlist/backannotation/synopsys/vcd/IIR_no_resynth.vcd -output ../netlist/backannotation/synopsys/saif/IIR_no_resynth.saif
+vcd2saif -input ../netlist/backannotation/synopsys/vcd/IIR_resynth.vcd -output ../netlist/backannotation/synopsys/saif/IIR_resynth.saif

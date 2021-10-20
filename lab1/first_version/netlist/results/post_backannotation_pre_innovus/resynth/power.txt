@@ -1,0 +1,56 @@
+Information: Updating design information... (UID-85)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: The derived toggle rate value (0.223214) for the clock net 'CLK' conflicts with the annotated value (0.250000). Using the annotated value. (PWR-12)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : IIR
+Version: O-2018.06-SP4
+Date   : Wed Oct 20 23:05:53 2021
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /software/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm_nowlm.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+IIR                    5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  = 235.1734 uW   (57%)
+  Net Switching Power  = 174.6402 uW   (43%)
+                         ---------
+Total Dynamic Power    = 409.8137 uW  (100%)
+
+Cell Leakage Power     =  51.5152 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register          77.1448           14.5671        7.5149e+03           99.2267  (  21.51%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational    158.0287          160.0732        4.4000e+04          362.1024  (  78.49%)
+--------------------------------------------------------------------------------------------------
+Total            235.1735 uW       174.6403 uW     5.1515e+04 nW       461.3292 uW
+1

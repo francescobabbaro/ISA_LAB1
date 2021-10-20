@@ -1,0 +1,97 @@
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : IIR
+Version: O-2018.06-SP4
+Date   : Wed Oct 20 21:21:34 2021
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /software/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm_nowlm.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+IIR                    5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+IIR                                      72.702  132.035 6.84e+04  273.126 100.0
+  i_output_register_VOUT (flipflop_rst_n_1)
+                                       2.09e-02    0.726   83.865    0.831   0.3
+  i_output_register_DOUT (REG_RST_N_N9_1)
+                                          0.291    8.141  850.495    9.282   3.4
+  i_DP (DATAPATH_IIR)                    65.629   75.970 6.09e+04  202.483  74.1
+    i_ADDER_3 (ADDER_NBIT_N8_1)           1.487    1.656 1.24e+03    4.386   1.6
+      add_28 (ADDER_NBIT_N8_1_DW01_add_2)
+                                          1.487    1.656 1.24e+03    4.386   1.6
+    i_ADDER_2 (ADDER_NBIT_N8_2)           0.416    0.711  384.725    1.512   0.6
+      add_28 (ADDER_NBIT_N8_2_DW01_add_0)
+                                          0.416    0.711  384.725    1.512   0.6
+    i_MULTIPLIER_B2 (MULTIPLIER_NBIT_N10_1)
+                                          7.977    7.643 8.41e+03   24.031   8.8
+      mult_28 (MULTIPLIER_NBIT_N10_1_DW_mult_tc_0)
+                                          7.977    7.643 8.41e+03   24.031   8.8
+    i_MULTIPLIER_B1 (MULTIPLIER_NBIT_N10_2)
+                                          9.006    8.622 8.28e+03   25.908   9.5
+      mult_28 (MULTIPLIER_NBIT_N10_2_DW_mult_tc_0)
+                                          9.006    8.622 8.28e+03   25.908   9.5
+    i_MULTIPLIER_B0 (MULTIPLIER_NBIT_N10_3)
+                                         15.289   14.375 1.17e+04   41.373  15.1
+      mult_28 (MULTIPLIER_NBIT_N10_3_DW_mult_tc_2)
+                                         15.289   14.375 1.17e+04   41.373  15.1
+    i_ADDER_1 (ADDER_NBIT_N8_0)           1.565    1.504 1.47e+03    4.537   1.7
+      add_28 (ADDER_NBIT_N8_0_DW01_add_2)
+                                          1.565    1.504 1.47e+03    4.537   1.7
+    i_MULTIPLIER_A2 (MULTIPLIER_NBIT_N10_4)
+                                         10.885   10.008 1.20e+04   32.919  12.1
+      mult_28 (MULTIPLIER_NBIT_N10_4_DW_mult_tc_2)
+                                         10.885   10.008 1.20e+04   32.919  12.1
+    i_MULTIPLIER_A1 (MULTIPLIER_NBIT_N10_0)
+                                         12.557   11.981 1.25e+04   37.011  13.6
+      mult_28 (MULTIPLIER_NBIT_N10_0_DW_mult_tc_3)
+                                         12.557   11.981 1.25e+04   37.011  13.6
+    i_reg_1 (reg_en_rst_n_N10_1)          1.098    8.591 1.38e+03   11.073   4.1
+    i_reg_0 (reg_en_rst_n_N10_0)          1.302    8.642 1.37e+03   11.316   4.1
+    i_ADDER_0 (ADDER_NBIT_N10)            2.449    1.637 1.74e+03    5.831   2.1
+      add_28 (ADDER_NBIT_N10_DW01_add_2)
+                                          2.449    1.637 1.74e+03    5.831   2.1
+  i_input_register_B2 (REG_RST_N_N9_2)    0.783    7.358  771.280    8.912   3.3
+  i_input_register_B1 (REG_RST_N_N9_3)    0.790    7.340  771.313    8.901   3.3
+  i_input_register_B0 (REG_RST_N_N9_4)    1.519    7.501  809.103    9.829   3.6
+  i_input_register_A2 (REG_RST_N_N9_5)    1.189    7.665  808.973    9.663   3.5
+  i_input_register_A1 (REG_RST_N_N9_0)    1.215    7.571  771.214    9.557   3.5
+  i_two_complement_A2 (two_complement_Nbit_N9_1)
+                                          0.445    0.705  667.830    1.818   0.7
+    i_adder (ADDER_NBIT_N9_1)             0.199    0.606  538.651    1.343   0.5
+      add_28 (ADDER_NBIT_N9_1_DW01_add_0)
+                                          0.199    0.606  538.651    1.343   0.5
+  i_two_complement_A1 (two_complement_Nbit_N9_0)
+                                          0.443    0.700  667.605    1.810   0.7
+    i_adder (ADDER_NBIT_N9_0)             0.196    0.600  538.427    1.335   0.5
+      add_28 (ADDER_NBIT_N9_0_DW01_add_0)
+                                          0.196    0.600  538.427    1.335   0.5
+  i_input_register_VIN (flipflop_rst_n_0)
+                                       8.99e-03    0.817   85.695    0.912   0.3
+  i_input_register_DIN (reg_en_rst_n_N9)
+                                          0.368    7.542 1.22e+03    9.128   3.3
+1

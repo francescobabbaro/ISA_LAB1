@@ -1,0 +1,2723 @@
+ 
+****************************************
+Report : power
+        -net
+        -analysis_effort low
+        -sort_mode net_switching_power
+Design : IIR
+Version: O-2018.06-SP4
+Date   : Wed Oct 20 23:05:53 2021
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /software/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm_nowlm.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+IIR                    5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+
+  Attributes
+  ----------
+      a  -  Switching activity information annotated on net
+      d  -  Default switching activity information on net
+
+                             Total      Static   Toggle   Switching
+Net                          Net Load   Prob.    Rate     Power      Attrs
+--------------------------------------------------------------------------------
+i_DP_W_DELAY_1[3]             51.841    0.394    0.0534      1.6758  a
+i_DP_W_DELAY_2[3]             49.355    0.392    0.0529      1.5808  a
+i_DP_W_DELAY_1[7]             33.579    0.508    0.0681      1.3842  a
+i_DP_W_DELAY_2[7]             31.843    0.504    0.0681      1.3126  a
+i_DP_W_DELAY_1[5]             33.579    0.559    0.0583      1.1851  a
+i_DP_W_DELAY_2[5]             31.843    0.506    0.0578      1.1143  a
+i_DP_i_MULTIPLIER_A1_mult_28_n315
+                              26.533    0.492    0.0681      1.0938  a
+i_DP_i_MULTIPLIER_A2_mult_28_n315
+                              26.533    0.496    0.0681      1.0938  a
+i_DP_i_MULTIPLIER_B0_mult_28_n314
+                              26.533    0.488    0.0681      1.0938  a
+i_DP_i_MULTIPLIER_B1_mult_28_n326
+                              26.533    0.492    0.0681      1.0938  a
+i_DP_i_MULTIPLIER_B2_mult_28_n315
+                              26.533    0.496    0.0681      1.0938  a
+i_DP_W[1]                     33.693    0.488    0.0525      1.0692  a
+i_DP_i_MULTIPLIER_A1_mult_28_n305
+                              31.207    0.451    0.0520      0.9810  a
+i_DP_i_MULTIPLIER_A2_mult_28_n305
+                              31.207    0.451    0.0520      0.9810  a
+i_DP_i_MULTIPLIER_B1_mult_28_n305
+                              31.207    0.451    0.0520      0.9810  a
+i_DP_i_MULTIPLIER_B2_mult_28_n305
+                              31.207    0.451    0.0520      0.9810  a
+i_DP_i_MULTIPLIER_A1_mult_28_n337
+                              27.497    0.686    0.0588      0.9786  a
+i_DP_i_MULTIPLIER_A2_mult_28_n337
+                              27.497    0.686    0.0588      0.9786  a
+i_DP_i_MULTIPLIER_B0_mult_28_n337
+                              27.497    0.765    0.0588      0.9786  a
+i_DP_i_MULTIPLIER_B1_mult_28_n338
+                              27.497    0.686    0.0588      0.9786  a
+i_DP_i_MULTIPLIER_B2_mult_28_n338
+                              27.497    0.686    0.0588      0.9786  a
+i_DP_i_MULTIPLIER_A1_mult_28_n320
+                              26.533    0.441    0.0583      0.9364  a
+i_DP_i_MULTIPLIER_B0_mult_28_n319
+                              26.533    0.394    0.0583      0.9364  a
+i_DP_i_MULTIPLIER_B1_mult_28_n327
+                              26.533    0.441    0.0583      0.9364  a
+i_DP_i_MULTIPLIER_A2_mult_28_n320
+                              26.533    0.494    0.0578      0.9285  a
+i_DP_i_MULTIPLIER_B2_mult_28_n320
+                              26.533    0.494    0.0578      0.9285  a
+i_DP_i_MULTIPLIER_B0_mult_28_n366
+                              21.379    0.533    0.0667      0.8623  a
+i_DP_i_MULTIPLIER_A1_mult_28_n366
+                              21.379    0.539    0.0662      0.8560  a
+i_DP_i_MULTIPLIER_B1_mult_28_n367
+                              21.379    0.539    0.0662      0.8560  a
+i_DP_i_MULTIPLIER_A2_mult_28_n366
+                              21.379    0.553    0.0657      0.8496  a
+i_DP_i_MULTIPLIER_B2_mult_28_n367
+                              21.379    0.553    0.0657      0.8496  a
+i_DP_W[3]                     26.182    0.461    0.0534      0.8464  a
+i_DP_i_MULTIPLIER_B0_mult_28_n345
+                              27.415    0.251    0.0480      0.7968  a
+i_DP_i_MULTIPLIER_A1_mult_28_n344
+                              27.415    0.210    0.0475      0.7887  a
+i_DP_i_MULTIPLIER_A2_mult_28_n344
+                              27.415    0.249    0.0475      0.7887  a
+i_DP_i_MULTIPLIER_B1_mult_28_n346
+                              27.415    0.210    0.0475      0.7887  a
+i_DP_i_MULTIPLIER_B2_mult_28_n346
+                              27.415    0.249    0.0475      0.7887  a
+i_DP_i_MULTIPLIER_B0_mult_28_n350
+                              27.415    0.539    0.0446      0.7399  a
+i_DP_W[7]                     17.823    0.512    0.0681      0.7347  a
+i_DP_i_MULTIPLIER_A1_mult_28_n349
+                              27.415    0.537    0.0441      0.7317  a
+i_DP_i_MULTIPLIER_A2_mult_28_n349
+                              27.415    0.545    0.0441      0.7317  a
+i_DP_i_MULTIPLIER_B1_mult_28_n351
+                              27.415    0.537    0.0441      0.7317  a
+i_DP_i_MULTIPLIER_B2_mult_28_n351
+                              27.415    0.545    0.0441      0.7317  a
+i_DP_i_MULTIPLIER_B0_mult_28_n328
+                              22.770    0.512    0.0525      0.7226  a
+i_DP_i_MULTIPLIER_A1_mult_28_n329
+                              22.770    0.549    0.0520      0.7158  a
+i_DP_i_MULTIPLIER_A2_mult_28_n329
+                              22.770    0.549    0.0520      0.7158  a
+i_DP_i_MULTIPLIER_B1_mult_28_n331
+                              22.770    0.549    0.0520      0.7158  a
+i_DP_i_MULTIPLIER_B2_mult_28_n329
+                              22.770    0.549    0.0520      0.7158  a
+i_DP_W[5]                     17.823    0.606    0.0583      0.6290  a
+i_DP_i_MULTIPLIER_A1_mult_28_n325
+                              19.387    0.606    0.0534      0.6267  a
+i_DP_i_MULTIPLIER_B0_mult_28_n324
+                              19.387    0.539    0.0534      0.6267  a
+i_DP_i_MULTIPLIER_B1_mult_28_n328
+                              19.387    0.606    0.0534      0.6267  a
+i_DP_i_MULTIPLIER_A2_mult_28_n325
+                              19.387    0.608    0.0529      0.6210  a
+i_DP_i_MULTIPLIER_B2_mult_28_n325
+                              19.387    0.608    0.0529      0.6210  a
+i_DP_i_reg_0_n31              25.376    0.790    0.0402      0.6171  a
+i_DP_i_reg_1_n31              25.376    0.790    0.0402      0.6171  a
+i_input_register_DIN_n28      25.284    0.790    0.0402      0.6149  a
+i_DP_W_DELAY_1[4]             16.543    0.504    0.0475      0.4759  a
+i_DP_i_MULTIPLIER_A1_mult_28_n365
+                              16.812    0.816    0.0431      0.4388  a
+i_DP_i_MULTIPLIER_A2_mult_28_n365
+                              16.812    0.749    0.0431      0.4388  a
+i_DP_i_MULTIPLIER_B0_mult_28_n365
+                              16.812    0.792    0.0431      0.4388  a
+i_DP_i_MULTIPLIER_B1_mult_28_n366
+                              16.812    0.816    0.0431      0.4388  a
+i_DP_i_MULTIPLIER_B2_mult_28_n366
+                              16.812    0.749    0.0431      0.4388  a
+i_DP_W_DELAY_1[2]             13.001    0.473    0.0534      0.4203  a
+i_DP_W_DELAY_2[4]             14.466    0.549    0.0471      0.4119  a
+i_DP_i_reg_0_n32              16.624    0.790    0.0402      0.4043  a
+i_DP_i_reg_1_n32              16.624    0.790    0.0402      0.4043  a
+i_DP_W_DELAY_1[6]             16.543    0.380    0.0402      0.4023  a
+i_DP_W_DELAY_2[2]             10.924    0.514    0.0529      0.3499  a
+i_DP_W_DELAY_2[6]             14.466    0.394    0.0397      0.3475  a
+i_DP_i_MULTIPLIER_B0_mult_28_n326
+                               8.092    0.467    0.0667      0.3264  a
+i_DP_i_MULTIPLIER_A1_mult_28_n327
+                               8.092    0.461    0.0662      0.3240  a
+i_DP_i_MULTIPLIER_B1_mult_28_n330
+                               8.092    0.461    0.0662      0.3240  a
+i_DP_i_MULTIPLIER_A2_mult_28_n327
+                               8.092    0.447    0.0657      0.3216  a
+i_DP_i_MULTIPLIER_B2_mult_28_n327
+                               8.092    0.447    0.0657      0.3216  a
+i_input_register_DIN_n29      12.090    0.790    0.0402      0.2940  a
+i_DP_W[4]                      9.161    0.533    0.0480      0.2662  a
+i_DP_i_MULTIPLIER_A1_mult_28_n348
+                              22.291    0.914    0.0196      0.2644  a
+i_DP_i_MULTIPLIER_A2_mult_28_n348
+                              22.291    0.867    0.0196      0.2644  a
+i_DP_i_MULTIPLIER_B0_mult_28_n349
+                              22.291    0.914    0.0196      0.2644  a
+i_DP_i_MULTIPLIER_B1_mult_28_n350
+                              22.291    0.914    0.0196      0.2644  a
+i_DP_i_MULTIPLIER_B2_mult_28_n350
+                              22.291    0.867    0.0196      0.2644  a
+i_DP_i_MULTIPLIER_A2_mult_28_n352
+                               6.049    0.514    0.0686      0.2511  a
+i_DP_i_MULTIPLIER_A1_mult_28_n352
+                               6.049    0.492    0.0681      0.2493  a
+i_DP_i_MULTIPLIER_B0_mult_28_n353
+                               6.049    0.488    0.0681      0.2493  a
+i_DP_i_MULTIPLIER_B1_mult_28_n354
+                               6.049    0.492    0.0681      0.2493  a
+i_DP_i_MULTIPLIER_B2_mult_28_n354
+                               6.049    0.496    0.0681      0.2493  a
+i_DP_W[2]                      7.390    0.508    0.0534      0.2389  a
+DIN_REGIN_DP[8]                8.190    0.488    0.0456      0.2259  a
+i_DP_W[6]                      9.161    0.382    0.0407      0.2255  a
+i_DP_i_MULTIPLIER_A1_mult_28_n326
+                               8.276    0.184    0.0431      0.2160  a
+i_DP_i_MULTIPLIER_A2_mult_28_n326
+                               8.276    0.251    0.0431      0.2160  a
+i_DP_i_MULTIPLIER_B0_mult_28_n325
+                               8.276    0.208    0.0431      0.2160  a
+i_DP_i_MULTIPLIER_B1_mult_28_n329
+                               8.276    0.184    0.0431      0.2160  a
+i_DP_i_MULTIPLIER_B2_mult_28_n326
+                               8.276    0.251    0.0431      0.2160  a
+i_DP_i_MULTIPLIER_A1_mult_28_n350
+                               6.049    0.441    0.0583      0.2135  a
+i_DP_i_MULTIPLIER_A2_mult_28_n350
+                               6.049    0.516    0.0583      0.2135  a
+i_DP_i_MULTIPLIER_B0_mult_28_n351
+                               6.049    0.394    0.0583      0.2135  a
+i_DP_i_MULTIPLIER_B1_mult_28_n352
+                               6.049    0.441    0.0583      0.2135  a
+i_DP_i_MULTIPLIER_B2_mult_28_n352
+                               6.049    0.494    0.0578      0.2117  a
+i_DP_i_MULTIPLIER_B0_mult_28_n35
+                               5.871    0.382    0.0593      0.2107  a
+i_DP_i_MULTIPLIER_A1_mult_28_n35
+                               5.871    0.384    0.0588      0.2089  a
+i_DP_i_MULTIPLIER_A2_mult_28_n25
+                               5.871    0.322    0.0588      0.2089  a
+i_DP_i_MULTIPLIER_B0_mult_28_n25
+                               5.871    0.392    0.0588      0.2089  a
+i_DP_i_MULTIPLIER_B1_mult_28_n35
+                               5.871    0.384    0.0588      0.2089  a
+i_DP_i_MULTIPLIER_B2_mult_28_n35
+                               5.871    0.349    0.0588      0.2089  a
+i_DP_i_MULTIPLIER_A1_mult_28_n25
+                               5.871    0.433    0.0583      0.2072  a
+i_DP_i_MULTIPLIER_B1_mult_28_n25
+                               5.871    0.433    0.0583      0.2072  a
+i_DP_i_MULTIPLIER_B2_mult_28_n25
+                               5.871    0.429    0.0583      0.2072  a
+i_DP_i_MULTIPLIER_B0_mult_28_n50
+                               5.871    0.647    0.0578      0.2055  a
+i_DP_i_MULTIPLIER_A1_mult_28_n50
+                               5.871    0.692    0.0574      0.2037  a
+i_DP_i_MULTIPLIER_B1_mult_28_n50
+                               5.871    0.692    0.0574      0.2037  a
+i_DP_i_MULTIPLIER_B2_mult_28_n50
+                               5.871    0.663    0.0569      0.2020  a
+i_DP_S_ADD1_ADD0[5]            3.782    0.512    0.0877      0.2008  a
+i_DP_S_ADD1_ADD0[6]            3.782    0.512    0.0877      0.2008  a
+i_DP_S_ADD1_ADD0[7]            3.782    0.512    0.0877      0.2008  a
+i_DP_i_MULTIPLIER_A1_mult_28_n346
+                               6.080    0.394    0.0534      0.1965  a
+i_DP_i_MULTIPLIER_A2_mult_28_n346
+                               6.080    0.598    0.0534      0.1965  a
+i_DP_i_MULTIPLIER_B0_mult_28_n347
+                               6.080    0.461    0.0534      0.1965  a
+i_DP_i_MULTIPLIER_B1_mult_28_n348
+                               6.080    0.394    0.0534      0.1965  a
+i_DP_W_DELAY_1[0]              6.211    0.451    0.0520      0.1953  a
+i_DP_i_MULTIPLIER_B2_mult_28_n348
+                               6.080    0.392    0.0529      0.1947  a
+i_DP_i_MULTIPLIER_A2_mult_28_n362
+                               6.012    0.461    0.0525      0.1908  a
+i_DP_i_MULTIPLIER_B0_mult_28_n362
+                               6.012    0.512    0.0525      0.1908  a
+i_DP_i_MULTIPLIER_A1_mult_28_n362
+                               6.012    0.549    0.0520      0.1890  a
+i_DP_i_MULTIPLIER_B1_mult_28_n363
+                               6.012    0.549    0.0520      0.1890  a
+i_DP_i_MULTIPLIER_B2_mult_28_n363
+                               6.012    0.549    0.0520      0.1890  a
+i_DP_i_MULTIPLIER_B0_mult_28_n64
+                               4.055    0.455    0.0765      0.1876  a
+i_DP_i_MULTIPLIER_B2_mult_28_n64
+                               4.055    0.504    0.0760      0.1864  a
+i_DP_i_MULTIPLIER_B0_mult_28_n147
+                               4.055    0.459    0.0725      0.1780  a
+i_DP_i_MULTIPLIER_B2_mult_28_n147
+                               4.055    0.494    0.0716      0.1756  a
+i_DP_i_MULTIPLIER_A1_mult_28_n45
+                               4.055    0.376    0.0706      0.1732  a
+i_DP_S_ADD1_ADD0[1]            3.782    0.510    0.0755      0.1727  a
+i_DP_i_MULTIPLIER_A2_mult_28_n50
+                               5.871    0.639    0.0480      0.1706  a
+i_DP_i_MULTIPLIER_A1_mult_28_n88
+                               3.981    0.525    0.0706      0.1700  a
+i_DP_i_MULTIPLIER_B0_mult_28_n316
+                               3.865    0.541    0.0725      0.1696  a
+i_DP_i_MULTIPLIER_B1_mult_28_n322
+                               3.865    0.586    0.0721      0.1685  a
+i_DP_i_MULTIPLIER_B1_mult_28_n44
+                               4.055    0.514    0.0686      0.1684  a
+i_DP_i_MULTIPLIER_B2_mult_28_n317
+                               3.865    0.506    0.0716      0.1673  a
+i_DP_P_MULA1_ADD1[14]          4.055    0.508    0.0681      0.1672  a
+i_DP_P_MULB0_ADD3[13]          4.055    0.512    0.0681      0.1672  a
+i_DP_P_MULB1_ADD2[14]          4.055    0.508    0.0681      0.1672  a
+i_DP_i_MULTIPLIER_A2_mult_28_n52
+                               4.055    0.539    0.0681      0.1672  a
+i_DP_i_MULTIPLIER_B0_mult_28_n340
+                               4.775    0.647    0.0578      0.1671  a
+i_DP_i_MULTIPLIER_B0_mult_28_n144
+                               3.782    0.459    0.0725      0.1660  a
+i_DP_i_MULTIPLIER_A1_mult_28_n339
+                               4.775    0.692    0.0574      0.1657  a
+i_DP_i_MULTIPLIER_B1_mult_28_n341
+                               4.775    0.692    0.0574      0.1657  a
+i_DP_i_MULTIPLIER_A1_mult_28_n342
+                               3.986    0.518    0.0686      0.1655  a
+i_DP_i_MULTIPLIER_A1_mult_28_n345
+                               3.986    0.518    0.0686      0.1655  a
+i_DP_i_MULTIPLIER_A1_mult_28_n383
+                               3.986    0.518    0.0686      0.1655  a
+i_DP_i_MULTIPLIER_A1_mult_28_n384
+                               3.986    0.518    0.0686      0.1655  a
+i_DP_i_MULTIPLIER_A1_mult_28_n386
+                               3.986    0.518    0.0686      0.1655  a
+i_DP_i_MULTIPLIER_A2_mult_28_n342
+                               3.986    0.514    0.0686      0.1655  a
+i_DP_i_MULTIPLIER_A2_mult_28_n351
+                               3.986    0.514    0.0686      0.1655  a
+i_DP_i_MULTIPLIER_A2_mult_28_n383
+                               3.986    0.514    0.0686      0.1655  a
+i_DP_i_MULTIPLIER_A2_mult_28_n384
+                               3.986    0.514    0.0686      0.1655  a
+i_DP_i_MULTIPLIER_A2_mult_28_n386
+                               3.986    0.514    0.0686      0.1655  a
+i_DP_i_MULTIPLIER_A2_mult_28_n387
+                               3.986    0.514    0.0686      0.1655  a
+i_DP_i_MULTIPLIER_B0_mult_28_n346
+                               3.986    0.522    0.0686      0.1655  a
+i_DP_i_MULTIPLIER_B0_mult_28_n384
+                               3.986    0.522    0.0686      0.1655  a
+i_DP_i_MULTIPLIER_B0_mult_28_n385
+                               3.986    0.522    0.0686      0.1655  a
+i_DP_i_MULTIPLIER_B1_mult_28_n344
+                               3.986    0.518    0.0686      0.1655  a
+i_DP_i_MULTIPLIER_B1_mult_28_n386
+                               3.986    0.518    0.0686      0.1655  a
+i_DP_i_MULTIPLIER_B1_mult_28_n387
+                               3.986    0.518    0.0686      0.1655  a
+i_DP_i_MULTIPLIER_B2_mult_28_n347
+                               3.986    0.514    0.0686      0.1655  a
+i_DP_i_MULTIPLIER_B2_mult_28_n385
+                               3.986    0.514    0.0686      0.1655  a
+i_DP_i_MULTIPLIER_B2_mult_28_n386
+                               3.986    0.514    0.0686      0.1655  a
+i_DP_i_MULTIPLIER_B1_mult_28_n404
+                               3.893    0.661    0.0701      0.1651  a
+i_DP_i_MULTIPLIER_A1_mult_28_n338
+                               4.631    0.357    0.0588      0.1648  a
+i_DP_i_MULTIPLIER_B0_mult_28_n339
+                               4.631    0.357    0.0588      0.1648  a
+i_DP_i_MULTIPLIER_B2_mult_28_n340
+                               4.631    0.322    0.0588      0.1648  a
+i_DP_i_MULTIPLIER_A2_mult_28_n45
+                               4.055    0.527    0.0672      0.1648  a
+i_DP_i_MULTIPLIER_A2_mult_28_n57
+                               4.055    0.531    0.0672      0.1648  a
+i_DP_i_MULTIPLIER_A1_mult_28_n351
+                               3.986    0.492    0.0681      0.1643  a
+i_DP_i_MULTIPLIER_A1_mult_28_n385
+                               3.986    0.492    0.0681      0.1643  a
+i_DP_i_MULTIPLIER_A1_mult_28_n387
+                               3.986    0.492    0.0681      0.1643  a
+i_DP_i_MULTIPLIER_A2_mult_28_n345
+                               3.986    0.496    0.0681      0.1643  a
+i_DP_i_MULTIPLIER_A2_mult_28_n385
+                               3.986    0.496    0.0681      0.1643  a
+i_DP_i_MULTIPLIER_B0_mult_28_n343
+                               3.986    0.488    0.0681      0.1643  a
+i_DP_i_MULTIPLIER_B0_mult_28_n352
+                               3.986    0.488    0.0681      0.1643  a
+i_DP_i_MULTIPLIER_B0_mult_28_n383
+                               3.986    0.488    0.0681      0.1643  a
+i_DP_i_MULTIPLIER_B0_mult_28_n386
+                               3.986    0.488    0.0681      0.1643  a
+i_DP_i_MULTIPLIER_B0_mult_28_n387
+                               3.986    0.488    0.0681      0.1643  a
+i_DP_i_MULTIPLIER_B1_mult_28_n347
+                               3.986    0.492    0.0681      0.1643  a
+i_DP_i_MULTIPLIER_B1_mult_28_n353
+                               3.986    0.492    0.0681      0.1643  a
+i_DP_i_MULTIPLIER_B1_mult_28_n384
+                               3.986    0.492    0.0681      0.1643  a
+i_DP_i_MULTIPLIER_B1_mult_28_n385
+                               3.986    0.492    0.0681      0.1643  a
+i_DP_i_MULTIPLIER_B1_mult_28_n388
+                               3.986    0.492    0.0681      0.1643  a
+i_DP_i_MULTIPLIER_B2_mult_28_n344
+                               3.986    0.496    0.0681      0.1643  a
+i_DP_i_MULTIPLIER_B2_mult_28_n353
+                               3.986    0.496    0.0681      0.1643  a
+i_DP_i_MULTIPLIER_B2_mult_28_n384
+                               3.986    0.496    0.0681      0.1643  a
+i_DP_i_MULTIPLIER_B2_mult_28_n387
+                               3.986    0.496    0.0681      0.1643  a
+i_DP_i_MULTIPLIER_B2_mult_28_n388
+                               3.986    0.496    0.0681      0.1643  a
+i_DP_i_MULTIPLIER_B2_mult_28_n341
+                               4.775    0.663    0.0569      0.1643  a
+i_DP_i_MULTIPLIER_B2_mult_28_n144
+                               3.782    0.494    0.0716      0.1637  a
+i_DP_i_MULTIPLIER_A2_mult_28_n338
+                               4.631    0.429    0.0583      0.1634  a
+i_DP_i_MULTIPLIER_B1_mult_28_n340
+                               4.631    0.433    0.0583      0.1634  a
+i_DP_i_MULTIPLIER_A1_mult_28_n309
+                              28.903    0.492    0.0093      0.1629  a
+i_DP_i_MULTIPLIER_A2_mult_28_n309
+                              28.903    0.496    0.0093      0.1629  a
+i_DP_i_MULTIPLIER_B0_mult_28_n308
+                              28.903    0.488    0.0093      0.1629  a
+i_DP_i_MULTIPLIER_B1_mult_28_n325
+                              28.903    0.492    0.0093      0.1629  a
+i_DP_i_MULTIPLIER_B2_mult_28_n309
+                              28.903    0.496    0.0093      0.1629  a
+i_DP_i_ADDER_1_add_28_carry[5]
+                               3.072    0.467    0.0873      0.1622  a
+i_DP_i_ADDER_1_add_28_carry[6]
+                               3.072    0.467    0.0873      0.1622  a
+i_DP_i_ADDER_1_add_28_carry[7]
+                               3.072    0.467    0.0873      0.1622  a
+i_DP_P_MULA2_ADD1[13]          3.782    0.471    0.0686      0.1570  a
+i_DP_P_MULA1_ADD1[10]          4.085    0.378    0.0632      0.1563  a
+i_DP_P_MULB2_ADD2[13]          3.782    0.504    0.0681      0.1559  a
+i_DP_S_ADD1_ADD0[3]            3.782    0.476    0.0681      0.1559  a
+i_DP_i_MULTIPLIER_B0_mult_28_n57
+                               4.055    0.600    0.0627      0.1539  a
+i_DP_i_MULTIPLIER_A1_mult_28_n57
+                               4.055    0.594    0.0623      0.1527  a
+i_DP_S_ADD1_ADD0[0]            3.782    0.467    0.0667      0.1525  a
+i_DP_i_MULTIPLIER_B1_mult_28_n149
+                               3.496    0.414    0.0721      0.1524  a
+i_DP_i_MULTIPLIER_B2_mult_28_n57
+                               4.055    0.557    0.0618      0.1515  a
+i_DP_i_MULTIPLIER_B0_mult_28_n322
+                               3.865    0.418    0.0642      0.1501  a
+i_DP_i_MULTIPLIER_B1_mult_28_n52
+                               4.055    0.518    0.0608      0.1491  a
+i_DP_i_MULTIPLIER_B2_mult_28_n323
+                               3.865    0.408    0.0637      0.1490  a
+i_DP_i_MULTIPLIER_A2_mult_28_n80
+                               3.981    0.451    0.0618      0.1488  a
+i_DP_W_DELAY_1[1]              4.695    0.451    0.0520      0.1476  a
+i_DP_i_MULTIPLIER_B1_mult_28_n58
+                               4.055    0.467    0.0598      0.1467  a
+i_DP_i_MULTIPLIER_B0_mult_28_n85
+                               4.055    0.382    0.0593      0.1455  a
+i_DP_P_MULB1_ADD2[11]          4.055    0.576    0.0588      0.1443  a
+i_DP_i_MULTIPLIER_A1_mult_28_n124
+                               4.055    0.357    0.0588      0.1443  a
+i_DP_i_MULTIPLIER_A1_mult_28_n127
+                               4.055    0.357    0.0588      0.1443  a
+i_DP_i_MULTIPLIER_A1_mult_28_n128
+                               4.055    0.357    0.0588      0.1443  a
+i_DP_i_MULTIPLIER_A2_mult_28_n66
+                               4.055    0.314    0.0588      0.1443  a
+i_DP_i_MULTIPLIER_A2_mult_28_n122
+                               4.055    0.322    0.0588      0.1443  a
+i_DP_i_MULTIPLIER_A2_mult_28_n124
+                               4.055    0.322    0.0588      0.1443  a
+i_DP_i_MULTIPLIER_A2_mult_28_n127
+                               4.055    0.322    0.0588      0.1443  a
+i_DP_i_MULTIPLIER_A2_mult_28_n128
+                               4.055    0.322    0.0588      0.1443  a
+i_DP_i_MULTIPLIER_A2_mult_28_n313
+                               4.055    0.678    0.0588      0.1443  a
+i_DP_i_MULTIPLIER_B0_mult_28_n122
+                               4.055    0.392    0.0588      0.1443  a
+i_DP_i_MULTIPLIER_B0_mult_28_n124
+                               4.055    0.392    0.0588      0.1443  a
+i_DP_i_MULTIPLIER_B0_mult_28_n125
+                               4.055    0.357    0.0588      0.1443  a
+i_DP_i_MULTIPLIER_B0_mult_28_n127
+                               4.055    0.392    0.0588      0.1443  a
+i_DP_i_MULTIPLIER_B0_mult_28_n128
+                               4.055    0.357    0.0588      0.1443  a
+i_DP_i_MULTIPLIER_B0_mult_28_n312
+                               4.055    0.608    0.0588      0.1443  a
+i_DP_i_MULTIPLIER_B1_mult_28_n124
+                               4.055    0.357    0.0588      0.1443  a
+i_DP_i_MULTIPLIER_B1_mult_28_n125
+                               4.055    0.357    0.0588      0.1443  a
+i_DP_i_MULTIPLIER_B1_mult_28_n127
+                               4.055    0.357    0.0588      0.1443  a
+i_DP_i_MULTIPLIER_B2_mult_28_n85
+                               4.055    0.349    0.0588      0.1443  a
+i_DP_i_MULTIPLIER_B2_mult_28_n125
+                               4.055    0.322    0.0588      0.1443  a
+i_DP_i_MULTIPLIER_B2_mult_28_n128
+                               4.055    0.322    0.0588      0.1443  a
+i_DP_i_MULTIPLIER_A1_mult_28_n34
+                               4.055    0.480    0.0583      0.1431  a
+i_DP_i_MULTIPLIER_A1_mult_28_n64
+                               4.055    0.394    0.0583      0.1431  a
+i_DP_i_MULTIPLIER_A1_mult_28_n122
+                               4.055    0.433    0.0583      0.1431  a
+i_DP_i_MULTIPLIER_A1_mult_28_n125
+                               4.055    0.433    0.0583      0.1431  a
+i_DP_i_MULTIPLIER_A1_mult_28_n313
+                               4.055    0.567    0.0583      0.1431  a
+i_DP_i_MULTIPLIER_A2_mult_28_n38
+                               4.055    0.382    0.0583      0.1431  a
+i_DP_i_MULTIPLIER_A2_mult_28_n125
+                               4.055    0.429    0.0583      0.1431  a
+i_DP_i_MULTIPLIER_B0_mult_28_n32
+                               4.055    0.575    0.0583      0.1431  a
+i_DP_i_MULTIPLIER_B1_mult_28_n122
+                               4.055    0.433    0.0583      0.1431  a
+i_DP_i_MULTIPLIER_B1_mult_28_n128
+                               4.055    0.433    0.0583      0.1431  a
+i_DP_i_MULTIPLIER_B1_mult_28_n310
+                               4.055    0.567    0.0583      0.1431  a
+i_DP_i_MULTIPLIER_B2_mult_28_n122
+                               4.055    0.429    0.0583      0.1431  a
+i_DP_i_MULTIPLIER_B2_mult_28_n124
+                               4.055    0.429    0.0583      0.1431  a
+i_DP_i_MULTIPLIER_B2_mult_28_n127
+                               4.055    0.429    0.0583      0.1431  a
+i_DP_i_MULTIPLIER_B2_mult_28_n313
+                               4.055    0.571    0.0583      0.1431  a
+i_DP_i_MULTIPLIER_A2_mult_28_n83
+                               3.868    0.392    0.0608      0.1422  a
+i_DP_i_MULTIPLIER_A2_mult_28_n306
+                               3.865    0.514    0.0608      0.1421  a
+i_DP_P_MULB1_ADD2[12]          4.055    0.365    0.0578      0.1419  a
+i_DP_i_MULTIPLIER_B0_mult_28_n58
+                               4.055    0.510    0.0578      0.1419  a
+i_DP_i_MULTIPLIER_B0_mult_28_n321
+                               4.055    0.353    0.0578      0.1419  a
+i_DP_i_MULTIPLIER_B2_mult_28_n32
+                               4.055    0.663    0.0578      0.1419  a
+i_DP_i_MULTIPLIER_A1_mult_28_n374
+                               3.986    0.569    0.0588      0.1418  a
+i_DP_i_MULTIPLIER_A1_mult_28_n375
+                               3.986    0.569    0.0588      0.1418  a
+i_DP_i_MULTIPLIER_A1_mult_28_n376
+                               3.986    0.569    0.0588      0.1418  a
+i_DP_i_MULTIPLIER_A1_mult_28_n377
+                               3.986    0.569    0.0588      0.1418  a
+i_DP_i_MULTIPLIER_A1_mult_28_n379
+                               3.986    0.569    0.0588      0.1418  a
+i_DP_i_MULTIPLIER_B0_mult_28_n375
+                               3.986    0.616    0.0588      0.1418  a
+i_DP_i_MULTIPLIER_B0_mult_28_n377
+                               3.986    0.616    0.0588      0.1418  a
+i_DP_i_MULTIPLIER_B0_mult_28_n378
+                               3.986    0.616    0.0588      0.1418  a
+i_DP_i_MULTIPLIER_B1_mult_28_n377
+                               3.986    0.569    0.0588      0.1418  a
+i_DP_i_MULTIPLIER_B1_mult_28_n379
+                               3.986    0.569    0.0588      0.1418  a
+i_DP_i_MULTIPLIER_B1_mult_28_n380
+                               3.986    0.569    0.0588      0.1418  a
+i_DP_i_MULTIPLIER_A2_mult_28_n68
+                               3.981    0.518    0.0588      0.1417  a
+i_DP_i_MULTIPLIER_A1_mult_28_n37
+                               3.782    0.388    0.0618      0.1413  a
+i_DP_i_MULTIPLIER_A1_mult_28_n44
+                               4.055    0.461    0.0574      0.1407  a
+i_DP_i_MULTIPLIER_A1_mult_28_n58
+                               4.055    0.476    0.0574      0.1407  a
+i_DP_i_MULTIPLIER_A1_mult_28_n322
+                               4.055    0.308    0.0574      0.1407  a
+i_DP_i_MULTIPLIER_B0_mult_28_n134
+                               4.055    0.382    0.0574      0.1407  a
+i_DP_i_MULTIPLIER_B0_mult_28_n137
+                               4.055    0.382    0.0574      0.1407  a
+i_DP_i_MULTIPLIER_B1_mult_28_n57
+                               4.055    0.637    0.0574      0.1407  a
+i_DP_i_MULTIPLIER_B1_mult_28_n306
+                               4.055    0.308    0.0574      0.1407  a
+i_DP_i_MULTIPLIER_A1_mult_28_n347
+                               3.986    0.441    0.0583      0.1407  a
+i_DP_i_MULTIPLIER_A1_mult_28_n378
+                               3.986    0.441    0.0583      0.1407  a
+i_DP_i_MULTIPLIER_A1_mult_28_n380
+                               3.986    0.441    0.0583      0.1407  a
+i_DP_i_MULTIPLIER_A2_mult_28_n347
+                               3.986    0.516    0.0583      0.1407  a
+i_DP_i_MULTIPLIER_A2_mult_28_n374
+                               3.986    0.516    0.0583      0.1407  a
+i_DP_i_MULTIPLIER_A2_mult_28_n375
+                               3.986    0.516    0.0583      0.1407  a
+i_DP_i_MULTIPLIER_A2_mult_28_n376
+                               3.986    0.516    0.0583      0.1407  a
+i_DP_i_MULTIPLIER_A2_mult_28_n379
+                               3.986    0.516    0.0583      0.1407  a
+i_DP_i_MULTIPLIER_A2_mult_28_n380
+                               3.986    0.516    0.0583      0.1407  a
+i_DP_i_MULTIPLIER_B0_mult_28_n348
+                               3.986    0.394    0.0583      0.1407  a
+i_DP_i_MULTIPLIER_B0_mult_28_n374
+                               3.986    0.394    0.0583      0.1407  a
+i_DP_i_MULTIPLIER_B0_mult_28_n376
+                               3.986    0.394    0.0583      0.1407  a
+i_DP_i_MULTIPLIER_B0_mult_28_n379
+                               3.986    0.394    0.0583      0.1407  a
+i_DP_i_MULTIPLIER_B0_mult_28_n380
+                               3.986    0.394    0.0583      0.1407  a
+i_DP_i_MULTIPLIER_B1_mult_28_n349
+                               3.986    0.441    0.0583      0.1407  a
+i_DP_i_MULTIPLIER_B1_mult_28_n375
+                               3.986    0.441    0.0583      0.1407  a
+i_DP_i_MULTIPLIER_B1_mult_28_n376
+                               3.986    0.441    0.0583      0.1407  a
+i_DP_i_MULTIPLIER_B1_mult_28_n378
+                               3.986    0.441    0.0583      0.1407  a
+i_DP_i_MULTIPLIER_B1_mult_28_n381
+                               3.986    0.441    0.0583      0.1407  a
+i_DP_i_MULTIPLIER_B2_mult_28_n376
+                               3.986    0.516    0.0583      0.1407  a
+i_DP_i_MULTIPLIER_B2_mult_28_n378
+                               3.986    0.516    0.0583      0.1407  a
+i_DP_i_MULTIPLIER_B2_mult_28_n379
+                               3.986    0.516    0.0583      0.1407  a
+i_DP_i_MULTIPLIER_A1_mult_28_n38
+                               4.055    0.596    0.0569      0.1395  a
+i_DP_i_MULTIPLIER_A2_mult_28_n72
+                               4.055    0.388    0.0569      0.1395  a
+i_DP_i_MULTIPLIER_A2_mult_28_n136
+                               4.055    0.388    0.0569      0.1395  a
+i_DP_i_MULTIPLIER_B1_mult_28_n28
+                               4.055    0.733    0.0569      0.1395  a
+i_DP_i_MULTIPLIER_B1_mult_28_n136
+                               4.055    0.384    0.0569      0.1395  a
+i_DP_i_MULTIPLIER_B2_mult_28_n58
+                               4.055    0.545    0.0569      0.1395  a
+i_DP_i_MULTIPLIER_B2_mult_28_n134
+                               4.055    0.388    0.0569      0.1395  a
+i_DP_i_MULTIPLIER_B2_mult_28_n137
+                               4.055    0.388    0.0569      0.1395  a
+i_DP_i_MULTIPLIER_B2_mult_28_n322
+                               4.055    0.337    0.0569      0.1395  a
+i_DP_i_MULTIPLIER_A2_mult_28_n377
+                               3.986    0.494    0.0578      0.1395  a
+i_DP_i_MULTIPLIER_A2_mult_28_n378
+                               3.986    0.494    0.0578      0.1395  a
+i_DP_i_MULTIPLIER_B2_mult_28_n349
+                               3.986    0.494    0.0578      0.1395  a
+i_DP_i_MULTIPLIER_B2_mult_28_n375
+                               3.986    0.494    0.0578      0.1395  a
+i_DP_i_MULTIPLIER_B2_mult_28_n377
+                               3.986    0.494    0.0578      0.1395  a
+i_DP_i_MULTIPLIER_B2_mult_28_n380
+                               3.986    0.494    0.0578      0.1395  a
+i_DP_i_MULTIPLIER_B2_mult_28_n381
+                               3.986    0.494    0.0578      0.1395  a
+i_DP_i_MULTIPLIER_A2_mult_28_n339
+                               4.775    0.639    0.0480      0.1388  a
+i_DP_i_MULTIPLIER_B0_mult_28_n410
+                               3.913    0.647    0.0578      0.1369  a
+i_DP_i_MULTIPLIER_A2_mult_28_n403
+                               3.893    0.667    0.0578      0.1362  a
+i_DP_i_MULTIPLIER_B0_mult_28_n132
+                               3.782    0.382    0.0593      0.1357  a
+i_DP_i_MULTIPLIER_B0_mult_28_n139
+                               3.758    0.382    0.0593      0.1348  a
+i_DP_i_MULTIPLIER_A2_mult_28_n410
+                               3.913    0.663    0.0569      0.1346  a
+i_DP_i_MULTIPLIER_B2_mult_28_n411
+                               3.913    0.663    0.0569      0.1346  a
+i_DP_i_MULTIPLIER_A1_mult_28_n78
+                               3.782    0.357    0.0588      0.1346  a
+i_DP_i_MULTIPLIER_A1_mult_28_n120
+                               3.782    0.314    0.0588      0.1346  a
+i_DP_i_MULTIPLIER_A1_mult_28_n132
+                               3.782    0.384    0.0588      0.1346  a
+i_DP_i_MULTIPLIER_A2_mult_28_n31
+                               3.782    0.314    0.0588      0.1346  a
+i_DP_i_MULTIPLIER_A2_mult_28_n123
+                               3.782    0.322    0.0588      0.1346  a
+i_DP_i_MULTIPLIER_A2_mult_28_n135
+                               3.782    0.349    0.0588      0.1346  a
+i_DP_i_MULTIPLIER_B0_mult_28_n123
+                               3.782    0.392    0.0588      0.1346  a
+i_DP_i_MULTIPLIER_B1_mult_28_n41
+                               3.782    0.318    0.0588      0.1346  a
+i_DP_i_MULTIPLIER_B1_mult_28_n120
+                               3.782    0.314    0.0588      0.1346  a
+i_DP_i_MULTIPLIER_B1_mult_28_n132
+                               3.782    0.384    0.0588      0.1346  a
+i_DP_i_MULTIPLIER_B1_mult_28_n138
+                               3.782    0.384    0.0588      0.1346  a
+i_DP_i_MULTIPLIER_B2_mult_28_n132
+                               3.782    0.349    0.0588      0.1346  a
+i_DP_i_MULTIPLIER_B1_mult_28_n307
+                               3.865    0.375    0.0574      0.1341  a
+i_DP_i_MULTIPLIER_A1_mult_28_n143
+                               3.072    0.414    0.0721      0.1339  a
+i_DP_i_MULTIPLIER_A1_mult_28_n145
+                               3.072    0.414    0.0721      0.1339  a
+i_DP_i_MULTIPLIER_B1_mult_28_n143
+                               3.072    0.414    0.0721      0.1339  a
+i_DP_i_MULTIPLIER_B1_mult_28_n146
+                               3.072    0.414    0.0721      0.1339  a
+i_DP_i_MULTIPLIER_A1_mult_28_n129
+                               3.758    0.357    0.0588      0.1337  a
+i_DP_i_MULTIPLIER_A2_mult_28_n129
+                               3.758    0.322    0.0588      0.1337  a
+i_DP_i_MULTIPLIER_B0_mult_28_n129
+                               3.758    0.392    0.0588      0.1337  a
+i_DP_i_MULTIPLIER_B2_mult_28_n139
+                               3.758    0.349    0.0588      0.1337  a
+i_DP_i_MULTIPLIER_A1_mult_28_n123
+                               3.782    0.433    0.0583      0.1335  a
+i_DP_i_MULTIPLIER_B0_mult_28_n75
+                               3.782    0.402    0.0583      0.1335  a
+i_DP_i_MULTIPLIER_B1_mult_28_n78
+                               3.782    0.433    0.0583      0.1335  a
+i_DP_i_MULTIPLIER_B1_mult_28_n123
+                               3.782    0.433    0.0583      0.1335  a
+i_DP_i_MULTIPLIER_B2_mult_28_n123
+                               3.782    0.429    0.0583      0.1335  a
+i_DP_i_MULTIPLIER_A2_mult_28_n82
+                               3.072    0.494    0.0716      0.1330  a
+i_DP_i_MULTIPLIER_A2_mult_28_n146
+                               3.072    0.494    0.0716      0.1330  a
+i_DP_i_MULTIPLIER_B1_mult_28_n129
+                               3.758    0.433    0.0583      0.1326  a
+i_DP_i_MULTIPLIER_B2_mult_28_n129
+                               3.758    0.429    0.0583      0.1326  a
+i_DP_i_MULTIPLIER_A2_mult_28_n56
+                               3.782    0.643    0.0578      0.1323  a
+i_DP_i_MULTIPLIER_B2_mult_28_n75
+                               3.782    0.404    0.0578      0.1323  a
+i_DP_i_MULTIPLIER_A1_mult_28_n40
+                               3.072    0.598    0.0711      0.1321  a
+i_DP_i_MULTIPLIER_A2_mult_28_n51
+                               3.782    0.335    0.0574      0.1312  a
+i_DP_i_MULTIPLIER_A1_mult_28_n46
+                               3.072    0.627    0.0706      0.1312  a
+i_DP_i_MULTIPLIER_A1_mult_28_n54
+                               3.072    0.590    0.0701      0.1303  a
+i_DP_S_ADD2_ADD3[3]            3.782    0.373    0.0569      0.1301  a
+i_DP_i_MULTIPLIER_A1_mult_28_n75
+                               3.782    0.333    0.0569      0.1301  a
+i_DP_i_MULTIPLIER_A1_mult_28_n135
+                               3.782    0.384    0.0569      0.1301  a
+i_DP_i_MULTIPLIER_A1_mult_28_n367
+                               3.986    0.404    0.0539      0.1300  a
+i_DP_i_MULTIPLIER_A1_mult_28_n368
+                               3.986    0.404    0.0539      0.1300  a
+i_DP_i_MULTIPLIER_A1_mult_28_n369
+                               3.986    0.404    0.0539      0.1300  a
+i_DP_i_MULTIPLIER_A1_mult_28_n370
+                               3.986    0.404    0.0539      0.1300  a
+i_DP_i_MULTIPLIER_A1_mult_28_n372
+                               3.986    0.404    0.0539      0.1300  a
+i_DP_i_MULTIPLIER_B0_mult_28_n368
+                               3.986    0.471    0.0539      0.1300  a
+i_DP_i_MULTIPLIER_B0_mult_28_n370
+                               3.986    0.471    0.0539      0.1300  a
+i_DP_i_MULTIPLIER_B0_mult_28_n371
+                               3.986    0.471    0.0539      0.1300  a
+i_DP_i_MULTIPLIER_B1_mult_28_n370
+                               3.986    0.404    0.0539      0.1300  a
+i_DP_i_MULTIPLIER_B1_mult_28_n372
+                               3.986    0.404    0.0539      0.1300  a
+i_DP_i_MULTIPLIER_B1_mult_28_n373
+                               3.986    0.404    0.0539      0.1300  a
+i_DP_i_MULTIPLIER_A2_mult_28_n32
+                               4.055    0.565    0.0529      0.1299  a
+i_DP_i_MULTIPLIER_B0_mult_28_n52
+                               4.055    0.557    0.0529      0.1299  a
+i_DP_i_MULTIPLIER_B1_mult_28_n72
+                               4.055    0.475    0.0529      0.1299  a
+i_DP_i_MULTIPLIER_B2_mult_28_n52
+                               4.055    0.620    0.0529      0.1299  a
+i_DP_i_MULTIPLIER_B0_mult_28_n68
+                               3.981    0.557    0.0539      0.1299  a
+i_DP_i_MULTIPLIER_A1_mult_28_n341
+                               4.015    0.606    0.0534      0.1298  a
+i_DP_i_MULTIPLIER_A2_mult_28_n341
+                               4.015    0.402    0.0534      0.1298  a
+i_DP_i_MULTIPLIER_B0_mult_28_n342
+                               4.015    0.539    0.0534      0.1298  a
+i_DP_i_MULTIPLIER_B1_mult_28_n343
+                               4.015    0.606    0.0534      0.1298  a
+DIN_REGIN_DP[0]                4.085    0.488    0.0525      0.1296  a
+i_DP_i_MULTIPLIER_A1_mult_28_n340
+                               4.009    0.394    0.0534      0.1296  a
+i_DP_i_MULTIPLIER_A2_mult_28_n340
+                               4.009    0.598    0.0534      0.1296  a
+i_DP_i_MULTIPLIER_B0_mult_28_n341
+                               4.009    0.461    0.0534      0.1296  a
+i_DP_i_MULTIPLIER_B1_mult_28_n342
+                               4.009    0.394    0.0534      0.1296  a
+i_DP_i_MULTIPLIER_B1_mult_28_n139
+                               3.758    0.384    0.0569      0.1293  a
+i_DP_i_MULTIPLIER_B0_mult_28_n354
+                               4.035    0.498    0.0529      0.1292  a
+i_DP_i_MULTIPLIER_B0_mult_28_n357
+                               4.035    0.498    0.0529      0.1292  a
+i_DP_i_MULTIPLIER_B0_mult_28_n358
+                               4.035    0.498    0.0529      0.1292  a
+i_DP_S_ADD1_ADD0[2]            3.782    0.382    0.0564      0.1290  a
+i_DP_W[0]                      4.063    0.488    0.0525      0.1289  a
+i_DP_W_DELAY_2[0]              4.099    0.451    0.0520      0.1289  a
+i_DP_i_MULTIPLIER_A1_mult_28_n371
+                               3.986    0.606    0.0534      0.1288  a
+i_DP_i_MULTIPLIER_A2_mult_28_n367
+                               3.986    0.402    0.0534      0.1288  a
+i_DP_i_MULTIPLIER_A2_mult_28_n368
+                               3.986    0.402    0.0534      0.1288  a
+i_DP_i_MULTIPLIER_A2_mult_28_n369
+                               3.986    0.402    0.0534      0.1288  a
+i_DP_i_MULTIPLIER_A2_mult_28_n372
+                               3.986    0.402    0.0534      0.1288  a
+i_DP_i_MULTIPLIER_B0_mult_28_n367
+                               3.986    0.539    0.0534      0.1288  a
+i_DP_i_MULTIPLIER_B0_mult_28_n369
+                               3.986    0.539    0.0534      0.1288  a
+i_DP_i_MULTIPLIER_B0_mult_28_n372
+                               3.986    0.539    0.0534      0.1288  a
+i_DP_i_MULTIPLIER_B1_mult_28_n368
+                               3.986    0.606    0.0534      0.1288  a
+i_DP_i_MULTIPLIER_B1_mult_28_n369
+                               3.986    0.606    0.0534      0.1288  a
+i_DP_i_MULTIPLIER_B1_mult_28_n371
+                               3.986    0.606    0.0534      0.1288  a
+i_DP_i_MULTIPLIER_B2_mult_28_n369
+                               3.986    0.402    0.0534      0.1288  a
+i_DP_i_MULTIPLIER_B2_mult_28_n371
+                               3.986    0.402    0.0534      0.1288  a
+i_DP_i_MULTIPLIER_B2_mult_28_n372
+                               3.986    0.402    0.0534      0.1288  a
+DIN_REGIN_DP[1]                4.055    0.488    0.0525      0.1287  a
+DIN_REGIN_DP[2]                4.055    0.488    0.0525      0.1287  a
+DIN_REGIN_DP[3]                4.055    0.488    0.0525      0.1287  a
+DIN_REGIN_DP[6]                4.055    0.488    0.0525      0.1287  a
+i_DP_i_MULTIPLIER_B0_mult_28_n155
+                               4.055    0.488    0.0525      0.1287  a
+i_DP_i_MULTIPLIER_B1_mult_28_n81
+                               4.055    0.273    0.0525      0.1287  a
+i_DP_i_MULTIPLIER_B1_mult_28_n88
+                               3.981    0.516    0.0534      0.1287  a
+i_DP_i_MULTIPLIER_B2_mult_28_n68
+                               3.981    0.598    0.0534      0.1287  a
+i_DP_i_MULTIPLIER_B2_mult_28_n343
+                               4.015    0.608    0.0529      0.1286  a
+i_DP_i_MULTIPLIER_B2_mult_28_n342
+                               4.009    0.392    0.0529      0.1284  a
+i_DP_i_MULTIPLIER_B0_mult_28_n310
+                               3.865    0.518    0.0549      0.1284  a
+i_DP_i_MULTIPLIER_B2_mult_28_n311
+                               3.865    0.514    0.0549      0.1284  a
+i_DP_i_MULTIPLIER_A1_mult_28_n354
+                               4.035    0.461    0.0525      0.1281  a
+i_DP_i_MULTIPLIER_A1_mult_28_n356
+                               4.035    0.461    0.0525      0.1281  a
+i_DP_i_MULTIPLIER_A1_mult_28_n357
+                               4.035    0.461    0.0525      0.1281  a
+i_DP_i_MULTIPLIER_A1_mult_28_n359
+                               4.035    0.461    0.0525      0.1281  a
+i_DP_i_MULTIPLIER_A2_mult_28_n354
+                               4.035    0.461    0.0525      0.1281  a
+i_DP_i_MULTIPLIER_A2_mult_28_n356
+                               4.035    0.461    0.0525      0.1281  a
+i_DP_i_MULTIPLIER_A2_mult_28_n359
+                               4.035    0.461    0.0525      0.1281  a
+i_DP_i_MULTIPLIER_A2_mult_28_n360
+                               4.035    0.461    0.0525      0.1281  a
+i_DP_i_MULTIPLIER_A2_mult_28_n361
+                               4.035    0.461    0.0525      0.1281  a
+i_DP_i_MULTIPLIER_B0_mult_28_n356
+                               4.035    0.512    0.0525      0.1281  a
+i_DP_i_MULTIPLIER_B0_mult_28_n359
+                               4.035    0.512    0.0525      0.1281  a
+i_DP_i_MULTIPLIER_B0_mult_28_n360
+                               4.035    0.512    0.0525      0.1281  a
+i_DP_i_MULTIPLIER_B0_mult_28_n361
+                               4.035    0.512    0.0525      0.1281  a
+i_DP_i_MULTIPLIER_B1_mult_28_n357
+                               4.035    0.461    0.0525      0.1281  a
+i_DP_i_MULTIPLIER_B1_mult_28_n359
+                               4.035    0.461    0.0525      0.1281  a
+i_DP_i_MULTIPLIER_B1_mult_28_n360
+                               4.035    0.461    0.0525      0.1281  a
+i_DP_i_MULTIPLIER_B2_mult_28_n355
+                               4.035    0.461    0.0525      0.1281  a
+i_DP_i_MULTIPLIER_B2_mult_28_n358
+                               4.035    0.461    0.0525      0.1281  a
+i_DP_i_MULTIPLIER_B2_mult_28_n359
+                               4.035    0.461    0.0525      0.1281  a
+i_DP_i_MULTIPLIER_B0_mult_28_n59
+                               3.782    0.302    0.0559      0.1279  a
+i_DP_i_MULTIPLIER_B2_mult_28_n59
+                               3.782    0.310    0.0559      0.1279  a
+i_DP_i_MULTIPLIER_A2_mult_28_n370
+                               3.986    0.608    0.0529      0.1277  a
+i_DP_i_MULTIPLIER_A2_mult_28_n371
+                               3.986    0.608    0.0529      0.1277  a
+i_DP_i_MULTIPLIER_B2_mult_28_n368
+                               3.986    0.608    0.0529      0.1277  a
+i_DP_i_MULTIPLIER_B2_mult_28_n370
+                               3.986    0.608    0.0529      0.1277  a
+i_DP_i_MULTIPLIER_B2_mult_28_n373
+                               3.986    0.608    0.0529      0.1277  a
+i_DP_i_MULTIPLIER_A2_mult_28_n157
+                               4.055    0.451    0.0520      0.1275  a
+i_DP_i_MULTIPLIER_B1_mult_28_n157
+                               4.055    0.451    0.0520      0.1275  a
+i_DP_i_MULTIPLIER_B2_mult_28_n155
+                               4.055    0.451    0.0520      0.1275  a
+i_DP_i_MULTIPLIER_B1_mult_28_n73
+                               3.868    0.288    0.0544      0.1273  a
+i_DP_i_MULTIPLIER_A1_mult_28_n306
+                               3.865    0.473    0.0544      0.1272  a
+i_DP_i_MULTIPLIER_A1_mult_28_n358
+                               4.035    0.549    0.0520      0.1269  a
+i_DP_i_MULTIPLIER_A1_mult_28_n360
+                               4.035    0.549    0.0520      0.1269  a
+i_DP_i_MULTIPLIER_A1_mult_28_n361
+                               4.035    0.549    0.0520      0.1269  a
+i_DP_i_MULTIPLIER_A2_mult_28_n357
+                               4.035    0.549    0.0520      0.1269  a
+i_DP_i_MULTIPLIER_A2_mult_28_n358
+                               4.035    0.549    0.0520      0.1269  a
+i_DP_i_MULTIPLIER_B1_mult_28_n355
+                               4.035    0.549    0.0520      0.1269  a
+i_DP_i_MULTIPLIER_B1_mult_28_n358
+                               4.035    0.549    0.0520      0.1269  a
+i_DP_i_MULTIPLIER_B1_mult_28_n361
+                               4.035    0.549    0.0520      0.1269  a
+i_DP_i_MULTIPLIER_B1_mult_28_n362
+                               4.035    0.549    0.0520      0.1269  a
+i_DP_i_MULTIPLIER_B2_mult_28_n357
+                               4.035    0.549    0.0520      0.1269  a
+i_DP_i_MULTIPLIER_B2_mult_28_n360
+                               4.035    0.549    0.0520      0.1269  a
+i_DP_i_MULTIPLIER_B2_mult_28_n361
+                               4.035    0.549    0.0520      0.1269  a
+i_DP_i_MULTIPLIER_B2_mult_28_n362
+                               4.035    0.549    0.0520      0.1269  a
+i_DP_i_MULTIPLIER_B1_mult_28_n5
+                               3.072    0.492    0.0681      0.1266  a
+i_DP_i_ADDER_1_add_28_carry[4]
+                               3.072    0.467    0.0676      0.1257  a
+i_DP_i_MULTIPLIER_B0_mult_28_n41
+                               3.782    0.282    0.0549      0.1256  a
+i_DP_i_MULTIPLIER_B0_mult_28_n108
+                               3.496    0.382    0.0593      0.1254  a
+i_DP_i_MULTIPLIER_A1_mult_28_n311
+                               3.865    0.512    0.0534      0.1249  a
+i_DP_i_MULTIPLIER_A2_mult_28_n46
+                               3.072    0.473    0.0672      0.1248  a
+i_DP_i_MULTIPLIER_A2_mult_28_n405
+                               3.893    0.714    0.0529      0.1247  a
+i_DP_i_MULTIPLIER_B2_mult_28_n41
+                               3.782    0.363    0.0544      0.1245  a
+i_DP_i_MULTIPLIER_A2_mult_28_n108
+                               3.496    0.349    0.0588      0.1244  a
+i_DP_i_MULTIPLIER_B0_mult_28_n107
+                               3.496    0.392    0.0588      0.1244  a
+i_DP_i_MULTIPLIER_B2_mult_28_n108
+                               3.496    0.349    0.0588      0.1244  a
+i_DP_i_MULTIPLIER_B1_mult_28_n416
+                               3.953    0.451    0.0520      0.1243  a
+i_DP_i_MULTIPLIER_A2_mult_28_n107
+                               3.496    0.429    0.0583      0.1234  a
+i_DP_i_MULTIPLIER_B2_mult_28_n107
+                               3.496    0.429    0.0583      0.1234  a
+i_DP_i_MULTIPLIER_A2_mult_28_n33
+                               4.055    0.282    0.0500      0.1227  a
+i_DP_i_MULTIPLIER_B0_mult_28_n149
+                               3.496    0.353    0.0578      0.1223  a
+i_DP_i_MULTIPLIER_A1_mult_28_n43
+                               3.782    0.402    0.0534      0.1222  a
+i_DP_i_MULTIPLIER_A1_mult_28_n51
+                               3.782    0.508    0.0534      0.1222  a
+i_DP_i_MULTIPLIER_B1_mult_28_n42
+                               3.782    0.571    0.0534      0.1222  a
+i_DP_i_MULTIPLIER_B1_mult_28_n86
+                               3.072    0.427    0.0657      0.1221  a
+i_DP_i_MULTIPLIER_B1_mult_28_n316
+                               3.865    0.471    0.0520      0.1215  a
+DIN_REGIN_DP[7]                4.055    0.488    0.0495      0.1215  a
+i_DP_i_MULTIPLIER_B0_mult_28_n38
+                               4.055    0.406    0.0495      0.1215  a
+i_DP_i_MULTIPLIER_B2_mult_28_n38
+                               4.055    0.414    0.0495      0.1215  a
+i_DP_i_MULTIPLIER_B0_mult_28_n69
+                               3.782    0.318    0.0529      0.1211  a
+i_DP_i_MULTIPLIER_A2_mult_28_n321
+                               3.916    0.702    0.0510      0.1208  a
+i_DP_P_MULA1_ADD1[12]          4.055    0.506    0.0490      0.1203  a
+i_DP_i_MULTIPLIER_A2_mult_28_n34
+                               4.055    0.675    0.0490      0.1203  a
+i_DP_i_MULTIPLIER_B2_mult_28_n149
+                               3.496    0.337    0.0569      0.1203  a
+i_DP_i_MULTIPLIER_B1_mult_28_n54
+                               3.072    0.557    0.0647      0.1203  a
+i_DP_i_MULTIPLIER_B0_mult_28_n152
+                               3.782    0.488    0.0525      0.1200  a
+i_DP_i_MULTIPLIER_B0_mult_28_n154
+                               3.782    0.488    0.0525      0.1200  a
+i_DP_i_MULTIPLIER_B0_mult_28_n309
+                               3.916    0.535    0.0505      0.1196  a
+i_DP_i_MULTIPLIER_B0_mult_28_n158
+                               3.758    0.488    0.0525      0.1192  a
+i_DP_P_MULB0_ADD3[11]          4.055    0.516    0.0485      0.1191  a
+i_DP_i_MULTIPLIER_A2_mult_28_n58
+                               4.055    0.727    0.0485      0.1191  a
+i_DP_i_MULTIPLIER_A1_mult_28_n152
+                               3.782    0.451    0.0520      0.1189  a
+i_DP_i_MULTIPLIER_A1_mult_28_n154
+                               3.782    0.451    0.0520      0.1189  a
+i_DP_i_MULTIPLIER_A1_mult_28_n156
+                               3.782    0.451    0.0520      0.1189  a
+i_DP_i_MULTIPLIER_A2_mult_28_n156
+                               3.782    0.451    0.0520      0.1189  a
+i_DP_i_MULTIPLIER_B1_mult_28_n152
+                               3.782    0.451    0.0520      0.1189  a
+i_DP_i_MULTIPLIER_B1_mult_28_n154
+                               3.782    0.451    0.0520      0.1189  a
+i_DP_i_MULTIPLIER_B2_mult_28_n69
+                               3.782    0.318    0.0520      0.1189  a
+i_DP_i_MULTIPLIER_B2_mult_28_n152
+                               3.782    0.451    0.0520      0.1189  a
+i_DP_i_MULTIPLIER_B2_mult_28_n154
+                               3.782    0.451    0.0520      0.1189  a
+i_DP_i_MULTIPLIER_B1_mult_28_n318
+                               3.916    0.714    0.0500      0.1184  a
+i_DP_i_MULTIPLIER_B1_mult_28_n320
+                               3.916    0.647    0.0500      0.1184  a
+i_DP_i_MULTIPLIER_B2_mult_28_n310
+                               3.916    0.569    0.0500      0.1184  a
+i_DP_i_MULTIPLIER_A1_mult_28_n7
+                               3.072    0.471    0.0637      0.1184  a
+i_DP_i_MULTIPLIER_B2_mult_28_n158
+                               3.758    0.451    0.0520      0.1181  a
+i_DP_i_MULTIPLIER_A1_mult_28_n68
+                               3.981    0.471    0.0490      0.1181  a
+i_DP_i_MULTIPLIER_B0_mult_28_n305
+                               3.865    0.414    0.0505      0.1180  a
+i_DP_i_MULTIPLIER_B2_mult_28_n306
+                               3.865    0.449    0.0505      0.1180  a
+i_DP_i_MULTIPLIER_A1_mult_28_n81
+                               4.055    0.310    0.0480      0.1179  a
+i_DP_i_MULTIPLIER_A1_mult_28_n147
+                               4.055    0.337    0.0480      0.1179  a
+i_DP_i_MULTIPLIER_A2_mult_28_n147
+                               4.055    0.361    0.0480      0.1179  a
+i_DP_i_MULTIPLIER_A2_mult_28_n322
+                               4.055    0.361    0.0480      0.1179  a
+i_DP_i_MULTIPLIER_B0_mult_28_n48
+                               3.782    0.614    0.0515      0.1178  a
+i_DP_i_MULTIPLIER_A1_mult_28_n73
+                               3.868    0.271    0.0500      0.1170  a
+i_DP_i_MULTIPLIER_A1_mult_28_n317
+                               3.865    0.655    0.0500      0.1169  a
+i_DP_i_MULTIPLIER_A1_mult_28_n80
+                               3.981    0.649    0.0485      0.1169  a
+i_DP_i_MULTIPLIER_A2_mult_28_n41
+                               3.782    0.286    0.0510      0.1166  a
+i_DP_i_MULTIPLIER_B1_mult_28_n51
+                               3.782    0.420    0.0510      0.1166  a
+i_DP_i_MULTIPLIER_B2_mult_28_n48
+                               3.782    0.498    0.0510      0.1166  a
+i_DP_i_MULTIPLIER_B1_mult_28_n405
+                               3.915    0.267    0.0490      0.1161  a
+i_DP_i_MULTIPLIER_A2_mult_28_n64
+                               4.055    0.412    0.0471      0.1155  a
+i_DP_i_MULTIPLIER_A2_mult_28_n35
+                               5.871    0.239    0.0324      0.1149  a
+i_DP_i_MULTIPLIER_B0_mult_28_n56
+                               3.782    0.533    0.0500      0.1144  a
+i_DP_i_MULTIPLIER_B2_mult_28_n56
+                               3.782    0.482    0.0500      0.1144  a
+DIN_REGIN_DP[4]                4.055    0.488    0.0466      0.1143  a
+DIN_REGIN_DP[5]                4.055    0.488    0.0466      0.1143  a
+i_DP_i_MULTIPLIER_A1_mult_28_n52
+                               4.055    0.492    0.0466      0.1143  a
+i_DP_i_MULTIPLIER_B1_mult_28_n80
+                               3.981    0.471    0.0471      0.1133  a
+i_DP_i_MULTIPLIER_A2_mult_28_n73
+                               3.868    0.255    0.0480      0.1124  a
+i_DP_i_MULTIPLIER_A1_mult_28_n323
+                               3.865    0.663    0.0480      0.1123  a
+i_DP_i_MULTIPLIER_A1_mult_28_n31
+                               3.782    0.306    0.0490      0.1122  a
+i_DP_i_MULTIPLIER_B1_mult_28_n31
+                               3.782    0.361    0.0490      0.1122  a
+i_DP_i_MULTIPLIER_B1_mult_28_n48
+                               3.782    0.427    0.0490      0.1122  a
+i_DP_i_MULTIPLIER_B1_mult_28_n64
+                               4.055    0.582    0.0456      0.1119  a
+i_DP_P_MULA2_ADD1[11]          3.782    0.590    0.0485      0.1110  a
+i_DP_S_ADD1_ADD0[4]            3.782    0.512    0.0485      0.1110  a
+i_DP_i_MULTIPLIER_A2_mult_28_n37
+                               3.782    0.512    0.0485      0.1110  a
+i_DP_i_MULTIPLIER_A2_mult_28_n48
+                               3.782    0.433    0.0485      0.1110  a
+i_DP_i_MULTIPLIER_B0_mult_28_n80
+                               3.981    0.408    0.0461      0.1110  a
+i_DP_i_MULTIPLIER_B2_mult_28_n80
+                               3.981    0.365    0.0461      0.1110  a
+i_DP_i_MULTIPLIER_A1_mult_28_n61
+                               4.055    0.235    0.0451      0.1107  a
+i_DP_i_MULTIPLIER_A1_mult_28_n72
+                               4.055    0.380    0.0451      0.1107  a
+i_DP_i_MULTIPLIER_B0_mult_28_n133
+                               3.072    0.382    0.0593      0.1102  a
+i_DP_i_MULTIPLIER_B0_mult_28_n317
+                               3.072    0.618    0.0593      0.1102  a
+i_DP_i_MULTIPLIER_B0_mult_28_n318
+                               3.072    0.618    0.0593      0.1102  a
+i_DP_P_MULB2_ADD2[11]          3.782    0.431    0.0480      0.1099  a
+i_DP_i_MULTIPLIER_B1_mult_28_n144
+                               3.782    0.337    0.0480      0.1099  a
+i_DP_i_MULTIPLIER_A1_mult_28_n318
+                               3.072    0.616    0.0588      0.1093  a
+i_DP_i_MULTIPLIER_A1_mult_28_n319
+                               3.072    0.616    0.0588      0.1093  a
+i_DP_i_MULTIPLIER_A2_mult_28_n29
+                               3.072    0.322    0.0588      0.1093  a
+i_DP_i_MULTIPLIER_A2_mult_28_n30
+                               3.072    0.678    0.0588      0.1093  a
+i_DP_i_MULTIPLIER_A2_mult_28_n62
+                               3.072    0.314    0.0588      0.1093  a
+i_DP_i_MULTIPLIER_A2_mult_28_n312
+                               3.072    0.678    0.0588      0.1093  a
+i_DP_i_MULTIPLIER_B0_mult_28_n29
+                               3.072    0.392    0.0588      0.1093  a
+i_DP_i_MULTIPLIER_B0_mult_28_n30
+                               3.072    0.608    0.0588      0.1093  a
+i_DP_i_MULTIPLIER_B0_mult_28_n76
+                               3.072    0.388    0.0588      0.1093  a
+i_DP_i_MULTIPLIER_B0_mult_28_n77
+                               3.072    0.392    0.0588      0.1093  a
+i_DP_i_MULTIPLIER_B0_mult_28_n311
+                               3.072    0.608    0.0588      0.1093  a
+i_DP_i_MULTIPLIER_B1_mult_28_n309
+                               3.072    0.616    0.0588      0.1093  a
+i_DP_i_MULTIPLIER_B1_mult_28_n314
+                               3.072    0.616    0.0588      0.1093  a
+i_DP_i_MULTIPLIER_B2_mult_28_n76
+                               3.072    0.392    0.0588      0.1093  a
+i_DP_i_MULTIPLIER_B2_mult_28_n133
+                               3.072    0.349    0.0588      0.1093  a
+i_DP_i_MULTIPLIER_B2_mult_28_n318
+                               3.072    0.651    0.0588      0.1093  a
+i_DP_i_MULTIPLIER_B2_mult_28_n319
+                               3.072    0.651    0.0588      0.1093  a
+i_DP_i_MULTIPLIER_A2_mult_28_n311
+                               3.865    0.457    0.0466      0.1089  a
+i_DP_i_MULTIPLIER_A1_mult_28_n42
+                               3.782    0.398    0.0475      0.1088  a
+i_DP_i_MULTIPLIER_A1_mult_28_n130
+                               3.782    0.790    0.0475      0.1088  a
+i_DP_i_MULTIPLIER_A2_mult_28_n78
+                               3.782    0.751    0.0475      0.1088  a
+i_DP_i_MULTIPLIER_B1_mult_28_n130
+                               3.782    0.790    0.0475      0.1088  a
+i_DP_i_MULTIPLIER_A1_mult_28_n29
+                               3.072    0.433    0.0583      0.1084  a
+i_DP_i_MULTIPLIER_A1_mult_28_n30
+                               3.072    0.567    0.0583      0.1084  a
+i_DP_i_MULTIPLIER_A1_mult_28_n312
+                               3.072    0.567    0.0583      0.1084  a
+i_DP_i_MULTIPLIER_B1_mult_28_n29
+                               3.072    0.433    0.0583      0.1084  a
+i_DP_i_MULTIPLIER_B1_mult_28_n30
+                               3.072    0.567    0.0583      0.1084  a
+i_DP_i_MULTIPLIER_B1_mult_28_n315
+                               3.072    0.567    0.0583      0.1084  a
+i_DP_i_MULTIPLIER_B2_mult_28_n29
+                               3.072    0.429    0.0583      0.1084  a
+i_DP_i_MULTIPLIER_B2_mult_28_n30
+                               3.072    0.571    0.0583      0.1084  a
+i_DP_i_MULTIPLIER_B2_mult_28_n77
+                               3.072    0.429    0.0583      0.1084  a
+i_DP_i_MULTIPLIER_B2_mult_28_n312
+                               3.072    0.571    0.0583      0.1084  a
+i_DP_i_reg_0_n6                1.980    0.562    0.0902      0.1081  a
+i_DP_i_MULTIPLIER_B0_mult_28_n31
+                               3.782    0.251    0.0471      0.1077  a
+i_DP_i_MULTIPLIER_B1_mult_28_n37
+                               3.782    0.600    0.0471      0.1077  a
+i_DP_i_MULTIPLIER_B2_mult_28_n31
+                               3.782    0.251    0.0471      0.1077  a
+i_DP_i_MULTIPLIER_A2_mult_28_n55
+                               3.072    0.357    0.0578      0.1075  a
+i_DP_i_MULTIPLIER_B0_mult_28_n141
+                               3.072    0.647    0.0578      0.1075  a
+i_DP_i_MULTIPLIER_B0_mult_28_n143
+                               3.072    0.353    0.0578      0.1075  a
+i_DP_i_MULTIPLIER_B1_mult_28_n8
+                               3.072    0.341    0.0578      0.1075  a
+i_DP_i_MULTIPLIER_A1_mult_28_n141
+                               3.072    0.692    0.0574      0.1066  a
+i_DP_i_MULTIPLIER_B1_mult_28_n141
+                               3.072    0.692    0.0574      0.1066  a
+i_DP_i_MULTIPLIER_B1_mult_28_n148
+                               3.072    0.308    0.0574      0.1066  a
+i_DP_i_MULTIPLIER_B1_mult_28_n61
+                               4.055    0.337    0.0431      0.1058  a
+i_DP_i_reg_0_n8                1.980    0.609    0.0882      0.1057  a
+i_DP_i_reg_1_n55               1.980    0.613    0.0882      0.1057  a
+i_DP_i_MULTIPLIER_A1_mult_28_n133
+                               3.072    0.384    0.0569      0.1057  a
+i_DP_i_MULTIPLIER_A2_mult_28_n145
+                               3.072    0.337    0.0569      0.1057  a
+i_DP_i_MULTIPLIER_B1_mult_28_n133
+                               3.072    0.384    0.0569      0.1057  a
+i_DP_i_MULTIPLIER_B2_mult_28_n141
+                               3.072    0.663    0.0569      0.1057  a
+i_DP_i_MULTIPLIER_B2_mult_28_n143
+                               3.072    0.337    0.0569      0.1057  a
+i_DP_i_MULTIPLIER_B0_mult_28_n307
+                               5.938    0.882    0.0294      0.1057  a
+i_DP_i_MULTIPLIER_B1_mult_28_n311
+                               5.938    0.843    0.0294      0.1057  a
+i_DP_i_MULTIPLIER_B2_mult_28_n308
+                               5.938    0.843    0.0294      0.1057  a
+i_DP_i_MULTIPLIER_A1_mult_28_n83
+                               3.868    0.325    0.0451      0.1055  a
+i_DP_i_MULTIPLIER_B1_mult_28_n68
+                               3.981    0.653    0.0436      0.1051  a
+i_DP_i_MULTIPLIER_A1_mult_28_n8
+                               3.072    0.449    0.0564      0.1048  a
+i_DP_i_MULTIPLIER_B0_mult_28_n8
+                               3.072    0.378    0.0564      0.1048  a
+i_DP_i_MULTIPLIER_B0_mult_28_n40
+                               3.072    0.520    0.0564      0.1048  a
+i_DP_i_ADDER_0_add_28_carry[4]
+                               3.072    0.380    0.0559      0.1039  a
+i_DP_i_MULTIPLIER_A2_mult_28_n76
+                               3.072    0.302    0.0559      0.1039  a
+i_DP_i_MULTIPLIER_B2_mult_28_n8
+                               3.072    0.392    0.0559      0.1039  a
+i_DP_i_MULTIPLIER_B2_mult_28_n40
+                               3.072    0.443    0.0559      0.1039  a
+i_DP_i_MULTIPLIER_B1_mult_28_n38
+                               4.055    0.329    0.0422      0.1034  a
+i_DP_i_MULTIPLIER_B1_mult_28_n147
+                               4.055    0.231    0.0422      0.1034  a
+i_DP_i_MULTIPLIER_B0_mult_28_n315
+                               3.916    0.673    0.0436      0.1033  a
+i_DP_i_MULTIPLIER_B1_mult_28_n56
+                               3.782    0.463    0.0451      0.1032  a
+i_DP_i_MULTIPLIER_B1_mult_28_n40
+                               3.072    0.425    0.0554      0.1029  a
+i_DP_i_MULTIPLIER_B1_mult_28_n32
+                               4.055    0.406    0.0417      0.1022  a
+i_DP_i_MULTIPLIER_B2_mult_28_n316
+                               3.916    0.675    0.0431      0.1022  a
+i_DP_i_MULTIPLIER_A1_mult_28_n71
+                               3.072    0.275    0.0549      0.1020  a
+i_DP_i_MULTIPLIER_B0_mult_28_n54
+                               3.072    0.651    0.0549      0.1020  a
+i_DP_i_MULTIPLIER_B1_mult_28_n62
+                               3.072    0.271    0.0549      0.1020  a
+i_DP_i_MULTIPLIER_B2_mult_28_n54
+                               3.072    0.624    0.0549      0.1020  a
+i_DP_i_MULTIPLIER_A1_mult_28_n149
+                               3.496    0.337    0.0480      0.1016  a
+i_DP_i_MULTIPLIER_B0_mult_28_n88
+                               3.981    0.216    0.0422      0.1015  a
+i_DP_i_MULTIPLIER_B2_mult_28_n88
+                               3.981    0.204    0.0422      0.1015  a
+i_DP_i_MULTIPLIER_B0_mult_28_n33
+                               4.055    0.251    0.0412      0.1010  a
+i_DP_i_MULTIPLIER_A1_mult_28_n140
+                               3.782    0.463    0.0441      0.1009  a
+i_DP_i_MULTIPLIER_B1_mult_28_n140
+                               3.782    0.463    0.0441      0.1009  a
+i_DP_i_MULTIPLIER_B0_mult_28_n70
+                               3.072    0.573    0.0539      0.1002  a
+i_DP_i_MULTIPLIER_B1_mult_28_n82
+                               3.072    0.659    0.0539      0.1002  a
+i_DP_i_MULTIPLIER_B1_mult_28_n407
+                               3.915    0.247    0.0422      0.0998  a
+i_DP_i_MULTIPLIER_B1_mult_28_n33
+                               4.055    0.324    0.0407      0.0998  a
+i_DP_i_MULTIPLIER_B2_mult_28_n33
+                               4.055    0.320    0.0407      0.0998  a
+i_DP_i_MULTIPLIER_B2_mult_28_n70
+                               3.072    0.610    0.0534      0.0993  a
+i_DP_W_DELAY_1[9]             17.589    0.508    0.0093      0.0991  a
+i_DP_i_MULTIPLIER_A2_mult_28_n323
+                               3.865    0.796    0.0422      0.0986  a
+i_DP_i_MULTIPLIER_B1_mult_28_n319
+                               3.865    0.451    0.0422      0.0986  a
+i_DP_P_MULB0_ADD3[10]          4.085    0.547    0.0397      0.0981  a
+i_DP_i_MULTIPLIER_A1_mult_28_n76
+                               3.072    0.363    0.0525      0.0975  a
+i_DP_i_MULTIPLIER_B0_mult_28_n153
+                               3.072    0.488    0.0525      0.0975  a
+i_DP_i_MULTIPLIER_B0_mult_28_n327
+                               3.072    0.512    0.0525      0.0975  a
+i_DP_i_MULTIPLIER_A1_mult_28_n153
+                               3.072    0.451    0.0520      0.0966  a
+i_DP_i_MULTIPLIER_A1_mult_28_n328
+                               3.072    0.549    0.0520      0.0966  a
+i_DP_i_MULTIPLIER_B1_mult_28_n153
+                               3.072    0.451    0.0520      0.0966  a
+i_DP_i_MULTIPLIER_B1_mult_28_n313
+                               3.072    0.549    0.0520      0.0966  a
+i_DP_i_MULTIPLIER_B2_mult_28_n153
+                               3.072    0.451    0.0520      0.0966  a
+i_DP_i_MULTIPLIER_B2_mult_28_n328
+                               3.072    0.549    0.0520      0.0966  a
+i_DP_i_MULTIPLIER_A1_mult_28_n144
+                               3.782    0.231    0.0422      0.0965  a
+i_DP_i_MULTIPLIER_A2_mult_28_n144
+                               3.782    0.204    0.0422      0.0965  a
+i_DP_i_MULTIPLIER_B0_mult_28_n51
+                               3.782    0.349    0.0422      0.0965  a
+i_DP_i_MULTIPLIER_B2_mult_28_n51
+                               3.782    0.294    0.0422      0.0965  a
+i_DP_i_MULTIPLIER_A2_mult_28_n317
+                               3.865    0.518    0.0412      0.0963  a
+i_DP_i_MULTIPLIER_A1_mult_28_n28
+                               4.055    0.694    0.0392      0.0962  a
+i_DP_i_MULTIPLIER_A2_mult_28_n28
+                               4.055    0.804    0.0392      0.0962  a
+i_DP_i_MULTIPLIER_A1_mult_28_n332
+                               5.393    0.157    0.0294      0.0960  a
+i_DP_i_MULTIPLIER_A2_mult_28_n332
+                               5.393    0.157    0.0294      0.0960  a
+i_DP_i_MULTIPLIER_B1_mult_28_n308
+                               3.916    0.827    0.0402      0.0952  a
+i_DP_i_reg_0_n5                1.980    0.592    0.0794      0.0951  a
+i_DP_i_reg_1_n57               1.980    0.566    0.0794      0.0951  a
+i_DP_i_MULTIPLIER_A1_mult_28_n33
+                               4.055    0.363    0.0387      0.0950  a
+i_DP_i_MULTIPLIER_B0_mult_28_n44
+                               4.055    0.598    0.0387      0.0950  a
+i_DP_i_MULTIPLIER_B0_mult_28_n72
+                               4.055    0.512    0.0387      0.0950  a
+i_DP_i_ADDER_2_add_28_carry[2]
+                               3.072    0.318    0.0510      0.0947  a
+i_DP_i_MULTIPLIER_B0_mult_28_n55
+                               3.072    0.239    0.0510      0.0947  a
+i_DP_i_MULTIPLIER_B2_mult_28_n55
+                               3.072    0.306    0.0510      0.0947  a
+i_DP_i_MULTIPLIER_A2_mult_28_n88
+                               3.981    0.216    0.0392      0.0944  a
+i_DP_S_ADD2_ADD3[1]            3.782    0.561    0.0412      0.0942  a
+i_DP_i_MULTIPLIER_B1_mult_28_n43
+                               3.782    0.212    0.0412      0.0942  a
+i_DP_i_MULTIPLIER_B0_mult_28_n6
+                               3.072    0.496    0.0505      0.0938  a
+i_DP_i_MULTIPLIER_B2_mult_28_n6
+                               3.072    0.512    0.0505      0.0938  a
+i_DP_P_MULA1_ADD1[11]          4.055    0.349    0.0382      0.0938  a
+i_DP_i_MULTIPLIER_B2_mult_28_n44
+                               4.055    0.596    0.0382      0.0938  a
+i_DP_i_MULTIPLIER_B2_mult_28_n72
+                               4.055    0.447    0.0382      0.0938  a
+i_DP_i_reg_1_n35               1.438    0.508    0.1074      0.0934  a
+i_DP_W_DELAY_1[8]             16.543    0.508    0.0093      0.0932  a
+i_DP_S_ADD2_ADD3[2]            3.782    0.684    0.0407      0.0931  a
+i_DP_i_MULTIPLIER_A1_mult_28_n63
+                               3.072    0.380    0.0500      0.0929  a
+i_DP_i_MULTIPLIER_A1_mult_28_n310
+                               3.916    0.659    0.0392      0.0929  a
+i_DP_i_MULTIPLIER_B0_mult_28_n408
+                               3.915    0.224    0.0392      0.0929  a
+i_DP_i_reg_0_n4                1.980    0.676    0.0775      0.0928  a
+i_DP_S_ADD2_ADD3[0]            3.849    0.535    0.0397      0.0925  a
+i_DP_i_MULTIPLIER_A1_mult_28_n41
+                               3.782    0.404    0.0402      0.0920  a
+i_DP_i_MULTIPLIER_A2_mult_28_n43
+                               3.782    0.227    0.0402      0.0920  a
+i_DP_P_MULB2_ADD2[10]          3.849    0.580    0.0392      0.0913  a
+i_DP_i_MULTIPLIER_A1_mult_28_n9
+                               3.072    0.278    0.0490      0.0911  a
+i_DP_i_MULTIPLIER_A1_mult_28_n47
+                               3.072    0.235    0.0490      0.0911  a
+i_DP_i_MULTIPLIER_A2_mult_28_n6
+                               3.072    0.412    0.0490      0.0911  a
+i_DP_i_MULTIPLIER_A1_mult_28_n48
+                               3.782    0.504    0.0397      0.0908  a
+i_DP_i_MULTIPLIER_B2_mult_28_n409
+                               3.915    0.239    0.0382      0.0906  a
+i_DP_i_ADDER_0_add_28_carry[5]
+                               3.072    0.359    0.0485      0.0902  a
+i_DP_i_ADDER_0_add_28_carry[6]
+                               3.072    0.359    0.0485      0.0902  a
+i_DP_i_MULTIPLIER_B1_mult_28_n70
+                               3.072    0.300    0.0485      0.0902  a
+i_DP_i_MULTIPLIER_A1_mult_28_n27
+                               3.782    0.196    0.0392      0.0897  a
+i_DP_i_MULTIPLIER_B0_mult_28_n42
+                               3.782    0.592    0.0392      0.0897  a
+i_DP_i_MULTIPLIER_B1_mult_28_n69
+                               3.782    0.235    0.0392      0.0897  a
+i_DP_i_ADDER_1_add_28_carry[3]
+                               3.072    0.471    0.0480      0.0893  a
+i_DP_i_MULTIPLIER_A1_mult_28_n146
+                               3.072    0.337    0.0480      0.0893  a
+i_DP_i_MULTIPLIER_A1_mult_28_n148
+                               3.072    0.337    0.0480      0.0893  a
+i_DP_i_MULTIPLIER_A2_mult_28_n141
+                               3.072    0.639    0.0480      0.0893  a
+i_DP_i_MULTIPLIER_A2_mult_28_n143
+                               3.072    0.361    0.0480      0.0893  a
+i_DP_i_MULTIPLIER_A2_mult_28_n148
+                               3.072    0.361    0.0480      0.0893  a
+i_DP_i_MULTIPLIER_B0_mult_28_n145
+                               3.072    0.322    0.0480      0.0893  a
+i_DP_i_MULTIPLIER_B2_mult_28_n145
+                               3.072    0.361    0.0480      0.0893  a
+i_DP_i_MULTIPLIER_A2_mult_28_n149
+                               3.496    0.204    0.0422      0.0892  a
+i_DP_i_MULTIPLIER_B0_mult_28_n45
+                               4.055    0.435    0.0363      0.0890  a
+i_DP_i_MULTIPLIER_B2_mult_28_n45
+                               4.055    0.475    0.0363      0.0890  a
+i_DP_i_MULTIPLIER_B0_mult_28_n37
+                               3.782    0.571    0.0387      0.0886  a
+i_DP_i_MULTIPLIER_B2_mult_28_n42
+                               3.782    0.524    0.0387      0.0886  a
+i_DP_i_ADDER_2_add_28_carry[4]
+                               3.072    0.406    0.0475      0.0884  a
+i_DP_i_MULTIPLIER_A2_mult_28_n54
+                               3.072    0.567    0.0475      0.0884  a
+i_DP_i_MULTIPLIER_A2_mult_28_n404
+                               3.915    0.220    0.0373      0.0882  a
+i_DP_i_MULTIPLIER_B0_mult_28_n84
+                               2.010    0.459    0.0725      0.0882  a
+i_DP_i_MULTIPLIER_B1_mult_28_n90
+                               2.010    0.414    0.0721      0.0876  a
+i_DP_i_MULTIPLIER_A1_mult_28_n59
+                               3.782    0.176    0.0382      0.0875  a
+i_DP_i_MULTIPLIER_B2_mult_28_n37
+                               3.782    0.514    0.0382      0.0875  a
+i_DP_i_MULTIPLIER_B1_mult_28_n9
+                               3.072    0.325    0.0471      0.0875  a
+i_DP_i_MULTIPLIER_B2_mult_28_n84
+                               2.010    0.494    0.0716      0.0870  a
+i_DP_i_reg_0_n3                1.980    0.609    0.0725      0.0869  a
+i_DP_i_ADDER_3_add_28_carry[2]
+                               3.072    0.359    0.0466      0.0865  a
+i_DP_S_ADD2_ADD3[4]            3.782    0.410    0.0377      0.0864  a
+i_DP_W_DELAY_2[9]             15.320    0.504    0.0093      0.0863  a
+i_DP_i_reg_1_n61               1.980    0.627    0.0716      0.0858  a
+i_DP_i_reg_1_n62               1.980    0.627    0.0716      0.0858  a
+i_DP_i_MULTIPLIER_A1_mult_28_n70
+                               3.072    0.439    0.0461      0.0856  a
+i_DP_i_MULTIPLIER_A2_mult_28_n70
+                               3.072    0.376    0.0461      0.0856  a
+i_DP_i_reg_0_n1                1.980    0.625    0.0706      0.0846  a
+i_DP_i_reg_0_n2                1.980    0.625    0.0706      0.0846  a
+i_DP_i_MULTIPLIER_B1_mult_28_n7
+                               3.072    0.259    0.0451      0.0838  a
+i_DP_W_DELAY_2[1]              2.648    0.451    0.0520      0.0832  a
+i_DP_i_MULTIPLIER_B1_mult_28_n410
+                               3.896    0.780    0.0353      0.0832  a
+i_DP_i_MULTIPLIER_B1_mult_28_n75
+                               3.782    0.224    0.0363      0.0830  a
+i_DP_i_MULTIPLIER_A1_mult_28_n32
+                               4.055    0.437    0.0338      0.0830  a
+i_DP_i_MULTIPLIER_A1_mult_28_n382
+                               1.981    0.518    0.0686      0.0822  a
+i_DP_i_MULTIPLIER_B1_mult_28_n383
+                               1.981    0.518    0.0686      0.0822  a
+i_DP_i_MULTIPLIER_A1_mult_28_n10
+                               3.072    0.267    0.0441      0.0820  a
+i_DP_i_MULTIPLIER_A2_mult_28_n86
+                               3.072    0.455    0.0441      0.0820  a
+i_DP_i_MULTIPLIER_A1_mult_28_n53
+                               4.055    0.133    0.0333      0.0818  a
+i_DP_i_MULTIPLIER_B1_mult_28_n45
+                               4.055    0.533    0.0333      0.0818  a
+i_DP_i_MULTIPLIER_A2_mult_28_n382
+                               1.981    0.496    0.0681      0.0817  a
+i_DP_i_MULTIPLIER_B0_mult_28_n382
+                               1.981    0.488    0.0681      0.0817  a
+i_DP_i_MULTIPLIER_B2_mult_28_n383
+                               1.981    0.496    0.0681      0.0817  a
+i_DP_W_DELAY_2[8]             14.466    0.504    0.0093      0.0815  a
+i_DP_i_MULTIPLIER_A1_mult_28_n321
+                               3.916    0.863    0.0343      0.0813  a
+i_DP_i_reg_0_n18               1.972    0.492    0.0681      0.0813  a
+i_DP_i_reg_1_n45               1.972    0.496    0.0681      0.0813  a
+i_DP_i_ADDER_1_add_28_carry[2]
+                               3.072    0.327    0.0436      0.0811  a
+i_DP_i_MULTIPLIER_A2_mult_28_n42
+                               3.782    0.545    0.0353      0.0808  a
+i_DP_i_MULTIPLIER_B1_mult_28_n63
+                               3.072    0.176    0.0431      0.0802  a
+i_DP_i_MULTIPLIER_B1_mult_28_n71
+                               3.072    0.337    0.0431      0.0802  a
+i_DP_i_MULTIPLIER_B1_mult_28_n76
+                               3.072    0.400    0.0431      0.0802  a
+i_DP_i_MULTIPLIER_B0_mult_28_n400
+                               1.974    0.427    0.0667      0.0796  a
+i_DP_i_MULTIPLIER_A1_mult_28_n136
+                               4.055    0.165    0.0324      0.0794  a
+i_DP_i_MULTIPLIER_A1_mult_28_n137
+                               4.055    0.165    0.0324      0.0794  a
+i_DP_i_MULTIPLIER_A2_mult_28_n137
+                               4.055    0.239    0.0324      0.0794  a
+i_DP_i_MULTIPLIER_B1_mult_28_n134
+                               4.055    0.165    0.0324      0.0794  a
+i_DP_i_ADDER_1_add_28_n1       3.072    0.225    0.0426      0.0793  a
+i_DP_i_MULTIPLIER_A1_mult_28_n82
+                               3.072    0.508    0.0426      0.0793  a
+i_DP_i_MULTIPLIER_B0_mult_28_n10
+                               3.072    0.339    0.0426      0.0793  a
+i_DP_i_MULTIPLIER_B1_mult_28_n10
+                               3.072    0.233    0.0426      0.0793  a
+i_DP_i_MULTIPLIER_A1_mult_28_n400
+                               1.974    0.363    0.0662      0.0790  a
+i_DP_i_MULTIPLIER_B1_mult_28_n401
+                               1.974    0.363    0.0662      0.0790  a
+i_DP_i_MULTIPLIER_A1_mult_28_n56
+                               3.782    0.682    0.0343      0.0785  a
+i_DP_i_MULTIPLIER_A2_mult_28_n400
+                               1.974    0.361    0.0657      0.0784  a
+i_DP_i_MULTIPLIER_B2_mult_28_n401
+                               1.974    0.361    0.0657      0.0784  a
+i_DP_i_MULTIPLIER_B0_mult_28_n39
+                               3.072    0.169    0.0422      0.0783  a
+i_DP_i_MULTIPLIER_B0_mult_28_n146
+                               3.072    0.216    0.0422      0.0783  a
+i_DP_i_MULTIPLIER_B0_mult_28_n148
+                               3.072    0.216    0.0422      0.0783  a
+i_DP_i_MULTIPLIER_B1_mult_28_n145
+                               3.072    0.231    0.0422      0.0783  a
+i_DP_i_MULTIPLIER_B2_mult_28_n10
+                               3.072    0.302    0.0422      0.0783  a
+i_DP_i_MULTIPLIER_B2_mult_28_n39
+                               3.072    0.204    0.0422      0.0783  a
+i_DP_i_MULTIPLIER_B2_mult_28_n146
+                               3.072    0.204    0.0422      0.0783  a
+i_DP_i_MULTIPLIER_B2_mult_28_n148
+                               3.072    0.204    0.0422      0.0783  a
+i_DP_i_MULTIPLIER_B0_mult_28_n90
+                               2.010    0.582    0.0642      0.0781  a
+i_DP_i_reg_1_n60               1.980    0.613    0.0647      0.0775  a
+i_DP_i_MULTIPLIER_B2_mult_28_n90
+                               2.010    0.592    0.0637      0.0775  a
+i_DP_i_ADDER_3_add_28_carry[4]
+                               3.072    0.422    0.0417      0.0774  a
+i_DP_i_MULTIPLIER_A2_mult_28_n44
+                               4.055    0.686    0.0314      0.0770  a
+i_DP_i_MULTIPLIER_A2_mult_28_n406
+                               3.915    0.200    0.0324      0.0766  a
+i_DP_i_ADDER_2_add_28_carry[3]
+                               3.072    0.212    0.0412      0.0765  a
+i_DP_i_MULTIPLIER_A1_mult_28_n39
+                               3.072    0.165    0.0412      0.0765  a
+i_DP_i_MULTIPLIER_B0_mult_28_n9
+                               3.072    0.325    0.0412      0.0765  a
+i_DP_i_MULTIPLIER_B0_mult_28_n63
+                               3.072    0.227    0.0412      0.0765  a
+i_DP_i_MULTIPLIER_B2_mult_28_n9
+                               3.072    0.325    0.0412      0.0765  a
+i_DP_P_MULA2_ADD1[10]          3.849    0.539    0.0328      0.0765  a
+i_DP_i_reg_0_n28               1.438    0.512    0.0877      0.0763  a
+i_DP_i_ADDER_0_add_28_carry[7]
+                               3.072    0.488    0.0407      0.0756  a
+i_DP_i_ADDER_0_add_28_carry[8]
+                               3.072    0.488    0.0407      0.0756  a
+i_DP_i_ADDER_0_add_28_carry[9]
+                               3.072    0.488    0.0407      0.0756  a
+i_DP_i_MULTIPLIER_A2_mult_28_n40
+                               3.072    0.333    0.0402      0.0747  a
+i_DP_i_MULTIPLIER_B2_mult_28_n63
+                               3.072    0.251    0.0402      0.0747  a
+i_DP_i_MULTIPLIER_A2_mult_28_n53
+                               4.055    0.235    0.0304      0.0746  a
+i_DP_i_MULTIPLIER_A2_mult_28_n310
+                               3.916    0.808    0.0314      0.0743  a
+i_DP_i_MULTIPLIER_A1_mult_28_n138
+                               3.782    0.165    0.0324      0.0740  a
+i_DP_i_MULTIPLIER_A2_mult_28_n132
+                               3.782    0.239    0.0324      0.0740  a
+i_DP_i_MULTIPLIER_A2_mult_28_n138
+                               3.782    0.239    0.0324      0.0740  a
+i_DP_i_MULTIPLIER_B0_mult_28_n135
+                               3.782    0.165    0.0324      0.0740  a
+i_DP_i_MULTIPLIER_B1_mult_28_n59
+                               3.782    0.231    0.0324      0.0740  a
+i_DP_i_MULTIPLIER_B2_mult_28_n135
+                               3.782    0.239    0.0324      0.0740  a
+i_DP_i_reg_1_n58               1.980    0.594    0.0618      0.0740  a
+i_DP_i_reg_1_n59               1.980    0.680    0.0618      0.0740  a
+i_input_register_DIN_n1        1.980    0.623    0.0618      0.0740  a
+i_input_register_DIN_n2        1.980    0.623    0.0618      0.0740  a
+i_input_register_DIN_n3        1.980    0.623    0.0618      0.0740  a
+i_input_register_DIN_n4        1.980    0.623    0.0618      0.0740  a
+i_input_register_DIN_n7        1.980    0.623    0.0618      0.0740  a
+i_DP_i_MULTIPLIER_A2_mult_28_n60
+                               2.010    0.486    0.0608      0.0739  a
+i_DP_P_MULB1_ADD2[10]          4.085    0.331    0.0299      0.0739  a
+i_DP_i_MULTIPLIER_B0_mult_28_n7
+                               3.072    0.359    0.0397      0.0738  a
+i_DP_i_MULTIPLIER_B0_mult_28_n82
+                               3.072    0.516    0.0397      0.0738  a
+i_DP_i_MULTIPLIER_B1_mult_28_n6
+                               3.072    0.398    0.0397      0.0738  a
+i_DP_i_MULTIPLIER_B2_mult_28_n7
+                               3.072    0.351    0.0397      0.0738  a
+i_DP_i_MULTIPLIER_A1_mult_28_n139
+                               3.758    0.165    0.0324      0.0735  a
+i_DP_P_MULB1_ADD2[13]          4.055    0.469    0.0299      0.0734  a
+i_DP_i_MULTIPLIER_B0_mult_28_n34
+                               4.055    0.625    0.0299      0.0734  a
+i_DP_i_MULTIPLIER_B1_mult_28_n34
+                               4.055    0.559    0.0299      0.0734  a
+i_DP_i_MULTIPLIER_B2_mult_28_n34
+                               4.055    0.598    0.0299      0.0734  a
+i_DP_i_MULTIPLIER_B0_mult_28_n43
+                               3.782    0.367    0.0319      0.0729  a
+i_DP_i_MULTIPLIER_B1_mult_28_n55
+                               3.072    0.204    0.0392      0.0729  a
+i_DP_i_MULTIPLIER_B2_mult_28_n82
+                               3.072    0.467    0.0392      0.0729  a
+i_DP_i_MULTIPLIER_B0_mult_28_n331
+                               4.076    0.118    0.0294      0.0725  a
+i_DP_i_MULTIPLIER_B1_mult_28_n332
+                               4.076    0.157    0.0294      0.0725  a
+i_DP_i_MULTIPLIER_B2_mult_28_n332
+                               4.076    0.157    0.0294      0.0725  a
+i_DP_i_MULTIPLIER_A1_mult_28_n21
+                               4.055    0.157    0.0294      0.0722  a
+i_DP_i_MULTIPLIER_A1_mult_28_n23
+                               4.055    0.157    0.0294      0.0722  a
+i_DP_i_MULTIPLIER_A1_mult_28_n24
+                               4.055    0.843    0.0294      0.0722  a
+i_DP_i_MULTIPLIER_A1_mult_28_n66
+                               4.055    0.157    0.0294      0.0722  a
+i_DP_i_MULTIPLIER_A1_mult_28_n112
+                               4.055    0.157    0.0294      0.0722  a
+i_DP_i_MULTIPLIER_A1_mult_28_n115
+                               4.055    0.157    0.0294      0.0722  a
+i_DP_i_MULTIPLIER_A1_mult_28_n134
+                               4.055    0.165    0.0294      0.0722  a
+i_DP_i_MULTIPLIER_A2_mult_28_n21
+                               4.055    0.157    0.0294      0.0722  a
+i_DP_i_MULTIPLIER_A2_mult_28_n23
+                               4.055    0.157    0.0294      0.0722  a
+i_DP_i_MULTIPLIER_A2_mult_28_n24
+                               4.055    0.843    0.0294      0.0722  a
+i_DP_i_MULTIPLIER_A2_mult_28_n112
+                               4.055    0.157    0.0294      0.0722  a
+i_DP_i_MULTIPLIER_A2_mult_28_n115
+                               4.055    0.157    0.0294      0.0722  a
+i_DP_i_MULTIPLIER_A2_mult_28_n134
+                               4.055    0.200    0.0294      0.0722  a
+i_DP_i_MULTIPLIER_B0_mult_28_n23
+                               4.055    0.118    0.0294      0.0722  a
+i_DP_i_MULTIPLIER_B0_mult_28_n24
+                               4.055    0.882    0.0294      0.0722  a
+i_DP_i_MULTIPLIER_B0_mult_28_n112
+                               4.055    0.118    0.0294      0.0722  a
+i_DP_i_MULTIPLIER_B0_mult_28_n115
+                               4.055    0.118    0.0294      0.0722  a
+i_DP_i_MULTIPLIER_B0_mult_28_n136
+                               4.055    0.165    0.0294      0.0722  a
+i_DP_i_MULTIPLIER_B1_mult_28_n23
+                               4.055    0.157    0.0294      0.0722  a
+i_DP_i_MULTIPLIER_B1_mult_28_n24
+                               4.055    0.843    0.0294      0.0722  a
+i_DP_i_MULTIPLIER_B1_mult_28_n66
+                               4.055    0.157    0.0294      0.0722  a
+i_DP_i_MULTIPLIER_B1_mult_28_n112
+                               4.055    0.157    0.0294      0.0722  a
+i_DP_i_MULTIPLIER_B1_mult_28_n115
+                               4.055    0.157    0.0294      0.0722  a
+i_DP_i_MULTIPLIER_B1_mult_28_n137
+                               4.055    0.165    0.0294      0.0722  a
+i_DP_i_MULTIPLIER_B2_mult_28_n23
+                               4.055    0.157    0.0294      0.0722  a
+i_DP_i_MULTIPLIER_B2_mult_28_n24
+                               4.055    0.843    0.0294      0.0722  a
+i_DP_i_MULTIPLIER_B2_mult_28_n112
+                               4.055    0.157    0.0294      0.0722  a
+i_DP_i_MULTIPLIER_B2_mult_28_n115
+                               4.055    0.157    0.0294      0.0722  a
+i_DP_i_MULTIPLIER_B2_mult_28_n136
+                               4.055    0.200    0.0294      0.0722  a
+i_DP_i_MULTIPLIER_B0_mult_28_n381
+                               2.010    0.382    0.0593      0.0721  a
+i_DP_i_ADDER_3_add_28_carry[3]
+                               3.072    0.496    0.0387      0.0720  a
+i_DP_i_MULTIPLIER_A1_mult_28_n5
+                               3.072    0.453    0.0387      0.0720  a
+i_DP_i_MULTIPLIER_A2_mult_28_n8
+                               3.072    0.316    0.0387      0.0720  a
+i_DP_i_MULTIPLIER_B2_mult_28_n43
+                               3.782    0.322    0.0314      0.0718  a
+i_DP_i_MULTIPLIER_A1_mult_28_n381
+                               2.010    0.384    0.0588      0.0715  a
+i_DP_i_MULTIPLIER_A2_mult_28_n388
+                               2.010    0.322    0.0588      0.0715  a
+i_DP_i_MULTIPLIER_B0_mult_28_n388
+                               2.010    0.392    0.0588      0.0715  a
+i_DP_i_MULTIPLIER_B1_mult_28_n382
+                               2.010    0.384    0.0588      0.0715  a
+i_DP_i_MULTIPLIER_B2_mult_28_n382
+                               2.010    0.349    0.0588      0.0715  a
+i_DP_i_MULTIPLIER_A1_mult_28_n62
+                               3.072    0.412    0.0382      0.0711  a
+i_DP_i_MULTIPLIER_A2_mult_28_n39
+                               3.072    0.231    0.0382      0.0711  a
+i_DP_i_MULTIPLIER_A2_mult_28_n63
+                               3.072    0.310    0.0382      0.0711  a
+i_DP_i_MULTIPLIER_A1_mult_28_n388
+                               2.010    0.433    0.0583      0.0709  a
+i_DP_i_MULTIPLIER_B1_mult_28_n389
+                               2.010    0.433    0.0583      0.0709  a
+i_DP_i_MULTIPLIER_B2_mult_28_n389
+                               2.010    0.429    0.0583      0.0709  a
+i_DP_i_MULTIPLIER_B0_mult_28_n334
+                               3.983    0.118    0.0294      0.0709  a
+i_DP_i_MULTIPLIER_B1_mult_28_n335
+                               3.983    0.157    0.0294      0.0709  a
+i_DP_i_MULTIPLIER_B2_mult_28_n335
+                               3.983    0.157    0.0294      0.0709  a
+i_DP_i_MULTIPLIER_B0_mult_28_n21
+                               3.981    0.118    0.0294      0.0708  a
+i_DP_i_MULTIPLIER_B1_mult_28_n21
+                               3.981    0.157    0.0294      0.0708  a
+i_DP_i_MULTIPLIER_B2_mult_28_n21
+                               3.981    0.157    0.0294      0.0708  a
+i_DP_i_MULTIPLIER_A1_mult_28_n373
+                               1.981    0.569    0.0588      0.0705  a
+i_DP_i_MULTIPLIER_B1_mult_28_n374
+                               1.981    0.569    0.0588      0.0705  a
+i_DP_i_MULTIPLIER_B0_mult_28_n399
+                               1.980    0.608    0.0588      0.0705  a
+i_DP_i_reg_1_n56               1.980    0.694    0.0588      0.0705  a
+i_DP_i_MULTIPLIER_B0_mult_28_n62
+                               3.072    0.418    0.0377      0.0701  a
+i_DP_i_MULTIPLIER_B0_mult_28_n373
+                               1.981    0.394    0.0583      0.0699  a
+i_DP_i_MULTIPLIER_A2_mult_28_n399
+                               1.980    0.571    0.0583      0.0699  a
+i_DP_i_MULTIPLIER_B2_mult_28_n400
+                               1.980    0.571    0.0583      0.0699  a
+i_DP_i_MULTIPLIER_B1_mult_28_n60
+                               2.010    0.625    0.0574      0.0697  a
+i_DP_i_MULTIPLIER_A1_mult_28_n308
+                               3.913    0.843    0.0294      0.0696  a
+i_DP_i_MULTIPLIER_A2_mult_28_n308
+                               3.913    0.843    0.0294      0.0696  a
+i_DP_i_reg_0_n16               1.972    0.441    0.0583      0.0696  a
+i_DP_i_MULTIPLIER_A2_mult_28_n373
+                               1.981    0.494    0.0578      0.0693  a
+i_DP_i_MULTIPLIER_B2_mult_28_n374
+                               1.981    0.494    0.0578      0.0693  a
+i_DP_i_MULTIPLIER_A1_mult_28_n403
+                               3.893    0.831    0.0294      0.0693  a
+i_DP_i_MULTIPLIER_B2_mult_28_n62
+                               3.072    0.349    0.0373      0.0692  a
+i_DP_i_reg_1_n40               1.438    0.516    0.0794      0.0691  a
+i_DP_i_reg_1_n47               1.972    0.494    0.0578      0.0690  a
+i_DP_i_reg_0_n23               1.438    0.476    0.0789      0.0687  a
+i_DP_i_ADDER_3_add_28_n1       3.072    0.269    0.0368      0.0683  a
+i_DP_i_reg_1_n39               1.438    0.395    0.0784      0.0682  a
+i_DP_i_MULTIPLIER_A1_mult_28_n314
+                               1.909    0.643    0.0588      0.0679  a
+i_DP_i_MULTIPLIER_B0_mult_28_n313
+                               1.909    0.643    0.0588      0.0679  a
+i_DP_i_MULTIPLIER_B2_mult_28_n314
+                               1.909    0.678    0.0588      0.0679  a
+i_DP_i_MULTIPLIER_A2_mult_28_n314
+                               1.909    0.571    0.0583      0.0674  a
+i_DP_i_MULTIPLIER_B1_mult_28_n321
+                               1.909    0.567    0.0583      0.0674  a
+i_DP_i_MULTIPLIER_A1_mult_28_n22
+                               3.782    0.843    0.0294      0.0673  a
+i_DP_i_MULTIPLIER_A1_mult_28_n113
+                               3.782    0.157    0.0294      0.0673  a
+i_DP_i_MULTIPLIER_A1_mult_28_n114
+                               3.782    0.157    0.0294      0.0673  a
+i_DP_i_MULTIPLIER_A1_mult_28_n116
+                               3.782    0.157    0.0294      0.0673  a
+i_DP_i_MULTIPLIER_A1_mult_28_n117
+                               3.782    0.157    0.0294      0.0673  a
+i_DP_i_MULTIPLIER_A1_mult_28_n118
+                               3.782    0.157    0.0294      0.0673  a
+i_DP_i_MULTIPLIER_A1_mult_28_n307
+                               3.782    0.843    0.0294      0.0673  a
+i_DP_i_MULTIPLIER_A2_mult_28_n22
+                               3.782    0.843    0.0294      0.0673  a
+i_DP_i_MULTIPLIER_A2_mult_28_n27
+                               3.782    0.157    0.0294      0.0673  a
+i_DP_i_MULTIPLIER_A2_mult_28_n59
+                               3.782    0.157    0.0294      0.0673  a
+i_DP_i_MULTIPLIER_A2_mult_28_n113
+                               3.782    0.157    0.0294      0.0673  a
+i_DP_i_MULTIPLIER_A2_mult_28_n114
+                               3.782    0.157    0.0294      0.0673  a
+i_DP_i_MULTIPLIER_A2_mult_28_n116
+                               3.782    0.157    0.0294      0.0673  a
+i_DP_i_MULTIPLIER_A2_mult_28_n117
+                               3.782    0.157    0.0294      0.0673  a
+i_DP_i_MULTIPLIER_A2_mult_28_n118
+                               3.782    0.157    0.0294      0.0673  a
+i_DP_i_MULTIPLIER_A2_mult_28_n307
+                               3.782    0.843    0.0294      0.0673  a
+i_DP_i_MULTIPLIER_B0_mult_28_n22
+                               3.782    0.882    0.0294      0.0673  a
+i_DP_i_MULTIPLIER_B0_mult_28_n27
+                               3.782    0.118    0.0294      0.0673  a
+i_DP_i_MULTIPLIER_B0_mult_28_n65
+                               3.782    0.118    0.0294      0.0673  a
+i_DP_i_MULTIPLIER_B0_mult_28_n113
+                               3.782    0.118    0.0294      0.0673  a
+i_DP_i_MULTIPLIER_B0_mult_28_n114
+                               3.782    0.118    0.0294      0.0673  a
+i_DP_i_MULTIPLIER_B0_mult_28_n116
+                               3.782    0.118    0.0294      0.0673  a
+i_DP_i_MULTIPLIER_B0_mult_28_n117
+                               3.782    0.118    0.0294      0.0673  a
+i_DP_i_MULTIPLIER_B0_mult_28_n118
+                               3.782    0.118    0.0294      0.0673  a
+i_DP_i_MULTIPLIER_B0_mult_28_n138
+                               3.782    0.165    0.0294      0.0673  a
+i_DP_i_MULTIPLIER_B1_mult_28_n22
+                               3.782    0.843    0.0294      0.0673  a
+i_DP_i_MULTIPLIER_B1_mult_28_n27
+                               3.782    0.157    0.0294      0.0673  a
+i_DP_i_MULTIPLIER_B1_mult_28_n113
+                               3.782    0.157    0.0294      0.0673  a
+i_DP_i_MULTIPLIER_B1_mult_28_n114
+                               3.782    0.157    0.0294      0.0673  a
+i_DP_i_MULTIPLIER_B1_mult_28_n116
+                               3.782    0.157    0.0294      0.0673  a
+i_DP_i_MULTIPLIER_B1_mult_28_n117
+                               3.782    0.157    0.0294      0.0673  a
+i_DP_i_MULTIPLIER_B1_mult_28_n118
+                               3.782    0.157    0.0294      0.0673  a
+i_DP_i_MULTIPLIER_B1_mult_28_n135
+                               3.782    0.165    0.0294      0.0673  a
+i_DP_i_MULTIPLIER_B2_mult_28_n22
+                               3.782    0.843    0.0294      0.0673  a
+i_DP_i_MULTIPLIER_B2_mult_28_n27
+                               3.782    0.157    0.0294      0.0673  a
+i_DP_i_MULTIPLIER_B2_mult_28_n65
+                               3.782    0.157    0.0294      0.0673  a
+i_DP_i_MULTIPLIER_B2_mult_28_n113
+                               3.782    0.157    0.0294      0.0673  a
+i_DP_i_MULTIPLIER_B2_mult_28_n114
+                               3.782    0.157    0.0294      0.0673  a
+i_DP_i_MULTIPLIER_B2_mult_28_n116
+                               3.782    0.157    0.0294      0.0673  a
+i_DP_i_MULTIPLIER_B2_mult_28_n117
+                               3.782    0.157    0.0294      0.0673  a
+i_DP_i_MULTIPLIER_B2_mult_28_n118
+                               3.782    0.157    0.0294      0.0673  a
+i_DP_i_MULTIPLIER_B2_mult_28_n138
+                               3.782    0.200    0.0294      0.0673  a
+i_DP_i_MULTIPLIER_B1_mult_28_n406
+                               3.893    0.878    0.0284      0.0670  a
+i_DP_i_MULTIPLIER_A1_mult_28_n119
+                               3.758    0.157    0.0294      0.0669  a
+i_DP_i_MULTIPLIER_A2_mult_28_n119
+                               3.758    0.157    0.0294      0.0669  a
+i_DP_i_MULTIPLIER_A2_mult_28_n139
+                               3.758    0.200    0.0294      0.0669  a
+i_DP_i_MULTIPLIER_B0_mult_28_n119
+                               3.758    0.118    0.0294      0.0669  a
+i_DP_i_MULTIPLIER_B1_mult_28_n119
+                               3.758    0.157    0.0294      0.0669  a
+i_DP_i_MULTIPLIER_B2_mult_28_n119
+                               3.758    0.157    0.0294      0.0669  a
+i_DP_i_MULTIPLIER_B0_mult_28_n74
+                               2.010    0.482    0.0549      0.0668  a
+i_DP_i_MULTIPLIER_B2_mult_28_n74
+                               2.010    0.486    0.0549      0.0668  a
+i_DP_i_reg_1_n37               1.438    0.508    0.0765      0.0665  a
+i_DP_i_MULTIPLIER_A1_mult_28_n60
+                               2.010    0.527    0.0544      0.0662  a
+i_DP_i_ADDER_0_add_28_carry[3]
+                               3.072    0.224    0.0353      0.0656  a
+i_DP_i_MULTIPLIER_A1_mult_28_n74
+                               2.010    0.488    0.0534      0.0650  a
+i_DP_i_MULTIPLIER_A1_mult_28_n364
+                               1.981    0.404    0.0539      0.0646  a
+i_DP_i_MULTIPLIER_B1_mult_28_n365
+                               1.981    0.404    0.0539      0.0646  a
+i_input_register_DIN_n8        1.980    0.623    0.0539      0.0646  a
+i_input_register_DIN_n9        1.980    0.623    0.0539      0.0646  a
+i_DP_i_MULTIPLIER_A1_mult_28_n324
+                               1.997    0.394    0.0534      0.0646  a
+i_DP_i_MULTIPLIER_A2_mult_28_n324
+                               1.997    0.598    0.0534      0.0646  a
+i_DP_i_MULTIPLIER_B0_mult_28_n323
+                               1.997    0.461    0.0534      0.0646  a
+i_DP_i_MULTIPLIER_B1_mult_28_n317
+                               1.997    0.394    0.0534      0.0646  a
+i_DP_i_MULTIPLIER_B0_mult_28_n411
+                               1.936    0.302    0.0549      0.0643  a
+i_DP_i_MULTIPLIER_B0_mult_28_n364
+                               1.981    0.539    0.0534      0.0640  a
+i_DP_i_MULTIPLIER_B2_mult_28_n324
+                               1.997    0.392    0.0529      0.0640  a
+i_DP_i_reg_1_n41               1.438    0.451    0.0735      0.0640  a
+i_DP_i_reg_1_n42               1.438    0.451    0.0735      0.0640  a
+i_DP_i_MULTIPLIER_B0_mult_28_n363
+                               2.010    0.488    0.0525      0.0638  a
+i_DP_i_reg_0_n13               1.972    0.527    0.0534      0.0637  a
+i_DP_i_reg_0_n14               1.972    0.606    0.0534      0.0637  a
+i_DP_i_MULTIPLIER_A2_mult_28_n364
+                               1.981    0.608    0.0529      0.0634  a
+i_DP_i_MULTIPLIER_B2_mult_28_n365
+                               1.981    0.608    0.0529      0.0634  a
+i_DP_i_MULTIPLIER_A1_mult_28_n363
+                               2.010    0.451    0.0520      0.0632  a
+i_DP_i_MULTIPLIER_B1_mult_28_n74
+                               2.010    0.529    0.0520      0.0632  a
+i_DP_i_MULTIPLIER_B1_mult_28_n364
+                               2.010    0.451    0.0520      0.0632  a
+i_DP_i_MULTIPLIER_B2_mult_28_n364
+                               2.010    0.451    0.0520      0.0632  a
+i_DP_i_MULTIPLIER_A2_mult_28_n411
+                               1.936    0.290    0.0539      0.0632  a
+i_DP_i_MULTIPLIER_B2_mult_28_n412
+                               1.936    0.290    0.0539      0.0632  a
+i_DP_i_reg_1_n49               1.972    0.608    0.0529      0.0632  a
+i_DP_i_reg_1_n50               1.972    0.486    0.0529      0.0632  a
+i_DP_i_reg_0_n21               1.438    0.453    0.0725      0.0631  a
+i_DP_i_reg_0_n22               1.438    0.453    0.0725      0.0631  a
+i_DP_i_MULTIPLIER_B0_mult_28_n404
+                               3.915    0.129    0.0265      0.0627  a
+i_DP_i_MULTIPLIER_B2_mult_28_n405
+                               3.915    0.145    0.0265      0.0627  a
+i_input_register_DIN_n10       1.972    0.512    0.0525      0.0626  a
+i_input_register_DIN_n11       1.972    0.512    0.0525      0.0626  a
+i_input_register_DIN_n12       1.972    0.512    0.0525      0.0626  a
+i_input_register_DIN_n13       1.972    0.512    0.0525      0.0626  a
+i_input_register_DIN_n16       1.972    0.512    0.0525      0.0626  a
+i_DP_i_MULTIPLIER_B0_mult_28_n53
+                               4.055    0.102    0.0255      0.0625  a
+i_DP_i_MULTIPLIER_B2_mult_28_n53
+                               4.055    0.165    0.0255      0.0625  a
+i_DP_i_MULTIPLIER_A2_mult_28_n106
+                               3.496    0.157    0.0294      0.0622  a
+i_DP_i_MULTIPLIER_B0_mult_28_n106
+                               3.496    0.118    0.0294      0.0622  a
+i_DP_i_MULTIPLIER_B2_mult_28_n106
+                               3.496    0.157    0.0294      0.0622  a
+i_DP_i_MULTIPLIER_A2_mult_28_n87
+                               2.010    0.298    0.0510      0.0620  a
+i_DP_i_reg_0_n11               1.972    0.549    0.0520      0.0620  a
+i_DP_i_reg_0_n12               1.972    0.549    0.0520      0.0620  a
+i_DP_i_reg_1_n51               1.972    0.549    0.0520      0.0620  a
+i_DP_i_reg_1_n52               1.972    0.549    0.0520      0.0620  a
+i_DP_i_MULTIPLIER_A2_mult_28_n10
+                               3.072    0.243    0.0333      0.0619  a
+i_DP_i_MULTIPLIER_B1_mult_28_n39
+                               3.072    0.251    0.0333      0.0619  a
+i_DP_i_MULTIPLIER_B1_mult_28_n46
+                               3.072    0.467    0.0333      0.0619  a
+i_DP_i_reg_1_n38               1.438    0.551    0.0706      0.0614  a
+i_DP_i_MULTIPLIER_B0_mult_28_n60
+                               2.010    0.586    0.0505      0.0614  a
+i_DP_i_MULTIPLIER_B0_mult_28_n67
+                               2.010    0.465    0.0505      0.0614  a
+i_DP_i_MULTIPLIER_B2_mult_28_n60
+                               2.010    0.551    0.0505      0.0614  a
+i_input_register_DIN_n5        1.980    0.623    0.0510      0.0611  a
+i_input_register_DIN_n6        1.980    0.623    0.0510      0.0611  a
+i_DP_i_MULTIPLIER_A1_mult_28_n84
+                               2.010    0.345    0.0500      0.0608  a
+i_DP_i_MULTIPLIER_B1_mult_28_n79
+                               2.010    0.286    0.0500      0.0608  a
+i_DP_i_MULTIPLIER_B1_mult_28_n87
+                               2.010    0.353    0.0500      0.0608  a
+i_DP_i_MULTIPLIER_B2_mult_28_n67
+                               2.010    0.431    0.0500      0.0608  a
+i_DP_i_reg_0_n24               1.438    0.398    0.0691      0.0601  a
+i_DP_i_reg_0_n26               1.438    0.563    0.0691      0.0601  a
+i_DP_i_MULTIPLIER_A2_mult_28_n9
+                               3.072    0.200    0.0324      0.0601  a
+i_DP_i_MULTIPLIER_A2_mult_28_n133
+                               3.072    0.239    0.0324      0.0601  a
+i_DP_i_MULTIPLIER_A2_mult_28_n318
+                               3.072    0.761    0.0324      0.0601  a
+i_DP_i_MULTIPLIER_A2_mult_28_n319
+                               3.072    0.761    0.0324      0.0601  a
+i_input_register_DIN_n17       1.972    0.512    0.0495      0.0591  a
+i_DP_i_reg_0_n7                1.980    0.692    0.0490      0.0587  a
+i_DP_i_reg_1_n36               1.438    0.396    0.0672      0.0584  a
+i_DP_i_MULTIPLIER_A1_mult_28_n90
+                               2.010    0.337    0.0480      0.0584  a
+i_DP_i_MULTIPLIER_B0_mult_28_n397
+                               1.980    0.661    0.0485      0.0581  a
+i_DP_i_MULTIPLIER_A2_mult_28_n316
+                               3.916    0.835    0.0245      0.0581  a
+i_DP_i_MULTIPLIER_B0_mult_28_n81
+                               4.055    0.094    0.0235      0.0577  a
+i_DP_i_MULTIPLIER_B2_mult_28_n81
+                               4.055    0.094    0.0235      0.0577  a
+i_DP_i_reg_0_n25               1.438    0.505    0.0662      0.0576  a
+i_DP_i_MULTIPLIER_A2_mult_28_n397
+                               1.980    0.698    0.0480      0.0576  a
+i_DP_i_MULTIPLIER_B2_mult_28_n398
+                               1.980    0.698    0.0480      0.0576  a
+i_DP_i_reg_0_n15               1.972    0.496    0.0475      0.0567  a
+i_DP_i_MULTIPLIER_A2_mult_28_n74
+                               2.010    0.543    0.0466      0.0566  a
+i_DP_i_ADDER_2_add_28_n2       3.072    0.188    0.0304      0.0565  a
+i_DP_i_MULTIPLIER_B0_mult_28_n46
+                               3.072    0.616    0.0304      0.0565  a
+i_DP_i_MULTIPLIER_B0_mult_28_n47
+                               3.072    0.122    0.0304      0.0565  a
+i_DP_i_MULTIPLIER_B2_mult_28_n46
+                               3.072    0.576    0.0304      0.0565  a
+i_DP_i_MULTIPLIER_B2_mult_28_n47
+                               3.072    0.165    0.0304      0.0565  a
+i_DP_i_reg_1_n48               1.972    0.451    0.0471      0.0561  a
+i_DP_i_MULTIPLIER_A1_mult_28_n6
+                               3.072    0.414    0.0299      0.0556  a
+i_input_register_DIN_n14       1.972    0.512    0.0466      0.0556  a
+i_input_register_DIN_n15       1.972    0.512    0.0466      0.0556  a
+i_DP_i_MULTIPLIER_A1_mult_28_n405
+                               3.893    0.898    0.0235      0.0554  a
+i_DP_i_MULTIPLIER_A1_mult_28_n86
+                               3.072    0.208    0.0294      0.0547  a
+i_DP_i_MULTIPLIER_A2_mult_28_n47
+                               3.072    0.196    0.0294      0.0547  a
+i_DP_i_MULTIPLIER_B1_mult_28_n47
+                               3.072    0.235    0.0294      0.0547  a
+i_input_register_DIN_n18       1.972    0.512    0.0456      0.0544  a
+i_DP_W[9]                      9.579    0.512    0.0093      0.0540  a
+i_DP_i_MULTIPLIER_A2_mult_28_n75
+                               3.782    0.137    0.0235      0.0538  a
+i_DP_i_MULTIPLIER_A2_mult_28_n7
+                               3.072    0.218    0.0289      0.0537  a
+i_DP_i_MULTIPLIER_B1_mult_28_n409
+                               3.915    0.090    0.0225      0.0534  a
+i_DP_i_MULTIPLIER_B0_mult_28_n79
+                               2.010    0.327    0.0436      0.0531  a
+i_DP_i_MULTIPLIER_B0_mult_28_n28
+                               4.055    0.741    0.0216      0.0529  a
+i_DP_i_MULTIPLIER_B2_mult_28_n28
+                               4.055    0.733    0.0216      0.0529  a
+i_DP_i_MULTIPLIER_B0_mult_28_n89
+                               3.868    0.129    0.0225      0.0528  a
+i_DP_i_MULTIPLIER_B2_mult_28_n89
+                               3.868    0.098    0.0225      0.0528  a
+i_DP_i_MULTIPLIER_B2_mult_28_n79
+                               2.010    0.325    0.0431      0.0525  a
+DOUT_DP_REGOUT[5]              1.438    0.537    0.0598      0.0520  a
+i_DP_W[8]                      9.161    0.512    0.0093      0.0516  a
+i_DP_i_MULTIPLIER_A2_mult_28_n90
+                               2.010    0.204    0.0422      0.0513  a
+i_DP_i_MULTIPLIER_B1_mult_28_n84
+                               2.010    0.549    0.0422      0.0513  a
+i_DP_i_MULTIPLIER_A1_mult_28_n412
+                               1.974    0.337    0.0422      0.0503  a
+i_DP_i_MULTIPLIER_A2_mult_28_n412
+                               1.974    0.412    0.0422      0.0503  a
+i_DP_i_MULTIPLIER_B0_mult_28_n412
+                               1.974    0.408    0.0422      0.0503  a
+i_DP_i_MULTIPLIER_B1_mult_28_n413
+                               1.974    0.337    0.0422      0.0503  a
+i_DP_i_MULTIPLIER_B2_mult_28_n413
+                               1.974    0.412    0.0422      0.0503  a
+i_DP_i_MULTIPLIER_A2_mult_28_n84
+                               2.010    0.482    0.0412      0.0501  a
+DOUT_DP_REGOUT[4]              1.438    0.484    0.0574      0.0499  a
+i_DP_i_MULTIPLIER_B0_mult_28_n398
+                               1.974    0.292    0.0417      0.0498  a
+i_DP_P_MULB0_ADD3[12]          4.055    0.433    0.0201      0.0493  a
+i_DP_i_MULTIPLIER_A1_mult_28_n398
+                               1.974    0.275    0.0412      0.0492  a
+i_DP_i_MULTIPLIER_A2_mult_28_n398
+                               1.974    0.325    0.0412      0.0492  a
+i_DP_i_MULTIPLIER_B1_mult_28_n399
+                               1.974    0.275    0.0412      0.0492  a
+i_DP_i_MULTIPLIER_B2_mult_28_n399
+                               1.974    0.325    0.0412      0.0492  a
+i_DP_i_MULTIPLIER_B1_mult_28_n67
+                               2.010    0.173    0.0402      0.0489  a
+i_DP_i_reg_0_n17               1.972    0.620    0.0402      0.0480  a
+i_DP_i_MULTIPLIER_A1_mult_28_n67
+                               2.010    0.341    0.0392      0.0477  a
+i_DP_i_reg_1_n46               1.972    0.606    0.0397      0.0474  a
+i_DP_P_MULB2_ADD2[12]          3.782    0.425    0.0201      0.0460  a
+i_input_register_DIN_n19       1.438    0.491    0.0525      0.0456  a
+i_input_register_DIN_n20       1.438    0.491    0.0525      0.0456  a
+i_input_register_DIN_n21       1.438    0.491    0.0525      0.0456  a
+i_input_register_DIN_n22       1.438    0.491    0.0525      0.0456  a
+i_input_register_DIN_n25       1.438    0.491    0.0525      0.0456  a
+i_DP_i_reg_0_n27               1.438    0.383    0.0520      0.0452  a
+i_DP_i_MULTIPLIER_A1_mult_28_n406
+                               3.915    0.075    0.0186      0.0441  a
+i_DP_i_MULTIPLIER_B0_mult_28_n61
+                               4.055    0.071    0.0176      0.0433  a
+i_DP_i_MULTIPLIER_B2_mult_28_n61
+                               4.055    0.102    0.0176      0.0433  a
+i_input_register_DIN_n26       1.438    0.491    0.0495      0.0431  a
+DOUT_DP_REGOUT[2]              1.438    0.545    0.0490      0.0426  a
+i_DP_i_MULTIPLIER_A1_mult_28_n69
+                               3.782    0.075    0.0186      0.0426  a
+i_DP_i_MULTIPLIER_A2_mult_28_n69
+                               3.782    0.075    0.0186      0.0426  a
+i_DP_i_MULTIPLIER_A1_mult_28_n87
+                               2.010    0.137    0.0343      0.0417  a
+i_input_register_DIN_n23       1.438    0.491    0.0466      0.0405  a
+i_input_register_DIN_n24       1.438    0.491    0.0466      0.0405  a
+i_input_register_DIN_n27       1.438    0.491    0.0456      0.0397  a
+i_DP_i_MULTIPLIER_B1_mult_28_n414
+                               1.256    0.549    0.0520      0.0395  a
+i_DP_i_MULTIPLIER_A2_mult_28_n381
+                               2.010    0.239    0.0324      0.0393  a
+i_DP_i_MULTIPLIER_A1_mult_28_n55
+                               3.072    0.094    0.0206      0.0383  a
+i_DP_i_MULTIPLIER_A2_mult_28_n67
+                               2.010    0.192    0.0314      0.0382  a
+i_DP_i_MULTIPLIER_A2_mult_28_n335
+                               6.049    0.514    0.0098      0.0359  a
+i_DP_i_MULTIPLIER_A1_mult_28_n334
+                               2.010    0.157    0.0294      0.0358  a
+i_DP_i_MULTIPLIER_A2_mult_28_n334
+                               2.010    0.157    0.0294      0.0358  a
+i_DP_i_ADDER_3_add_28_carry[5]
+                               3.072    0.433    0.0191      0.0355  a
+i_DP_i_MULTIPLIER_A2_mult_28_n401
+                               1.980    0.843    0.0294      0.0352  a
+i_DP_i_MULTIPLIER_B0_mult_28_n401
+                               1.980    0.882    0.0294      0.0352  a
+i_DP_i_MULTIPLIER_B2_mult_28_n402
+                               1.980    0.843    0.0294      0.0352  a
+i_DP_i_reg_0_n9                1.980    0.609    0.0294      0.0352  a
+i_DP_i_reg_0_n10               1.980    0.609    0.0294      0.0352  a
+i_DP_i_reg_1_n53               1.980    0.613    0.0294      0.0352  a
+i_DP_i_reg_1_n54               1.980    0.613    0.0294      0.0352  a
+VIN_FROM_REGIN                 1.438    0.788    0.0402      0.0350  a
+i_DP_i_MULTIPLIER_B0_mult_28_n306
+                               1.957    0.882    0.0294      0.0348  a
+i_DP_i_MULTIPLIER_B1_mult_28_n312
+                               1.957    0.843    0.0294      0.0348  a
+i_DP_i_MULTIPLIER_B2_mult_28_n307
+                               1.957    0.843    0.0294      0.0348  a
+i_DP_i_MULTIPLIER_A1_mult_28_n335
+                               6.049    0.492    0.0093      0.0341  a
+i_DP_i_MULTIPLIER_B0_mult_28_n338
+                               6.049    0.488    0.0093      0.0341  a
+i_DP_i_MULTIPLIER_B1_mult_28_n339
+                               6.049    0.492    0.0093      0.0341  a
+i_DP_i_MULTIPLIER_B2_mult_28_n339
+                               6.049    0.496    0.0093      0.0341  a
+DOUT_DP_REGOUT[6]              1.438    0.476    0.0387      0.0337  a
+i_DP_i_MULTIPLIER_B0_mult_28_n71
+                               3.072    0.071    0.0176      0.0328  a
+i_DP_i_MULTIPLIER_B2_mult_28_n71
+                               3.072    0.102    0.0176      0.0328  a
+DOUT_DP_REGOUT[3]              1.438    0.627    0.0343      0.0299  a
+i_DP_i_MULTIPLIER_A2_mult_28_n79
+                               2.010    0.165    0.0245      0.0298  a
+i_DP_i_MULTIPLIER_B1_mult_28_n83
+                               3.868    0.055    0.0118      0.0275  a
+i_DP_P_MULA2_ADD1[12]          3.782    0.490    0.0118      0.0269  a
+i_DP_i_MULTIPLIER_B1_mult_28_n415
+                               1.255    0.780    0.0353      0.0268  a
+i_DP_i_MULTIPLIER_A2_mult_28_n85
+                               4.055    0.047    0.0108      0.0265  a
+i_DP_i_MULTIPLIER_B1_mult_28_n408
+                               3.893    0.957    0.0108      0.0254  a
+i_DP_i_MULTIPLIER_B1_mult_28_n53
+                               4.055    0.043    0.0098      0.0241  a
+i_DP_i_MULTIPLIER_A1_mult_28_n390
+                               3.986    0.518    0.0098      0.0236  a
+i_DP_i_MULTIPLIER_A1_mult_28_n391
+                               3.986    0.518    0.0098      0.0236  a
+i_DP_i_MULTIPLIER_A1_mult_28_n392
+                               3.986    0.518    0.0098      0.0236  a
+i_DP_i_MULTIPLIER_A1_mult_28_n393
+                               3.986    0.518    0.0098      0.0236  a
+i_DP_i_MULTIPLIER_A1_mult_28_n395
+                               3.986    0.518    0.0098      0.0236  a
+i_DP_i_MULTIPLIER_A2_mult_28_n353
+                               3.986    0.514    0.0098      0.0236  a
+i_DP_i_MULTIPLIER_A2_mult_28_n390
+                               3.986    0.514    0.0098      0.0236  a
+i_DP_i_MULTIPLIER_A2_mult_28_n391
+                               3.986    0.514    0.0098      0.0236  a
+i_DP_i_MULTIPLIER_A2_mult_28_n392
+                               3.986    0.514    0.0098      0.0236  a
+i_DP_i_MULTIPLIER_A2_mult_28_n395
+                               3.986    0.514    0.0098      0.0236  a
+i_DP_i_MULTIPLIER_A2_mult_28_n396
+                               3.986    0.514    0.0098      0.0236  a
+i_DP_i_MULTIPLIER_B0_mult_28_n391
+                               3.986    0.522    0.0098      0.0236  a
+i_DP_i_MULTIPLIER_B0_mult_28_n393
+                               3.986    0.522    0.0098      0.0236  a
+i_DP_i_MULTIPLIER_B0_mult_28_n394
+                               3.986    0.522    0.0098      0.0236  a
+i_DP_i_MULTIPLIER_B1_mult_28_n393
+                               3.986    0.518    0.0098      0.0236  a
+i_DP_i_MULTIPLIER_B1_mult_28_n395
+                               3.986    0.518    0.0098      0.0236  a
+i_DP_i_MULTIPLIER_B1_mult_28_n396
+                               3.986    0.518    0.0098      0.0236  a
+i_DP_i_MULTIPLIER_B2_mult_28_n392
+                               3.986    0.514    0.0098      0.0236  a
+i_DP_i_MULTIPLIER_B2_mult_28_n394
+                               3.986    0.514    0.0098      0.0236  a
+i_DP_i_MULTIPLIER_B2_mult_28_n395
+                               3.986    0.514    0.0098      0.0236  a
+i_DP_i_MULTIPLIER_A2_mult_28_n408
+                               3.915    0.047    0.0098      0.0232  a
+i_DP_i_MULTIPLIER_A1_mult_28_n410
+                               3.913    0.961    0.0098      0.0232  a
+i_DP_i_MULTIPLIER_B1_mult_28_n411
+                               3.913    0.961    0.0098      0.0232  a
+i_DP_i_MULTIPLIER_B0_mult_28_n407
+                               3.893    0.949    0.0098      0.0231  a
+i_DP_i_MULTIPLIER_B2_mult_28_n408
+                               3.893    0.953    0.0098      0.0231  a
+i_DP_P_MULA1_ADD1[13]          4.055    0.469    0.0093      0.0229  a
+i_DP_P_MULA1_ADD1[15]          4.055    0.508    0.0093      0.0229  a
+i_DP_P_MULA1_ADD1[16]          4.055    0.508    0.0093      0.0229  a
+i_DP_P_MULA1_ADD1[17]          4.055    0.508    0.0093      0.0229  a
+i_DP_P_MULB0_ADD3[14]          4.055    0.512    0.0093      0.0229  a
+i_DP_P_MULB0_ADD3[15]          4.055    0.512    0.0093      0.0229  a
+i_DP_P_MULB0_ADD3[16]          4.055    0.512    0.0093      0.0229  a
+i_DP_P_MULB1_ADD2[15]          4.055    0.508    0.0093      0.0229  a
+i_DP_P_MULB1_ADD2[16]          4.055    0.508    0.0093      0.0229  a
+i_DP_i_MULTIPLIER_A1_mult_28_n108
+                               3.496    0.043    0.0108      0.0228  a
+i_DP_i_MULTIPLIER_B1_mult_28_n108
+                               3.496    0.043    0.0108      0.0228  a
+i_DP_i_MULTIPLIER_A1_mult_28_n353
+                               3.986    0.492    0.0093      0.0225  a
+i_DP_i_MULTIPLIER_A1_mult_28_n394
+                               3.986    0.492    0.0093      0.0225  a
+i_DP_i_MULTIPLIER_A1_mult_28_n396
+                               3.986    0.492    0.0093      0.0225  a
+i_DP_i_MULTIPLIER_A2_mult_28_n393
+                               3.986    0.496    0.0093      0.0225  a
+i_DP_i_MULTIPLIER_A2_mult_28_n394
+                               3.986    0.496    0.0093      0.0225  a
+i_DP_i_MULTIPLIER_B0_mult_28_n333
+                               3.986    0.512    0.0093      0.0225  a
+i_DP_i_MULTIPLIER_B0_mult_28_n335
+                               3.986    0.488    0.0093      0.0225  a
+i_DP_i_MULTIPLIER_B0_mult_28_n390
+                               3.986    0.488    0.0093      0.0225  a
+i_DP_i_MULTIPLIER_B0_mult_28_n392
+                               3.986    0.488    0.0093      0.0225  a
+i_DP_i_MULTIPLIER_B0_mult_28_n395
+                               3.986    0.488    0.0093      0.0225  a
+i_DP_i_MULTIPLIER_B0_mult_28_n396
+                               3.986    0.488    0.0093      0.0225  a
+i_DP_i_MULTIPLIER_B1_mult_28_n334
+                               3.986    0.508    0.0093      0.0225  a
+i_DP_i_MULTIPLIER_B1_mult_28_n336
+                               3.986    0.492    0.0093      0.0225  a
+i_DP_i_MULTIPLIER_B1_mult_28_n391
+                               3.986    0.492    0.0093      0.0225  a
+i_DP_i_MULTIPLIER_B1_mult_28_n392
+                               3.986    0.492    0.0093      0.0225  a
+i_DP_i_MULTIPLIER_B1_mult_28_n394
+                               3.986    0.492    0.0093      0.0225  a
+i_DP_i_MULTIPLIER_B1_mult_28_n397
+                               3.986    0.492    0.0093      0.0225  a
+i_DP_i_MULTIPLIER_B2_mult_28_n334
+                               3.986    0.504    0.0093      0.0225  a
+i_DP_i_MULTIPLIER_B2_mult_28_n336
+                               3.986    0.496    0.0093      0.0225  a
+i_DP_i_MULTIPLIER_B2_mult_28_n391
+                               3.986    0.496    0.0093      0.0225  a
+i_DP_i_MULTIPLIER_B2_mult_28_n393
+                               3.986    0.496    0.0093      0.0225  a
+i_DP_i_MULTIPLIER_B2_mult_28_n396
+                               3.986    0.496    0.0093      0.0225  a
+i_DP_i_MULTIPLIER_B2_mult_28_n397
+                               3.986    0.496    0.0093      0.0225  a
+i_DP_P_MULA2_ADD1[14]          3.782    0.471    0.0098      0.0224  a
+i_DP_P_MULA2_ADD1[15]          3.782    0.471    0.0098      0.0224  a
+i_DP_P_MULA2_ADD1[16]          3.782    0.471    0.0098      0.0224  a
+i_DP_P_MULA2_ADD1[17]          3.782    0.471    0.0098      0.0224  a
+i_DP_i_MULTIPLIER_B0_mult_28_n3
+                               3.957    0.488    0.0093      0.0223  a
+i_DP_i_MULTIPLIER_B1_mult_28_n3
+                               3.957    0.492    0.0093      0.0223  a
+i_DP_i_MULTIPLIER_B2_mult_28_n3
+                               3.957    0.496    0.0093      0.0223  a
+i_DP_P_MULB2_ADD2[14]          3.782    0.504    0.0093      0.0213  a
+i_DP_P_MULB2_ADD2[15]          3.782    0.504    0.0093      0.0213  a
+i_DP_P_MULB2_ADD2[16]          3.782    0.504    0.0093      0.0213  a
+i_DP_S_ADD2_ADD3[5]            3.782    0.508    0.0093      0.0213  a
+i_DP_S_ADD2_ADD3[6]            3.782    0.508    0.0093      0.0213  a
+i_DP_i_MULTIPLIER_A2_mult_28_n2
+                               3.380    0.529    0.0098      0.0200  a
+i_DP_i_MULTIPLIER_A1_mult_28_n2
+                               3.380    0.492    0.0093      0.0190  a
+i_DP_i_MULTIPLIER_A2_mult_28_n3
+                               3.072    0.529    0.0098      0.0182  a
+i_DP_i_MULTIPLIER_A2_mult_28_n4
+                               3.072    0.529    0.0098      0.0182  a
+i_DP_i_MULTIPLIER_A2_mult_28_n5
+                               3.072    0.529    0.0098      0.0182  a
+i_DP_i_ADDER_2_add_28_carry[5]
+                               3.072    0.504    0.0093      0.0173  a
+i_DP_i_ADDER_2_add_28_carry[6]
+                               3.072    0.504    0.0093      0.0173  a
+i_DP_i_ADDER_3_add_28_carry[6]
+                               3.072    0.473    0.0093      0.0173  a
+i_DP_i_MULTIPLIER_A1_mult_28_n3
+                               3.072    0.492    0.0093      0.0173  a
+i_DP_i_MULTIPLIER_A1_mult_28_n4
+                               3.072    0.492    0.0093      0.0173  a
+i_DP_i_MULTIPLIER_B0_mult_28_n4
+                               3.072    0.488    0.0093      0.0173  a
+i_DP_i_MULTIPLIER_B0_mult_28_n5
+                               3.072    0.488    0.0093      0.0173  a
+i_DP_i_MULTIPLIER_B1_mult_28_n4
+                               3.072    0.492    0.0093      0.0173  a
+i_DP_i_MULTIPLIER_B2_mult_28_n4
+                               3.072    0.496    0.0093      0.0173  a
+i_DP_i_MULTIPLIER_B2_mult_28_n5
+                               3.072    0.496    0.0093      0.0173  a
+DOUT_DP_REGOUT[7]              1.438    0.508    0.0191      0.0166  a
+i_DP_i_MULTIPLIER_A1_mult_28_n389
+                               1.981    0.518    0.0098      0.0117  a
+i_DP_i_MULTIPLIER_B1_mult_28_n390
+                               1.981    0.518    0.0098      0.0117  a
+i_DP_i_MULTIPLIER_A1_mult_28_n404
+                               3.915    0.020    0.0049      0.0116  a
+DOUT[5]                        0.310    0.537    0.0598      0.0112  a
+i_DP_i_MULTIPLIER_A2_mult_28_n389
+                               1.981    0.496    0.0093      0.0112  a
+i_DP_i_MULTIPLIER_B0_mult_28_n389
+                               1.981    0.488    0.0093      0.0112  a
+i_DP_i_MULTIPLIER_B2_mult_28_n390
+                               1.981    0.496    0.0093      0.0112  a
+i_DP_i_reg_0_n19               1.972    0.492    0.0093      0.0111  a
+i_DP_i_reg_0_n20               1.972    0.492    0.0093      0.0111  a
+i_DP_i_reg_1_n43               1.972    0.496    0.0093      0.0111  a
+i_DP_i_reg_1_n44               1.972    0.496    0.0093      0.0111  a
+i_DP_i_MULTIPLIER_B0_mult_28_n332
+                               1.936    0.488    0.0093      0.0109  a
+i_DP_i_MULTIPLIER_B1_mult_28_n333
+                               1.936    0.492    0.0093      0.0109  a
+i_DP_i_MULTIPLIER_B2_mult_28_n333
+                               1.936    0.496    0.0093      0.0109  a
+DOUT[4]                        0.310    0.480    0.0574      0.0107  a
+DOUT[2]                        0.310    0.545    0.0490      0.0092  a
+DOUT_DP_REGOUT[8]              1.438    0.547    0.0093      0.0081  a
+i_DP_i_reg_0_n29               1.438    0.512    0.0093      0.0081  a
+i_DP_i_reg_0_n30               1.438    0.512    0.0093      0.0081  a
+i_DP_i_reg_1_n33               1.438    0.508    0.0093      0.0081  a
+i_DP_i_reg_1_n34               1.438    0.508    0.0093      0.0081  a
+A2_2COMPLEMENT_REG_DP[8]      26.981    0.990    0.0005      0.0080  a
+VOUT                           0.310    0.788    0.0402      0.0075  a
+DOUT[6]                        0.310    0.473    0.0387      0.0073  a
+i_DP_i_MULTIPLIER_A1_mult_28_n316
+                               3.916    0.988    0.0029      0.0070  a
+DOUT[3]                        0.310    0.627    0.0343      0.0064  a
+i_DP_i_MULTIPLIER_A1_mult_28_n331
+                              16.604    0.010    0.0005      0.0049  a
+i_DP_i_MULTIPLIER_B1_mult_28_n324
+                              16.604    0.010    0.0005      0.0049  a
+A1_2COMPLEMENT_REG_DP[0]      13.818    0.990    0.0005      0.0041  a
+B1_REG_DP[0]                  13.818    0.990    0.0005      0.0041  a
+A1_2COMPLEMENT_REG_DP[3]      13.275    0.990    0.0005      0.0039  a
+A1_2COMPLEMENT_REG_DP[4]      13.275    0.990    0.0005      0.0039  a
+A1_2COMPLEMENT_REG_DP[6]      13.275    0.990    0.0005      0.0039  a
+A2_2COMPLEMENT_REG_DP[3]      13.275    0.990    0.0005      0.0039  a
+A2_2COMPLEMENT_REG_DP[6]      13.275    0.990    0.0005      0.0039  a
+A2_2COMPLEMENT_REG_DP[7]      13.275    0.990    0.0005      0.0039  a
+B0_REG_DP[4]                  13.275    0.990    0.0005      0.0039  a
+B0_REG_DP[5]                  13.275    0.990    0.0005      0.0039  a
+B1_REG_DP[3]                  13.275    0.990    0.0005      0.0039  a
+B1_REG_DP[5]                  13.275    0.990    0.0005      0.0039  a
+B1_REG_DP[6]                  13.275    0.990    0.0005      0.0039  a
+B2_REG_DP[4]                  13.275    0.990    0.0005      0.0039  a
+B2_REG_DP[5]                  13.275    0.990    0.0005      0.0039  a
+A1_2COMPLEMENT_REG_DP[2]      13.275    0.990    0.0005      0.0039  a
+A2_2COMPLEMENT_REG_DP[2]      13.275    0.990    0.0005      0.0039  a
+B0_REG_DP[2]                  13.275    0.990    0.0005      0.0039  a
+B2_REG_DP[2]                  13.275    0.990    0.0005      0.0039  a
+i_DP_i_MULTIPLIER_A1_mult_28_n330
+                              12.663    0.010    0.0005      0.0038  a
+i_DP_i_MULTIPLIER_A2_mult_28_n330
+                              12.663    0.010    0.0005      0.0038  a
+DOUT[7]                        0.310    0.504    0.0191      0.0036  a
+i_DP_i_MULTIPLIER_A1_mult_28_n79
+                               2.010    0.012    0.0029      0.0036  a
+i_DP_i_MULTIPLIER_B0_mult_28_n403
+                               3.893    0.996    0.0010      0.0023  a
+i_DP_i_MULTIPLIER_B2_mult_28_n404
+                               3.893    0.996    0.0010      0.0023  a
+DOUT[8]                        0.310    0.543    0.0093      0.0017  a
+A1_2COMPLEMENT_REG_DP[1]       4.070    0.990    0.0005      0.0012  a
+A2_2COMPLEMENT_REG_DP[1]       4.070    0.990    0.0005      0.0012  a
+*Logic0*                      77.209    0.000    0.0000      0.0000  d
+*Logic1*                       7.447    1.000    0.0000      0.0000  d
+A1_2COMPLEMENT[0]              1.438    1.000    0.0000      0.0000  a
+A1_2COMPLEMENT[1]              1.438    1.000    0.0000      0.0000  a
+A1_2COMPLEMENT[2]              1.438    1.000    0.0000      0.0000  a
+A1_2COMPLEMENT[3]              1.438    1.000    0.0000      0.0000  a
+A1_2COMPLEMENT[4]              1.438    1.000    0.0000      0.0000  a
+A1_2COMPLEMENT[5]              1.438    0.000    0.0000      0.0000  a
+A1_2COMPLEMENT[6]              1.438    1.000    0.0000      0.0000  a
+A1_2COMPLEMENT[7]              1.438    0.000    0.0000      0.0000  a
+A1_2COMPLEMENT[8]              1.438    0.000    0.0000      0.0000  a
+A1_2COMPLEMENT_REG_DP[5]      13.275    0.000    0.0000      0.0000  a
+A1_2COMPLEMENT_REG_DP[7]      13.275    0.000    0.0000      0.0000  a
+A1_2COMPLEMENT_REG_DP[8]      26.981    0.000    0.0000      0.0000  a
+A2_2COMPLEMENT[0]              1.438    0.000    0.0000      0.0000  a
+A2_2COMPLEMENT[1]              1.438    1.000    0.0000      0.0000  a
+A2_2COMPLEMENT[2]              1.438    1.000    0.0000      0.0000  a
+A2_2COMPLEMENT[3]              1.438    1.000    0.0000      0.0000  a
+A2_2COMPLEMENT[4]              1.438    0.000    0.0000      0.0000  a
+A2_2COMPLEMENT[5]              1.438    0.000    0.0000      0.0000  a
+A2_2COMPLEMENT[6]              1.438    1.000    0.0000      0.0000  a
+A2_2COMPLEMENT[7]              1.438    1.000    0.0000      0.0000  a
+A2_2COMPLEMENT[8]              1.438    1.000    0.0000      0.0000  a
+A2_2COMPLEMENT_REG_DP[0]      13.818    0.000    0.0000      0.0000  a
+A2_2COMPLEMENT_REG_DP[4]      13.275    0.000    0.0000      0.0000  a
+A2_2COMPLEMENT_REG_DP[5]      13.275    0.000    0.0000      0.0000  a
+B0_REG_DP[0]                  13.818    0.000    0.0000      0.0000  a
+B0_REG_DP[1]                   4.070    0.000    0.0000      0.0000  a
+B0_REG_DP[3]                  13.275    0.000    0.0000      0.0000  a
+B0_REG_DP[6]                  13.275    0.000    0.0000      0.0000  a
+B0_REG_DP[7]                  13.275    0.000    0.0000      0.0000  a
+B0_REG_DP[8]                  26.981    0.000    0.0000      0.0000  a
+B1_REG_DP[1]                   4.070    0.000    0.0000      0.0000  a
+B1_REG_DP[2]                  13.275    0.000    0.0000      0.0000  a
+B1_REG_DP[4]                  13.275    0.000    0.0000      0.0000  a
+B1_REG_DP[7]                  13.275    0.000    0.0000      0.0000  a
+B1_REG_DP[8]                  26.981    0.000    0.0000      0.0000  a
+B2_REG_DP[0]                  13.818    0.000    0.0000      0.0000  a
+B2_REG_DP[1]                   4.070    0.000    0.0000      0.0000  a
+B2_REG_DP[3]                  13.275    0.000    0.0000      0.0000  a
+B2_REG_DP[6]                  13.275    0.000    0.0000      0.0000  a
+B2_REG_DP[7]                  13.275    0.000    0.0000      0.0000  a
+B2_REG_DP[8]                  26.981    0.000    0.0000      0.0000  a
+DOUT[0]                        0.310    0.000    0.0000      0.0000  a
+DOUT[1]                        0.310    0.000    0.0000      0.0000  a
+i_DP_i_ADDER_0_add_28_carry[2]
+                               3.072    0.000    0.0000      0.0000  a
+i_DP_i_ADDER_0_add_28_n1       3.072    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A1_mult_28_n65
+                               3.782    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A1_mult_28_n77
+                               3.072    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A1_mult_28_n85
+                               4.055    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A1_mult_28_n89
+                               3.868    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A1_mult_28_n106
+                               3.496    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A1_mult_28_n107
+                               3.496    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A1_mult_28_n155
+                               4.055    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A1_mult_28_n157
+                               4.055    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A1_mult_28_n158
+                               3.758    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A1_mult_28_n333
+                               1.987    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A1_mult_28_n336
+                              22.210    1.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A1_mult_28_n343
+                              22.291    1.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A1_mult_28_n355
+                              18.860    1.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A1_mult_28_n397
+                               1.980    1.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A1_mult_28_n399
+                               1.980    1.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A1_mult_28_n401
+                               1.980    1.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A1_mult_28_n402
+                               1.974    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A1_mult_28_n407
+                               3.893    1.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A1_mult_28_n408
+                               3.915    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A1_mult_28_n409
+                               3.896    1.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A1_mult_28_n411
+                               1.936    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A1_mult_28_n413
+                               1.256    1.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A1_mult_28_n414
+                               1.255    1.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A1_mult_28_n415
+                               3.953    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A2_mult_28_n61
+                               4.055    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A2_mult_28_n65
+                               3.782    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A2_mult_28_n71
+                               3.072    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A2_mult_28_n77
+                               3.072    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A2_mult_28_n81
+                               4.055    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A2_mult_28_n89
+                               3.868    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A2_mult_28_n120
+                               3.782    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A2_mult_28_n130
+                               3.782    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A2_mult_28_n140
+                               3.782    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A2_mult_28_n152
+                               3.782    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A2_mult_28_n153
+                               3.072    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A2_mult_28_n154
+                               3.782    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A2_mult_28_n155
+                               4.055    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A2_mult_28_n158
+                               3.758    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A2_mult_28_n328
+                               3.072    1.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A2_mult_28_n331
+                              16.604    1.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A2_mult_28_n333
+                               1.987    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A2_mult_28_n336
+                              22.210    1.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A2_mult_28_n343
+                              22.291    1.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A2_mult_28_n355
+                              18.860    1.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A2_mult_28_n363
+                               2.010    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A2_mult_28_n402
+                               1.974    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A2_mult_28_n407
+                               3.893    1.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A2_mult_28_n409
+                               3.896    1.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A2_mult_28_n413
+                               1.256    1.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A2_mult_28_n414
+                               1.255    1.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_A2_mult_28_n415
+                               3.953    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B0_mult_28_n66
+                               4.055    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B0_mult_28_n73
+                               3.868    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B0_mult_28_n78
+                               3.782    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B0_mult_28_n83
+                               3.868    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B0_mult_28_n86
+                               3.072    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B0_mult_28_n87
+                               2.010    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B0_mult_28_n120
+                               3.782    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B0_mult_28_n130
+                               3.782    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B0_mult_28_n140
+                               3.782    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B0_mult_28_n156
+                               3.782    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B0_mult_28_n157
+                               4.055    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B0_mult_28_n320
+                               3.916    1.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B0_mult_28_n329
+                              12.663    1.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B0_mult_28_n330
+                              16.604    1.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B0_mult_28_n336
+                              22.210    1.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B0_mult_28_n344
+                              22.291    1.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B0_mult_28_n355
+                              18.860    1.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B0_mult_28_n402
+                               1.974    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B0_mult_28_n405
+                               3.893    1.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B0_mult_28_n406
+                               3.915    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B0_mult_28_n409
+                               3.896    1.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B0_mult_28_n413
+                               1.256    1.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B0_mult_28_n414
+                               1.255    1.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B0_mult_28_n415
+                               3.953    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B1_mult_28_n65
+                               3.782    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B1_mult_28_n77
+                               3.072    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B1_mult_28_n85
+                               4.055    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B1_mult_28_n89
+                               3.868    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B1_mult_28_n106
+                               3.496    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B1_mult_28_n107
+                               3.496    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B1_mult_28_n155
+                               4.055    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B1_mult_28_n156
+                               3.782    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B1_mult_28_n158
+                               3.758    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B1_mult_28_n323
+                              12.663    1.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B1_mult_28_n337
+                              22.210    1.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B1_mult_28_n345
+                              22.291    1.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B1_mult_28_n356
+                              18.860    1.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B1_mult_28_n398
+                               1.980    1.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B1_mult_28_n400
+                               1.980    1.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B1_mult_28_n402
+                               1.980    1.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B1_mult_28_n403
+                               1.974    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B1_mult_28_n412
+                               1.936    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B2_mult_28_n66
+                               4.055    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B2_mult_28_n73
+                               3.868    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B2_mult_28_n78
+                               3.782    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B2_mult_28_n83
+                               3.868    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B2_mult_28_n86
+                               3.072    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B2_mult_28_n87
+                               2.010    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B2_mult_28_n120
+                               3.782    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B2_mult_28_n130
+                               3.782    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B2_mult_28_n140
+                               3.782    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B2_mult_28_n156
+                               3.782    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B2_mult_28_n157
+                               4.055    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B2_mult_28_n321
+                               3.916    1.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B2_mult_28_n330
+                              12.663    1.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B2_mult_28_n331
+                              16.604    1.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B2_mult_28_n337
+                              22.210    1.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B2_mult_28_n345
+                              22.291    1.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B2_mult_28_n356
+                              18.860    1.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B2_mult_28_n403
+                               1.974    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B2_mult_28_n406
+                               3.893    1.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B2_mult_28_n407
+                               3.915    0.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B2_mult_28_n410
+                               3.896    1.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B2_mult_28_n414
+                               1.256    1.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B2_mult_28_n415
+                               1.255    1.000    0.0000      0.0000  a
+i_DP_i_MULTIPLIER_B2_mult_28_n416
+                               3.953    0.000    0.0000      0.0000  a
+i_two_complement_A1_i_adder_add_28_carry[2]
+                               3.072    0.000    0.0000      0.0000  a
+i_two_complement_A1_i_adder_add_28_carry[3]
+                               3.072    0.000    0.0000      0.0000  a
+i_two_complement_A1_i_adder_add_28_carry[4]
+                               3.072    0.000    0.0000      0.0000  a
+i_two_complement_A1_i_adder_add_28_carry[5]
+                               3.072    0.000    0.0000      0.0000  a
+i_two_complement_A1_i_adder_add_28_carry[6]
+                               3.072    0.000    0.0000      0.0000  a
+i_two_complement_A1_i_adder_add_28_carry[7]
+                               3.072    0.000    0.0000      0.0000  a
+i_two_complement_A1_i_adder_add_28_carry[8]
+                               3.072    0.000    0.0000      0.0000  a
+i_two_complement_A1_i_adder_add_28_n1
+                               3.072    0.000    0.0000      0.0000  a
+i_two_complement_A1_n1         4.055    0.000    0.0000      0.0000  a
+i_two_complement_A1_n2         4.055    0.000    0.0000      0.0000  a
+i_two_complement_A1_n3         4.055    1.000    0.0000      0.0000  a
+i_two_complement_A1_n4         4.055    0.000    0.0000      0.0000  a
+i_two_complement_A1_n5         4.055    1.000    0.0000      0.0000  a
+i_two_complement_A1_n6         4.055    1.000    0.0000      0.0000  a
+i_two_complement_A1_n7         4.055    1.000    0.0000      0.0000  a
+i_two_complement_A1_n8         4.055    1.000    0.0000      0.0000  a
+i_two_complement_A1_n9         4.085    0.000    0.0000      0.0000  a
+i_two_complement_A2_i_adder_add_28_carry[2]
+                               3.072    0.000    0.0000      0.0000  a
+i_two_complement_A2_i_adder_add_28_carry[3]
+                               3.072    0.000    0.0000      0.0000  a
+i_two_complement_A2_i_adder_add_28_carry[4]
+                               3.072    0.000    0.0000      0.0000  a
+i_two_complement_A2_i_adder_add_28_carry[5]
+                               3.072    0.000    0.0000      0.0000  a
+i_two_complement_A2_i_adder_add_28_carry[6]
+                               3.072    0.000    0.0000      0.0000  a
+i_two_complement_A2_i_adder_add_28_carry[7]
+                               3.072    0.000    0.0000      0.0000  a
+i_two_complement_A2_i_adder_add_28_carry[8]
+                               3.072    0.000    0.0000      0.0000  a
+i_two_complement_A2_i_adder_add_28_n1
+                               3.072    1.000    0.0000      0.0000  a
+i_two_complement_A2_n1         4.055    1.000    0.0000      0.0000  a
+i_two_complement_A2_n2         4.055    1.000    0.0000      0.0000  a
+i_two_complement_A2_n3         4.055    1.000    0.0000      0.0000  a
+i_two_complement_A2_n4         4.055    0.000    0.0000      0.0000  a
+i_two_complement_A2_n5         4.055    0.000    0.0000      0.0000  a
+i_two_complement_A2_n6         4.055    1.000    0.0000      0.0000  a
+i_two_complement_A2_n7         4.055    1.000    0.0000      0.0000  a
+i_two_complement_A2_n8         4.055    0.000    0.0000      0.0000  a
+i_two_complement_A2_n9         4.085    1.000    0.0000      0.0000  a
+--------------------------------------------------------------------------------
+Total (1483 nets)                                          174.6400 uW
+1
