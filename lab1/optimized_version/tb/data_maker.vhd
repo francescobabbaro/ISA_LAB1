@@ -42,7 +42,7 @@ begin                                   -- beh
 	B2 <= conv_std_logic_vector(52, 9);
 
 	process(RST_n, CLK)
-		file fp_in       : text open READ_MODE is "./samples.txt";
+		file fp_in       : text open READ_MODE is "../matlab/samples.txt";
 		variable line_in : line;
 		variable x       : integer;
 		variable v_N_CLK : integer := 0;
