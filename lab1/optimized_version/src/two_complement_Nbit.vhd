@@ -22,14 +22,14 @@ end two_complement_Nbit;
 
 architecture RTL of two_complement_Nbit is
 
-	component ADDER_NBIT
+	component ADDER2_NBIT
 		generic(N : positive := 32);
 		port(
 			ADDER_IN_A  : in  std_logic_vector(N - 1 downto 0);
 			ADDER_IN_B  : in  std_logic_vector(N - 1 downto 0);
 			ADDER_OUT_S : out std_logic_vector(N - 1 downto 0)
 		);
-	end component ADDER_NBIT;
+	end component ADDER2_NBIT;
 
 	signal IN_NOT : std_logic_vector(N - 1 downto 0);
 
@@ -37,7 +37,7 @@ begin
 
 	IN_NOT <= not (TWO_COMPLEMENT_IN);
 
-	i_adder : component ADDER_NBIT
+	i_adder : component ADDER2_NBIT
 		generic map(
 			N => N
 		)

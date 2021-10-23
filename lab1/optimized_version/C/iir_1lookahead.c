@@ -4,7 +4,7 @@
 
 #define N 2 /// order of the filter
 #define NB 9  /// number of bits
-#define NB_MULT 18 // multiplier parallelism 2.16
+#define NB_MULT 17 // multiplier parallelism 2.16
 #define NB_FIRST_ADD 10 // first (upper-left) adder parallelism 2.8
 #define NB_ADD 9 // other adder parallelism 2.6
 #define N_TRUNC_MULT 8
@@ -62,7 +62,7 @@ int myfilter(int x)
   /// compute feed-back and feed-forward
   fb = 0;
   ff = 0;
-  for (i=0; i<N; i++) {
+  for (i=0; i<N+1; i++) {
     if (i == 0){
         ff_mult = sw[i]*b[i];
         ff_mult = saturation(ff_mult, NB_MULT);
@@ -87,7 +87,7 @@ int myfilter(int x)
   }
 
   /// compute intermediate value (w) and output sample
-  w = x + (x_del1*-a0 >> 9) + fb;
+  w = x + (x_del1*-a0 >> 8) + fb;
   w = saturation(w, NB_FIRST_ADD);
   b0_mult = w*b0;
   b0_mult = saturation(b0_mult, NB_MULT);
