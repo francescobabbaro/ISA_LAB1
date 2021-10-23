@@ -6,8 +6,8 @@
 #define NB 9  /// number of bits
 #define NB_MULT 17 // multiplier parallelism 2.16
 #define NB_FIRST_ADD 10 // first (upper-left) adder parallelism 2.8
-#define NB_ADD 9 // other adder parallelism 2.6
-#define N_TRUNC_MULT 8
+#define NB_ADD 7 // other adder parallelism 2.6
+#define N_TRUNC_MULT 10
 #define N_PIPE 2 // number of pipeline registers
 
 const int b0 = 52; /// coefficient b0
@@ -82,12 +82,12 @@ int myfilter(int x)
   /// compute feed-back and feed-forward
   fb = mul_c1_del1 + mul_c2_del[1];
   fb = saturation(fb, NB_ADD);
-  w = mul_c0_del1 + x + fb;
+  w = (mul_c0_del1 << 2) + x + (fb << 2);
   w = saturation(w, NB_FIRST_ADD);
   ff = mul_b1_del1 + mul_b2_del[1];
   ff = saturation(ff, NB_ADD);
-  y = mul_b0_del1 + ff;
-  y = saturation(y, NB_ADD);
+  y = (mul_b0_del1 + ff) << 2;
+  y = saturation(y, NB_ADD+2);
 
   /// compute intermediate values
   mul_c0 = c0 * x;
