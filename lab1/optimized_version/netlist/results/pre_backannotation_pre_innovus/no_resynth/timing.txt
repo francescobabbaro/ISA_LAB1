@@ -1,0 +1,74 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : IIR_1lookahead
+Version: O-2018.06-SP4
+Date   : Sat Oct 23 20:42:36 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: i_DP/i_REG_DEL_1/Q_reg[5]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: i_DP/i_REG_MUL_C2/r_0/Q_reg[1]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  IIR_1lookahead     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  i_DP/i_REG_DEL_1/Q_reg[5]/CK (DFFR_X1)                  0.00       0.00 r
+  i_DP/i_REG_DEL_1/Q_reg[5]/QN (DFFR_X1)                  0.07       0.07 r
+  i_DP/i_REG_DEL_1/U14/ZN (INV_X1)                        0.03       0.09 f
+  i_DP/i_REG_DEL_1/Q[5] (reg_en_rst_n_N10)                0.00       0.09 f
+  i_DP/i_MULTIPLIER_C2/MULTIPLIER_IN_A[5] (MULTIPLIER_NBIT_N10_4)
+                                                          0.00       0.09 f
+  i_DP/i_MULTIPLIER_C2/mult_28/a[5] (MULTIPLIER_NBIT_N10_4_DW_mult_tc_1)
+                                                          0.00       0.09 f
+  i_DP/i_MULTIPLIER_C2/mult_28/U605/ZN (INV_X1)           0.04       0.14 r
+  i_DP/i_MULTIPLIER_C2/mult_28/U580/ZN (XNOR2_X1)         0.07       0.21 r
+  i_DP/i_MULTIPLIER_C2/mult_28/U453/ZN (INV_X1)           0.03       0.24 f
+  i_DP/i_MULTIPLIER_C2/mult_28/U468/ZN (NAND2_X1)         0.04       0.28 r
+  i_DP/i_MULTIPLIER_C2/mult_28/U700/ZN (OAI22_X1)         0.04       0.32 f
+  i_DP/i_MULTIPLIER_C2/mult_28/U181/CO (FA_X1)            0.10       0.42 f
+  i_DP/i_MULTIPLIER_C2/mult_28/U175/S (FA_X1)             0.13       0.56 r
+  i_DP/i_MULTIPLIER_C2/mult_28/U174/S (FA_X1)             0.12       0.67 f
+  i_DP/i_MULTIPLIER_C2/mult_28/U677/ZN (NAND2_X1)         0.04       0.71 r
+  i_DP/i_MULTIPLIER_C2/mult_28/U676/ZN (OAI21_X1)         0.04       0.75 f
+  i_DP/i_MULTIPLIER_C2/mult_28/U693/ZN (AOI21_X1)         0.06       0.81 r
+  i_DP/i_MULTIPLIER_C2/mult_28/U556/ZN (INV_X1)           0.03       0.84 f
+  i_DP/i_MULTIPLIER_C2/mult_28/U435/Z (BUF_X1)            0.04       0.88 f
+  i_DP/i_MULTIPLIER_C2/mult_28/U554/ZN (XNOR2_X1)         0.05       0.94 f
+  i_DP/i_MULTIPLIER_C2/mult_28/product[11] (MULTIPLIER_NBIT_N10_4_DW_mult_tc_1)
+                                                          0.00       0.94 f
+  i_DP/i_MULTIPLIER_C2/MULTIPLIER_OUT_P[11] (MULTIPLIER_NBIT_N10_4)
+                                                          0.00       0.94 f
+  i_DP/i_REG_MUL_C2/D[1] (reg_N_level_en_rst_n_M7_N2)     0.00       0.94 f
+  i_DP/i_REG_MUL_C2/r_0/D[1] (reg_en_rst_n_N7_2)          0.00       0.94 f
+  i_DP/i_REG_MUL_C2/r_0/U12/Z (MUX2_X1)                   0.06       1.00 f
+  i_DP/i_REG_MUL_C2/r_0/Q_reg[1]/D (DFFR_X1)              0.01       1.01 f
+  data arrival time                                                  1.01
+
+  clock MY_CLK (rise edge)                                4.20       4.20
+  clock network delay (ideal)                             0.00       4.20
+  i_DP/i_REG_MUL_C2/r_0/Q_reg[1]/CK (DFFR_X1)             0.00       4.20 r
+  library setup time                                     -0.04       4.16
+  data required time                                                 4.16
+  --------------------------------------------------------------------------
+  data required time                                                 4.16
+  data arrival time                                                 -1.01
+  --------------------------------------------------------------------------
+  slack (MET)                                                        3.15
+
+
+1
