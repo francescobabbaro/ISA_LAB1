@@ -35,18 +35,18 @@ module tb_iir ();
 	);
 
 	IIR_1lookahead DUT (
-		.din(DIN_i),
-		.c0(C0_i),
-		.c1(C1_i),
-		.c2(C2_i),
-		.b0(B0_i),
-		.b1(B1_i),
-		.b2(B2_i),
-		.vin(VIN_i),
-		.clk(CLK_i),
-		.rst_n(RST_n_i),
-		.dout(DOUT_i),
-		.vout(VOUT_i)
+		.DIN(DIN_i),
+		.C0(C0_i),
+		.C1(C1_i),
+		.C2(C2_i),
+		.B0(B0_i),
+		.B1(B1_i),
+		.B2(B2_i),
+		.VIN(VIN_i),
+		.CLK(CLK_i),
+		.RST_N(RST_n_i),
+		.DOUT(DOUT_i),
+		.VOUT(VOUT_i)
 	);
 
 	data_sink DS(.CLK(CLK_i),
