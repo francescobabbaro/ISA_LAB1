@@ -55,7 +55,7 @@ yc = fscanf(fp, '%d\n');
 yc = yc';
 fclose(fp);
 
-figure(3);
+figure(4);
 thd(yc, fs);
 title('THD $-37.31 dB$','interpreter','latex', 'fontsize', 20)
 xlabel('Frequency (kHz)','interpreter','latex', 'fontsize', 12)
