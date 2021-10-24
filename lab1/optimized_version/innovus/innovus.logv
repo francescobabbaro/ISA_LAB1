@@ -1,0 +1,109 @@
+[10/24 12:34:18      0s] 
+[10/24 12:34:18      0s] Cadence Innovus(TM) Implementation System.
+[10/24 12:34:18      0s] Copyright 2017 Cadence Design Systems, Inc. All rights reserved worldwide.
+[10/24 12:34:18      0s] 
+[10/24 12:34:18      0s] Version:	v17.11-s080_1, built Fri Aug 4 11:13:11 PDT 2017
+[10/24 12:34:18      0s] Options:	
+[10/24 12:34:18      0s] Date:		Sun Oct 24 12:34:18 2021
+[10/24 12:34:18      0s] Host:		localhost.localdomain (x86_64 w/Linux 3.10.0-957.5.1.el7.x86_64) (1core*2cpus*Westmere E56xx/L56xx/X56xx (Nehalem-C) 4096KB)
+[10/24 12:34:18      0s] OS:		CentOS Linux release 7.6.1810 (Core) 
+[10/24 12:34:18      0s] 
+[10/24 12:34:18      0s] License:
+[10/24 12:34:19      0s] 		invs	Innovus Implementation System	17.1	checkout succeeded
+[10/24 12:34:19      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[10/24 12:35:25     21s] @(#)CDS: Innovus v17.11-s080_1 (64bit) 08/04/2017 11:13 (Linux 2.6.18-194.el5)
+[10/24 12:35:25     21s] @(#)CDS: NanoRoute 17.11-s080_1 NR170721-2155/17_11-UB (database version 2.30, 390.7.1) {superthreading v1.44}
+[10/24 12:35:25     21s] @(#)CDS: AAE 17.11-s034 (64bit) 08/04/2017 (Linux 2.6.18-194.el5)
+[10/24 12:35:25     21s] @(#)CDS: CTE 17.11-s053_1 () Aug  1 2017 23:31:41 ( )
+[10/24 12:35:25     21s] @(#)CDS: SYNTECH 17.11-s012_1 () Jul 21 2017 02:29:12 ( )
+[10/24 12:35:25     21s] @(#)CDS: CPE v17.11-s095
+[10/24 12:35:25     21s] @(#)CDS: IQRC/TQRC 16.1.1-s215 (64bit) Thu Jul  6 20:18:10 PDT 2017 (Linux 2.6.18-194.el5)
+[10/24 12:35:25     21s] @(#)CDS: OA 22.50-p063 Fri Feb  3 19:45:13 2017
+[10/24 12:35:25     21s] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[10/24 12:35:25     21s] @(#)CDS: RCDB 11.10
+[10/24 12:35:25     21s] --- Running on localhost.localdomain (x86_64 w/Linux 3.10.0-957.5.1.el7.x86_64) (1core*2cpus*Westmere E56xx/L56xx/X56xx (Nehalem-C) 4096KB) ---
+[10/24 12:35:25     21s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_2320_localhost.localdomain_isa04_2021_2022_TYDETp.
+
+[10/24 12:35:25     21s] Change the soft stacksize limit to 0.2%RAM (31 mbytes). Set global soft_stack_size_limit to change the value.
+[10/24 12:35:30     22s] 
+[10/24 12:35:30     22s] **INFO:  MMMC transition support version v31-84 
+[10/24 12:35:30     22s] 
+[10/24 12:35:30     22s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[10/24 12:35:30     22s] <CMD> suppressMessage ENCEXT-2799
+[10/24 12:35:31     22s] <CMD> getDrawView
+[10/24 12:35:31     22s] <CMD> loadWorkspace -name Physical
+[10/24 12:35:32     22s] <CMD> win
+[10/24 12:37:59     28s] **ERROR: can't read "IIR_no_resynth": no such variable
+[10/24 12:40:41     35s] **ERROR: can't read "IIR_no_resynth": no such variable
+[10/24 12:40:59     35s] **ERROR: can't read "IIR_no_resynth": no such variable
+[10/24 12:41:46     37s] <CMD> set init_design_netlisttype verilog
+[10/24 12:41:46     37s] <CMD> set init_design_settop 1
+[10/24 12:41:49     38s] **ERROR: can't read "TopLevelDesign": no such variable
+[10/24 12:41:58     38s] <CMD> set init_design_netlisttype verilog
+[10/24 12:41:58     38s] <CMD> set init_design_settop 1
+[10/24 12:42:02     38s] **ERROR: can't read "TopLevelDesign": no such variable
+[10/24 12:42:27     39s] <CMD> set init_design_netlisttype verilog
+[10/24 12:42:27     39s] <CMD> set init_design_settop 1
+[10/24 12:42:27     39s] <CMD> set init_top_cell IIR_no_resynth
+[10/24 12:42:27     39s] <CMD> set init_verilog ../netlist/backannotation/synopsys/IIR_no_resynth.v
+[10/24 12:42:27     39s] <CMD> set init_lef_file /software/dk/nangate45/lef/NangateOpenCellLibrary.lef
+[10/24 12:42:27     39s] <CMD> set init_gnd_net VSS
+[10/24 12:42:27     39s] <CMD> set init_pwr_net VDD
+[10/24 12:42:51     41s] <CMD> set init_mmmc_file mmm_design.tcl
+[10/24 12:42:51     41s] <CMD> init_design
+[10/24 12:42:51     41s] #% Begin Load MMMC data ... (date=10/24 12:42:51, mem=416.0M)
+[10/24 12:42:51     41s] #% End Load MMMC data ... (date=10/24 12:42:51, total cpu=0:00:00.0, real=0:00:00.0, peak res=416.1M, current mem=416.1M)
+[10/24 12:42:51     41s] 
+[10/24 12:42:51     41s] Loading LEF file /software/dk/nangate45/lef/NangateOpenCellLibrary.lef ...
+[10/24 12:42:51     41s] Set DBUPerIGU to M2 pitch 380.
+[10/24 12:42:51     41s] 
+[10/24 12:42:51     41s] viaInitial starts at Sun Oct 24 12:42:51 2021
+viaInitial ends at Sun Oct 24 12:42:51 2021
+Loading view definition file from mmm_design.tcl
+[10/24 12:42:51     41s] Reading MY_LIBSET timing library '/software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib' ...
+[10/24 12:42:52     41s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X1' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+[10/24 12:42:52     41s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X2' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+[10/24 12:42:52     41s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X4' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+[10/24 12:42:52     41s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X1' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+[10/24 12:42:52     41s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X2' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+[10/24 12:42:52     41s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X4' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+[10/24 12:42:52     41s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X1' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+[10/24 12:42:52     41s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X2' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+[10/24 12:42:52     41s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X4' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+[10/24 12:42:52     41s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X1' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+[10/24 12:42:52     41s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X2' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+[10/24 12:42:52     41s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X4' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+[10/24 12:42:52     41s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X1' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+[10/24 12:42:52     41s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X2' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+[10/24 12:42:52     41s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X4' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+[10/24 12:42:52     41s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X1' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+[10/24 12:42:52     41s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X2' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+[10/24 12:42:52     41s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X4' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+[10/24 12:42:52     41s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI221_X1' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+[10/24 12:42:52     41s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI221_X2' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+[10/24 12:42:53     41s] Message <TECHLIB-436> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+[10/24 12:43:00     43s] Read 134 cells in library 'NangateOpenCellLibrary' 
+[10/24 12:43:00     43s] *** End library_loading (cpu=0.04min, real=0.15min, mem=20.9M, fe_cpu=0.72min, fe_real=8.70min, fe_mem=532.6M) ***
+[10/24 12:43:00     43s] #% Begin Load netlist data ... (date=10/24 12:43:00, mem=510.5M)
+[10/24 12:43:00     43s] *** Begin netlist parsing (mem=532.6M) ***
+[10/24 12:43:00     43s] Created 134 new cells from 1 timing libraries.
+[10/24 12:43:00     43s] Reading netlist ...
+[10/24 12:43:00     43s] Backslashed names will retain backslash and a trailing blank character.
+[10/24 12:43:00     43s] Reading verilog netlist '../netlist/backannotation/synopsys/IIR_no_resynth.v'
+[10/24 12:43:00     43s] 
+[10/24 12:43:00     43s] *** Memory Usage v#1 (Current mem = 532.551M, initial mem = 187.688M) ***
+[10/24 12:43:00     43s] *** End netlist parsing (cpu=0:00:00.1, real=0:00:00.0, mem=532.6M) ***
+[10/24 12:43:00     43s] #% End Load netlist data ... (date=10/24 12:43:00, total cpu=0:00:00.1, real=0:00:00.0, peak res=510.5M, current mem=439.9M)
+[10/24 12:43:00     43s] **ERROR: (IMPSYC-300):	Cell IIR_no_resynth not found.
+**ERROR: (IMPVL-904):	Can't set top cell to "IIR_no_resynth" because it does not exist.  Exiting!
+[10/24 12:43:05     43s] 
+[10/24 12:43:05     43s] *** Memory Usage v#1 (Current mem = 533.559M, initial mem = 187.688M) ***
+[10/24 12:43:05     43s] 
+[10/24 12:43:05     43s] *** Summary of all messages that are not suppressed in this session:
+[10/24 12:43:05     43s] Severity  ID               Count  Summary                                  
+[10/24 12:43:05     43s] ERROR     IMPSYC-300           1  Cell %s not found.                       
+[10/24 12:43:05     43s] ERROR     IMPVL-904            2  Can't set top cell to "%s" because it do...
+[10/24 12:43:05     43s] WARNING   TECHLIB-436         20  Attribute '%s' on '%s' pin '%s' of cell ...
+[10/24 12:43:05     43s] *** Message Summary: 20 warning(s), 3 error(s)
+[10/24 12:43:05     43s] 
+[10/24 12:43:05     43s] --- Ending "Innovus" (totcpu=0:00:43.8, real=0:08:47, mem=533.6M) ---
