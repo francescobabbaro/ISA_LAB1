@@ -5,7 +5,7 @@ Report : power
         -analysis_effort low
 Design : IIR_1lookahead
 Version: O-2018.06-SP4
-Date   : Thu Oct 28 10:21:06 2021
+Date   : Thu Oct 28 19:30:40 2021
 ****************************************
 
 
