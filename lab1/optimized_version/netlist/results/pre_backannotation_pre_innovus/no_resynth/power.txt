@@ -1,3 +1,4 @@
+Loading db file '/software/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm_nowlm.db'
 Information: Updating design information... (UID-85)
 Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
 Warning: Design has unannotated primary inputs. (PWR-414)
@@ -8,7 +9,7 @@ Report : power
         -analysis_effort low
 Design : IIR_1lookahead
 Version: O-2018.06-SP4
-Date   : Sat Oct 23 20:42:36 2021
+Date   : Thu Oct 28 09:23:48 2021
 ****************************************
 
 
@@ -34,12 +35,12 @@ Power-specific unit information :
     Leakage Power Units = 1nW
 
 
-  Cell Internal Power  = 446.2178 uW   (71%)
-  Net Switching Power  = 177.9407 uW   (29%)
+  Cell Internal Power  = 447.2299 uW   (71%)
+  Net Switching Power  = 179.0156 uW   (29%)
                          ---------
-Total Dynamic Power    = 624.1584 uW  (100%)
+Total Dynamic Power    = 626.2455 uW  (100%)
 
-Cell Leakage Power     =  94.7530 uW
+Cell Leakage Power     =  95.2227 uW
 
 
                  Internal         Switching           Leakage            Total
@@ -49,9 +50,9 @@ io_pad             0.0000            0.0000            0.0000            0.0000 
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
 clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
-register         304.9380           21.1065        1.5021e+04          341.0660  (  47.44%)
+register         304.8098           20.7866        1.4948e+04          340.5445  (  47.20%)
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational    141.2797          156.8340        7.9732e+04          377.8453  (  52.56%)
+combinational    142.4200          158.2292        8.0275e+04          380.9232  (  52.80%)
 --------------------------------------------------------------------------------------------------
-Total            446.2177 uW       177.9406 uW     9.4753e+04 nW       718.9114 uW
+Total            447.2299 uW       179.0157 uW     9.5223e+04 nW       721.4677 uW
 1

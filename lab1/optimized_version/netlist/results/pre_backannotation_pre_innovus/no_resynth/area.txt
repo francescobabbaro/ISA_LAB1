@@ -3,7 +3,7 @@
 Report : area
 Design : IIR_1lookahead
 Version: O-2018.06-SP4
-Date   : Sat Oct 23 20:42:36 2021
+Date   : Thu Oct 28 09:23:48 2021
 ****************************************
 
 Library(s) Used:
@@ -11,21 +11,21 @@ Library(s) Used:
     NangateOpenCellLibrary (File: /software/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm_nowlm.db)
 
 Number of ports:                         1280
-Number of nets:                          4141
-Number of cells:                         2786
-Number of combinational cells:           2558
+Number of nets:                          4131
+Number of cells:                         2781
+Number of combinational cells:           2553
 Number of sequential cells:               172
 Number of macros/black boxes:               0
-Number of buf/inv:                        557
+Number of buf/inv:                        554
 Number of references:                      12
 
-Combinational area:               3291.217994
-Buf/Inv area:                      365.218000
-Noncombinational area:             924.616031
+Combinational area:               3305.315995
+Buf/Inv area:                      362.558000
+Noncombinational area:             923.552031
 Macro/Black Box area:                0.000000
 Net Interconnect area:      undefined  (Wire load has zero net area)
 
-Total cell area:                  4215.834024
+Total cell area:                  4228.868026
 Total area:                 undefined
 
 Hierarchical area distribution
@@ -36,53 +36,53 @@ Hierarchical area distribution
 Hierarchical cell                 Absolute   Percent  Combi-     Noncombi-  Black-
                                   Total      Total    national   national   boxes   Design
 --------------------------------  ---------  -------  ---------  ---------  ------  ----------------------------------
-IIR_1lookahead                    4215.8340    100.0     0.0000     0.0000  0.0000  IIR_1lookahead
-i_DP                              3789.4360     89.9    14.0980     0.0000  0.0000  datapath_IIR_1lookahead
+IIR_1lookahead                    4228.8680    100.0     0.0000     0.0000  0.0000  IIR_1lookahead
+i_DP                              3800.8740     89.9    10.3740     0.0000  0.0000  datapath_IIR_1lookahead
 i_DP/i_ADDER_0                     127.1480      3.0     0.0000     0.0000  0.0000  ADDER3_NBIT_N10
 i_DP/i_ADDER_0/add_0_root_add_0_root_add_29_2
                                     63.0420      1.5    63.0420     0.0000  0.0000  ADDER3_NBIT_N10_DW01_add_5
 i_DP/i_ADDER_0/add_1_root_add_0_root_add_29_2
                                     64.1060      1.5    64.1060     0.0000  0.0000  ADDER3_NBIT_N10_DW01_add_4
-i_DP/i_ADDER_1                      40.1660      1.0     0.0000     0.0000  0.0000  ADDER2_NBIT_N7
-i_DP/i_ADDER_1/add_28               40.1660      1.0    40.1660     0.0000  0.0000  ADDER2_NBIT_N7_DW01_add_1
+i_DP/i_ADDER_1                      40.1660      0.9     0.0000     0.0000  0.0000  ADDER2_NBIT_N7
+i_DP/i_ADDER_1/add_28               40.1660      0.9    40.1660     0.0000  0.0000  ADDER2_NBIT_N7_DW01_add_1
 i_DP/i_ADDER_2                      80.3320      1.9     0.0000     0.0000  0.0000  ADDER3_NBIT_N7
 i_DP/i_ADDER_2/add_0_root_add_0_root_add_29_2
-                                    40.1660      1.0    40.1660     0.0000  0.0000  ADDER3_NBIT_N7_DW01_add_3
+                                    40.1660      0.9    40.1660     0.0000  0.0000  ADDER3_NBIT_N7_DW01_add_3
 i_DP/i_ADDER_2/add_1_root_add_0_root_add_29_2
-                                    40.1660      1.0    40.1660     0.0000  0.0000  ADDER3_NBIT_N7_DW01_add_2
-i_DP/i_MULTIPLIER_B0               493.9620     11.7     0.0000     0.0000  0.0000  MULTIPLIER_NBIT_N10_3
-i_DP/i_MULTIPLIER_B0/mult_28       493.9620     11.7   493.9620     0.0000  0.0000  MULTIPLIER_NBIT_N10_3_DW_mult_tc_1
-i_DP/i_MULTIPLIER_B1               477.2040     11.3     0.0000     0.0000  0.0000  MULTIPLIER_NBIT_N10_2
-i_DP/i_MULTIPLIER_B1/mult_28       477.2040     11.3   477.2040     0.0000  0.0000  MULTIPLIER_NBIT_N10_2_DW_mult_tc_1
-i_DP/i_MULTIPLIER_B2               475.3420     11.3     0.0000     0.0000  0.0000  MULTIPLIER_NBIT_N10_1
-i_DP/i_MULTIPLIER_B2/mult_28       475.3420     11.3   475.3420     0.0000  0.0000  MULTIPLIER_NBIT_N10_1_DW_mult_tc_1
-i_DP/i_MULTIPLIER_C0               453.5300     10.8     0.0000     0.0000  0.0000  MULTIPLIER_NBIT_N9
-i_DP/i_MULTIPLIER_C0/mult_28       453.5300     10.8   453.5300     0.0000  0.0000  MULTIPLIER_NBIT_N9_DW_mult_tc_2
-i_DP/i_MULTIPLIER_C1               504.3360     12.0     0.0000     0.0000  0.0000  MULTIPLIER_NBIT_N10_0
-i_DP/i_MULTIPLIER_C1/mult_28       504.3360     12.0   504.3360     0.0000  0.0000  MULTIPLIER_NBIT_N10_0_DW_mult_tc_1
-i_DP/i_MULTIPLIER_C2               506.7300     12.0     0.0000     0.0000  0.0000  MULTIPLIER_NBIT_N10_4
-i_DP/i_MULTIPLIER_C2/mult_28       506.7300     12.0   506.7300     0.0000  0.0000  MULTIPLIER_NBIT_N10_4_DW_mult_tc_1
-i_DP/i_REG_DEL_1                    79.0020      1.9    25.2700    53.7320  0.0000  reg_en_rst_n_N10
-i_DP/i_REG_MUL_C0                   53.2000      1.3    14.3640    38.8360  0.0000  reg_en_rst_n_N7_0
-i_DP/i_REG_MUL_C1                   55.8600      1.3    18.6200    37.2400  0.0000  reg_en_rst_n_N7_3
-i_DP/i_REG_MUL_C2                  110.9220      2.6     0.0000     0.0000  0.0000  reg_N_level_en_rst_n_M7_N2
-i_DP/i_REG_MUL_C2/r_0               56.9240      1.4    18.0880    38.8360  0.0000  reg_en_rst_n_N7_2
-i_DP/i_REG_MUL_C2/r_1               53.9980      1.3    16.7580    37.2400  0.0000  reg_en_rst_n_N7_1
-i_DP/i_REG_PIPE0_B0                 55.0620      1.3     1.8620    53.2000  0.0000  REG_RST_N_N10_0
-i_DP/i_REG_PIPE0_B1                 54.5300      1.3     1.3300    53.2000  0.0000  REG_RST_N_N10_2
-i_DP/i_REG_PIPE0_B2                 53.7320      1.3     0.0000    53.7320  0.0000  REG_RST_N_N10_1
-i_DP/i_REG_PIPE1_B0                 38.3040      0.9     0.0000    38.3040  0.0000  REG_RST_N_N7_0
+                                    40.1660      0.9    40.1660     0.0000  0.0000  ADDER3_NBIT_N7_DW01_add_2
+i_DP/i_MULTIPLIER_B0               487.5780     11.5     0.0000     0.0000  0.0000  MULTIPLIER_NBIT_N10_3
+i_DP/i_MULTIPLIER_B0/mult_28       487.5780     11.5   487.5780     0.0000  0.0000  MULTIPLIER_NBIT_N10_3_DW_mult_tc_1
+i_DP/i_MULTIPLIER_B1               488.6420     11.6     0.0000     0.0000  0.0000  MULTIPLIER_NBIT_N10_2
+i_DP/i_MULTIPLIER_B1/mult_28       488.6420     11.6   488.6420     0.0000  0.0000  MULTIPLIER_NBIT_N10_2_DW_mult_tc_1
+i_DP/i_MULTIPLIER_B2               489.7060     11.6     0.0000     0.0000  0.0000  MULTIPLIER_NBIT_N10_1
+i_DP/i_MULTIPLIER_B2/mult_28       489.7060     11.6   489.7060     0.0000  0.0000  MULTIPLIER_NBIT_N10_1_DW_mult_tc_1
+i_DP/i_MULTIPLIER_C0               441.8260     10.4     0.0000     0.0000  0.0000  MULTIPLIER_NBIT_N9
+i_DP/i_MULTIPLIER_C0/mult_28       441.8260     10.4   441.8260     0.0000  0.0000  MULTIPLIER_NBIT_N9_DW_mult_tc_2
+i_DP/i_MULTIPLIER_C1               513.1140     12.1     0.0000     0.0000  0.0000  MULTIPLIER_NBIT_N10_0
+i_DP/i_MULTIPLIER_C1/mult_28       513.1140     12.1   513.1140     0.0000  0.0000  MULTIPLIER_NBIT_N10_0_DW_mult_tc_1
+i_DP/i_MULTIPLIER_C2               509.1240     12.0     0.0000     0.0000  0.0000  MULTIPLIER_NBIT_N10_4
+i_DP/i_MULTIPLIER_C2/mult_28       509.1240     12.0   509.1240     0.0000  0.0000  MULTIPLIER_NBIT_N10_4_DW_mult_tc_1
+i_DP/i_REG_DEL_1                    77.9380      1.8    24.7380    53.2000  0.0000  reg_en_rst_n_N10
+i_DP/i_REG_MUL_C0                   52.1360      1.2    14.3640    37.7720  0.0000  reg_en_rst_n_N7_0
+i_DP/i_REG_MUL_C1                   53.4660      1.3    15.6940    37.7720  0.0000  reg_en_rst_n_N7_3
+i_DP/i_REG_MUL_C2                  110.3900      2.6     0.0000     0.0000  0.0000  reg_N_level_en_rst_n_M7_N2
+i_DP/i_REG_MUL_C2/r_0               56.9240      1.3    18.0880    38.8360  0.0000  reg_en_rst_n_N7_2
+i_DP/i_REG_MUL_C2/r_1               53.4660      1.3    16.2260    37.2400  0.0000  reg_en_rst_n_N7_1
+i_DP/i_REG_PIPE0_B0                 55.3280      1.3     2.1280    53.2000  0.0000  REG_RST_N_N10_0
+i_DP/i_REG_PIPE0_B1                 54.7960      1.3     1.5960    53.2000  0.0000  REG_RST_N_N10_2
+i_DP/i_REG_PIPE0_B2                 54.5300      1.3     1.3300    53.2000  0.0000  REG_RST_N_N10_1
+i_DP/i_REG_PIPE1_B0                 38.8360      0.9     0.0000    38.8360  0.0000  REG_RST_N_N7_0
 i_DP/i_REG_PIPE1_B1                 39.3680      0.9     0.0000    39.3680  0.0000  REG_RST_N_N7_3
-i_DP/i_REG_PIPE1_B2                 76.6080      1.8     0.0000     0.0000  0.0000  reg_N_level_rst_n_M7_N2
-i_DP/i_REG_PIPE1_B2/r_0             39.3680      0.9     0.0000    39.3680  0.0000  REG_RST_N_N7_2
+i_DP/i_REG_PIPE1_B2                 76.0760      1.8     0.0000     0.0000  0.0000  reg_N_level_rst_n_M7_N2
+i_DP/i_REG_PIPE1_B2/r_0             38.8360      0.9     0.0000    38.8360  0.0000  REG_RST_N_N7_2
 i_DP/i_REG_PIPE1_B2/r_1             37.2400      0.9     0.0000    37.2400  0.0000  REG_RST_N_N7_1
 i_input_register_B0                 47.8800      1.1     0.0000    47.8800  0.0000  REG_RST_N_N9_4
 i_input_register_B1                 47.8800      1.1     0.0000    47.8800  0.0000  REG_RST_N_N9_3
-i_input_register_B2                 47.8800      1.1     0.0000    47.8800  0.0000  REG_RST_N_N9_2
+i_input_register_B2                 48.4120      1.1     0.0000    48.4120  0.0000  REG_RST_N_N9_2
 i_input_register_C0                 47.8800      1.1     0.0000    47.8800  0.0000  REG_RST_N_N9_0
 i_input_register_C1                 47.8800      1.1     0.0000    47.8800  0.0000  REG_RST_N_N9_6
 i_input_register_C2                 47.8800      1.1     0.0000    47.8800  0.0000  REG_RST_N_N9_5
-i_input_register_DIN                69.9580      1.7    22.0780    47.8800  0.0000  reg_en_rst_n_N9
+i_input_register_DIN                71.0220      1.7    23.1420    47.8800  0.0000  reg_en_rst_n_N9
 i_input_register_VIN                 5.3200      0.1     0.0000     5.3200  0.0000  flipflop_rst_n_0
 i_output_register_DOUT              47.8800      1.1     0.0000    47.8800  0.0000  REG_RST_N_N9_1
 i_output_register_VOUT               5.3200      0.1     0.0000     5.3200  0.0000  flipflop_rst_n_3
@@ -90,6 +90,6 @@ i_pipe_register_VOUT                10.6400      0.3     0.0000     0.0000  0.00
 i_pipe_register_VOUT/FD_0            5.3200      0.1     0.0000     5.3200  0.0000  flipflop_rst_n_2
 i_pipe_register_VOUT/FD_1            5.3200      0.1     0.0000     5.3200  0.0000  flipflop_rst_n_1
 --------------------------------  ---------  -------  ---------  ---------  ------  ----------------------------------
-Total                                                 3291.2180   924.6160  0.0000
+Total                                                 3305.3160   923.5520  0.0000
 
 1

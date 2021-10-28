@@ -9,7 +9,7 @@ analyze -f vhdl -lib WORK ../src/adder2_Nbit.vhd
 analyze -f vhdl -lib WORK ../src/adder3_Nbit.vhd
 analyze -f vhdl -lib WORK ../src/multiplier_Nbit.vhd
 analyze -f vhdl -lib WORK ../src/datapath_iir_1lookahead.vhd
-analyze -f vhdl -lib WORK ../src/iir_1lookahead.vhd
+analyze -f vhdl -lib WORK ../src/IIR_1lookahead.vhd
 
 set power_preserve_rtl_hier_names true
 
@@ -19,10 +19,11 @@ elaborate IIR_1lookahead -arch structural -lib WORK
 # clock creation
 create_clock -name MY_CLK -period 0 {CLK}
 set_dont_touch_network MY_CLK
-#set_clock_uncertainty 0.07 [get_clocks MY_CLK]
-#set_input_delay 0.5 -max -clock MY_CLK [remove_from_collection [all_inputs] CLK]
-#set_output_delay 0.5 -max -clock MY_CLK [all_outputs]
-set OLOAD [load_of NangateOpenCellLibrary/BUF_X4/A]
+set_fix_hold [get_clocks MY_CLK]
+set_clock_uncertainty 0.07 [get_clocks MY_CLK]
+set_input_delay 0.5 -max -clock MY_CLK [remove_from_collection [all_inputs] CLK]
+set_output_delay 0.5 -max -clock MY_CLK [all_outputs]
+set OLOAD [load_of NangateOpenCellLibrary/BUF_X2/A]
 set_load $OLOAD [all_outputs]
 
 # compilation

@@ -5,7 +5,7 @@ Report : power
         -analysis_effort low
 Design : IIR_1lookahead
 Version: O-2018.06-SP4
-Date   : Sat Oct 23 20:42:36 2021
+Date   : Thu Oct 28 09:23:48 2021
 ****************************************
 
 
@@ -35,77 +35,77 @@ Power-specific unit information :
                                        Switch   Int      Leak     Total
 Hierarchy                              Power    Power    Power    Power    %
 --------------------------------------------------------------------------------
-IIR_1lookahead                          177.941  446.218 9.48e+04  718.911 100.0
+IIR_1lookahead                          179.016  447.230 9.52e+04  721.468 100.0
   i_output_register_VOUT (flipflop_rst_n_3)
-                                       3.89e-02    1.588   83.319    1.710   0.2
+                                       2.19e-02    1.588   83.319    1.693   0.2
   i_pipe_register_VOUT (flip_flop_N_level_rst_n_N2)
                                        3.36e-02    3.113  167.120    3.313   0.5
     FD_1 (flipflop_rst_n_1)            1.68e-02    1.542   83.471    1.642   0.2
     FD_0 (flipflop_rst_n_2)            1.68e-02    1.571   83.650    1.672   0.2
   i_output_register_DOUT (REG_RST_N_N9_1)
-                                          0.468   16.260  734.540   17.463   2.4
-  i_DP (datapath_IIR_1lookahead)        163.051  311.432 8.78e+04  562.286  78.2
-    i_ADDER_2 (ADDER3_NBIT_N7)            4.151    3.641 2.16e+03    9.954   1.4
+                                          0.264   16.255  734.604   17.254   2.4
+  i_DP (datapath_IIR_1lookahead)        164.196  312.157 8.82e+04  564.559  78.3
+    i_ADDER_2 (ADDER3_NBIT_N7)            4.141    3.631 2.16e+03    9.933   1.4
       add_0_root_add_0_root_add_29_2 (ADDER3_NBIT_N7_DW01_add_3)
-                                          2.094    1.968 1.08e+03    5.141   0.7
+                                          2.088    1.967 1.08e+03    5.134   0.7
       add_1_root_add_0_root_add_29_2 (ADDER3_NBIT_N7_DW01_add_2)
-                                          2.058    1.673 1.08e+03    4.813   0.7
+                                          2.052    1.664 1.08e+03    4.799   0.7
     i_REG_PIPE1_B2 (reg_N_level_rst_n_M7_N2)
-                                          0.545   25.649 1.30e+03   27.490   3.8
-      r_1 (REG_RST_N_N7_1)                0.396   12.400  573.776   13.369   1.9
-      r_0 (REG_RST_N_N7_2)                0.149   13.249  721.819   14.120   2.0
+                                          0.544   25.439 1.26e+03   27.242   3.8
+      r_1 (REG_RST_N_N7_1)                0.395   12.399  573.764   13.368   1.9
+      r_0 (REG_RST_N_N7_2)                0.149   13.039  685.025   13.874   1.9
     i_MULTIPLIER_B2 (MULTIPLIER_NBIT_N10_1)
-                                         20.880   19.620 1.14e+04   51.869   7.2
+                                         21.827   20.449 1.18e+04   54.088   7.5
       mult_28 (MULTIPLIER_NBIT_N10_1_DW_mult_tc_1)
-                                         20.880   19.620 1.14e+04   51.869   7.2
-    i_REG_PIPE0_B2 (REG_RST_N_N10_1)      1.094   17.438  860.447   19.392   2.7
-    i_REG_PIPE1_B1 (REG_RST_N_N7_3)       0.389   13.154  721.962   14.265   2.0
+                                         21.827   20.449 1.18e+04   54.088   7.5
+    i_REG_PIPE0_B2 (REG_RST_N_N10_1)      1.039   17.345  875.883   19.261   2.7
+    i_REG_PIPE1_B1 (REG_RST_N_N7_3)       0.389   13.201  721.933   14.312   2.0
     i_MULTIPLIER_B1 (MULTIPLIER_NBIT_N10_2)
-                                         21.036   19.688 1.15e+04   52.186   7.3
+                                         21.081   20.479 1.18e+04   53.367   7.4
       mult_28 (MULTIPLIER_NBIT_N10_2_DW_mult_tc_1)
-                                         21.036   19.688 1.15e+04   52.186   7.3
-    i_REG_PIPE0_B1 (REG_RST_N_N10_2)      1.143   17.354  875.872   19.373   2.7
-    i_REG_PIPE1_B0 (REG_RST_N_N7_0)       0.458   13.024  651.444   14.134   2.0
+                                         21.081   20.479 1.18e+04   53.367   7.4
+    i_REG_PIPE0_B1 (REG_RST_N_N10_2)      1.704   17.371  893.334   19.969   2.8
+    i_REG_PIPE1_B0 (REG_RST_N_N7_0)       0.459   13.167  688.415   14.314   2.0
     i_MULTIPLIER_B0 (MULTIPLIER_NBIT_N10_3)
-                                         25.244   23.502 1.19e+04   60.620   8.4
+                                         24.738   23.443 1.17e+04   59.839   8.3
       mult_28 (MULTIPLIER_NBIT_N10_3_DW_mult_tc_1)
-                                         25.244   23.502 1.19e+04   60.620   8.4
-    i_REG_PIPE0_B0 (REG_RST_N_N10_0)      1.402   17.307  897.224   19.607   2.7
-    i_ADDER_1 (ADDER2_NBIT_N7)            1.771    1.410 1.08e+03    4.266   0.6
+                                         24.738   23.443 1.17e+04   59.839   8.3
+    i_REG_PIPE0_B0 (REG_RST_N_N10_0)      1.161   17.317  897.268   19.375   2.7
+    i_ADDER_1 (ADDER2_NBIT_N7)            1.771    1.411 1.08e+03    4.267   0.6
       add_28 (ADDER2_NBIT_N7_DW01_add_1)
-                                          1.771    1.410 1.08e+03    4.266   0.6
+                                          1.771    1.411 1.08e+03    4.267   0.6
     i_REG_MUL_C2 (reg_N_level_en_rst_n_M7_N2)
-                                          1.651   26.397 2.06e+03   30.109   4.2
-      r_1 (reg_en_rst_n_N7_1)             0.711   12.892  915.308   14.519   2.0
-      r_0 (reg_en_rst_n_N7_2)             0.939   13.505 1.15e+03   15.590   2.2
+                                          1.587   26.296 2.02e+03   29.905   4.1
+      r_1 (reg_en_rst_n_N7_1)             0.689   12.872  897.585   14.458   2.0
+      r_0 (reg_en_rst_n_N7_2)             0.898   13.425 1.12e+03   15.447   2.1
     i_MULTIPLIER_C2 (MULTIPLIER_NBIT_N10_4)
-                                         24.859   23.483 1.21e+04   60.422   8.4
+                                         25.437   22.823 1.23e+04   60.560   8.4
       mult_28 (MULTIPLIER_NBIT_N10_4_DW_mult_tc_1)
-                                         24.859   23.483 1.21e+04   60.422   8.4
-    i_REG_MUL_C1 (reg_en_rst_n_N7_3)      1.162   13.023 1.03e+03   15.216   2.1
+                                         25.437   22.823 1.23e+04   60.560   8.4
+    i_REG_MUL_C1 (reg_en_rst_n_N7_3)      1.179   13.172  995.372   15.346   2.1
     i_MULTIPLIER_C1 (MULTIPLIER_NBIT_N10_0)
-                                         25.568   22.654 1.24e+04   60.602   8.4
+                                         25.598   23.358 1.25e+04   61.446   8.5
       mult_28 (MULTIPLIER_NBIT_N10_0_DW_mult_tc_1)
-                                         25.568   22.654 1.24e+04   60.602   8.4
-    i_REG_DEL_1 (reg_en_rst_n_N10)        2.868   18.637 1.41e+03   22.916   3.2
-    i_ADDER_0 (ADDER3_NBIT_N10)           5.458    4.437 3.28e+03   13.171   1.8
+                                         25.598   23.358 1.25e+04   61.446   8.5
+    i_REG_DEL_1 (reg_en_rst_n_N10)        2.895   18.489 1.36e+03   22.741   3.2
+    i_ADDER_0 (ADDER3_NBIT_N10)           5.457    4.436 3.28e+03   13.169   1.8
       add_1_root_add_0_root_add_29_2 (ADDER3_NBIT_N10_DW01_add_4)
-                                          2.558    1.990 1.66e+03    6.213   0.9
+                                          2.559    1.991 1.66e+03    6.214   0.9
       add_0_root_add_0_root_add_29_2 (ADDER3_NBIT_N10_DW01_add_5)
-                                          2.900    2.447 1.61e+03    6.958   1.0
-    i_REG_MUL_C0 (reg_en_rst_n_N7_0)      1.183   12.888 1.06e+03   15.127   2.1
+                                          2.898    2.445 1.61e+03    6.954   1.0
+    i_REG_MUL_C0 (reg_en_rst_n_N7_0)      1.183   12.625  982.042   14.791   2.1
     i_MULTIPLIER_C0 (MULTIPLIER_NBIT_N9)
-                                         17.748   17.375 1.10e+04   46.122   6.4
+                                         17.668   17.061 1.07e+04   45.436   6.3
       mult_28 (MULTIPLIER_NBIT_N9_DW_mult_tc_2)
-                                         17.748   17.375 1.10e+04   46.122   6.4
-  i_input_register_B2 (REG_RST_N_N9_2)    2.192   16.018  771.080   18.980   2.6
-  i_input_register_B1 (REG_RST_N_N9_3)    2.175   16.080  771.035   19.026   2.6
-  i_input_register_B0 (REG_RST_N_N9_4)    2.174   15.879  771.152   18.824   2.6
-  i_input_register_C2 (REG_RST_N_N9_5)    2.204   15.866  771.162   18.841   2.6
-  i_input_register_C1 (REG_RST_N_N9_6)    2.167   16.031  771.058   18.969   2.6
-  i_input_register_C0 (REG_RST_N_N9_0)    1.973   15.985  771.085   18.729   2.6
+                                         17.668   17.061 1.07e+04   45.436   6.3
+  i_input_register_B2 (REG_RST_N_N9_2)    2.169   16.275  808.811   19.252   2.7
+  i_input_register_B1 (REG_RST_N_N9_3)    2.135   16.080  771.035   18.986   2.6
+  i_input_register_B0 (REG_RST_N_N9_4)    2.175   15.879  771.152   18.825   2.6
+  i_input_register_C2 (REG_RST_N_N9_5)    2.210   15.866  771.162   18.847   2.6
+  i_input_register_C1 (REG_RST_N_N9_6)    2.199   16.031  771.058   19.001   2.6
+  i_input_register_C0 (REG_RST_N_N9_0)    1.925   15.985  771.085   18.681   2.6
   i_input_register_VIN (flipflop_rst_n_0)
                                        1.88e-02    1.797   85.662    1.902   0.3
   i_input_register_DIN (reg_en_rst_n_N9)
-                                          1.446   16.169 1.25e+03   18.867   2.6
+                                          1.668   16.206 1.28e+03   19.155   2.7
 1

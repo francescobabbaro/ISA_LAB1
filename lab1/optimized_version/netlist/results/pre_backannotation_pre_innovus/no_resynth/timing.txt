@@ -1,3 +1,4 @@
+Warning: There are infeasible paths detected in your design that were ignored during optimization. Please run 'report_timing -attributes' and/or 'create_qor_snapshot/query_qor_snapshot -infeasible_paths' to identify these paths.  (OPT-1721)
  
 ****************************************
 Report : timing
@@ -6,15 +7,15 @@ Report : timing
         -max_paths 1
 Design : IIR_1lookahead
 Version: O-2018.06-SP4
-Date   : Sat Oct 23 20:42:36 2021
+Date   : Thu Oct 28 09:23:48 2021
 ****************************************
 
 Operating Conditions: typical   Library: NangateOpenCellLibrary
 Wire Load Model Mode: top
 
-  Startpoint: i_DP/i_REG_DEL_1/Q_reg[5]
+  Startpoint: i_DP/i_REG_DEL_1/Q_reg[6]
               (rising edge-triggered flip-flop clocked by MY_CLK)
-  Endpoint: i_DP/i_REG_MUL_C2/r_0/Q_reg[1]
+  Endpoint: i_DP/i_REG_MUL_C1/Q_reg[3]
             (rising edge-triggered flip-flop clocked by MY_CLK)
   Path Group: MY_CLK
   Path Type: max
@@ -27,48 +28,48 @@ Wire Load Model Mode: top
   --------------------------------------------------------------------------
   clock MY_CLK (rise edge)                                0.00       0.00
   clock network delay (ideal)                             0.00       0.00
-  i_DP/i_REG_DEL_1/Q_reg[5]/CK (DFFR_X1)                  0.00       0.00 r
-  i_DP/i_REG_DEL_1/Q_reg[5]/QN (DFFR_X1)                  0.07       0.07 r
-  i_DP/i_REG_DEL_1/U14/ZN (INV_X1)                        0.03       0.09 f
-  i_DP/i_REG_DEL_1/Q[5] (reg_en_rst_n_N10)                0.00       0.09 f
-  i_DP/i_MULTIPLIER_C2/MULTIPLIER_IN_A[5] (MULTIPLIER_NBIT_N10_4)
-                                                          0.00       0.09 f
-  i_DP/i_MULTIPLIER_C2/mult_28/a[5] (MULTIPLIER_NBIT_N10_4_DW_mult_tc_1)
-                                                          0.00       0.09 f
-  i_DP/i_MULTIPLIER_C2/mult_28/U605/ZN (INV_X1)           0.04       0.14 r
-  i_DP/i_MULTIPLIER_C2/mult_28/U580/ZN (XNOR2_X1)         0.07       0.21 r
-  i_DP/i_MULTIPLIER_C2/mult_28/U453/ZN (INV_X1)           0.03       0.24 f
-  i_DP/i_MULTIPLIER_C2/mult_28/U468/ZN (NAND2_X1)         0.04       0.28 r
-  i_DP/i_MULTIPLIER_C2/mult_28/U700/ZN (OAI22_X1)         0.04       0.32 f
-  i_DP/i_MULTIPLIER_C2/mult_28/U181/CO (FA_X1)            0.10       0.42 f
-  i_DP/i_MULTIPLIER_C2/mult_28/U175/S (FA_X1)             0.13       0.56 r
-  i_DP/i_MULTIPLIER_C2/mult_28/U174/S (FA_X1)             0.12       0.67 f
-  i_DP/i_MULTIPLIER_C2/mult_28/U677/ZN (NAND2_X1)         0.04       0.71 r
-  i_DP/i_MULTIPLIER_C2/mult_28/U676/ZN (OAI21_X1)         0.04       0.75 f
-  i_DP/i_MULTIPLIER_C2/mult_28/U693/ZN (AOI21_X1)         0.06       0.81 r
-  i_DP/i_MULTIPLIER_C2/mult_28/U556/ZN (INV_X1)           0.03       0.84 f
-  i_DP/i_MULTIPLIER_C2/mult_28/U435/Z (BUF_X1)            0.04       0.88 f
-  i_DP/i_MULTIPLIER_C2/mult_28/U554/ZN (XNOR2_X1)         0.05       0.94 f
-  i_DP/i_MULTIPLIER_C2/mult_28/product[11] (MULTIPLIER_NBIT_N10_4_DW_mult_tc_1)
-                                                          0.00       0.94 f
-  i_DP/i_MULTIPLIER_C2/MULTIPLIER_OUT_P[11] (MULTIPLIER_NBIT_N10_4)
-                                                          0.00       0.94 f
-  i_DP/i_REG_MUL_C2/D[1] (reg_N_level_en_rst_n_M7_N2)     0.00       0.94 f
-  i_DP/i_REG_MUL_C2/r_0/D[1] (reg_en_rst_n_N7_2)          0.00       0.94 f
-  i_DP/i_REG_MUL_C2/r_0/U12/Z (MUX2_X1)                   0.06       1.00 f
-  i_DP/i_REG_MUL_C2/r_0/Q_reg[1]/D (DFFR_X1)              0.01       1.01 f
-  data arrival time                                                  1.01
+  i_DP/i_REG_DEL_1/Q_reg[6]/CK (DFFR_X1)                  0.00       0.00 r
+  i_DP/i_REG_DEL_1/Q_reg[6]/Q (DFFR_X1)                   0.14       0.14 r
+  i_DP/i_REG_DEL_1/Q[6] (reg_en_rst_n_N10)                0.00       0.14 r
+  i_DP/i_MULTIPLIER_C1/MULTIPLIER_IN_A[6] (MULTIPLIER_NBIT_N10_0)
+                                                          0.00       0.14 r
+  i_DP/i_MULTIPLIER_C1/mult_28/a[6] (MULTIPLIER_NBIT_N10_0_DW_mult_tc_1)
+                                                          0.00       0.14 r
+  i_DP/i_MULTIPLIER_C1/mult_28/U604/ZN (XNOR2_X1)         0.06       0.20 f
+  i_DP/i_MULTIPLIER_C1/mult_28/U447/Z (BUF_X1)            0.05       0.25 f
+  i_DP/i_MULTIPLIER_C1/mult_28/U460/ZN (NAND2_X1)         0.04       0.29 r
+  i_DP/i_MULTIPLIER_C1/mult_28/U457/ZN (OR2_X1)           0.03       0.32 r
+  i_DP/i_MULTIPLIER_C1/mult_28/U459/ZN (NAND2_X1)         0.03       0.35 f
+  i_DP/i_MULTIPLIER_C1/mult_28/U181/CO (FA_X1)            0.10       0.45 f
+  i_DP/i_MULTIPLIER_C1/mult_28/U175/S (FA_X1)             0.13       0.58 r
+  i_DP/i_MULTIPLIER_C1/mult_28/U174/S (FA_X1)             0.12       0.70 f
+  i_DP/i_MULTIPLIER_C1/mult_28/U574/ZN (NAND2_X1)         0.04       0.74 r
+  i_DP/i_MULTIPLIER_C1/mult_28/U640/ZN (OAI21_X1)         0.04       0.78 f
+  i_DP/i_MULTIPLIER_C1/mult_28/U481/ZN (AOI21_X1)         0.07       0.85 r
+  i_DP/i_MULTIPLIER_C1/mult_28/U480/ZN (INV_X1)           0.03       0.88 f
+  i_DP/i_MULTIPLIER_C1/mult_28/U718/ZN (AOI21_X1)         0.05       0.92 r
+  i_DP/i_MULTIPLIER_C1/mult_28/U541/ZN (XNOR2_X1)         0.06       0.98 r
+  i_DP/i_MULTIPLIER_C1/mult_28/product[13] (MULTIPLIER_NBIT_N10_0_DW_mult_tc_1)
+                                                          0.00       0.98 r
+  i_DP/i_MULTIPLIER_C1/MULTIPLIER_OUT_P[13] (MULTIPLIER_NBIT_N10_0)
+                                                          0.00       0.98 r
+  i_DP/i_REG_MUL_C1/D[3] (reg_en_rst_n_N7_3)              0.00       0.98 r
+  i_DP/i_REG_MUL_C1/U10/ZN (NAND2_X1)                     0.03       1.01 f
+  i_DP/i_REG_MUL_C1/U4/ZN (NAND2_X1)                      0.03       1.04 r
+  i_DP/i_REG_MUL_C1/Q_reg[3]/D (DFFR_X2)                  0.01       1.05 r
+  data arrival time                                                  1.05
 
   clock MY_CLK (rise edge)                                4.20       4.20
   clock network delay (ideal)                             0.00       4.20
-  i_DP/i_REG_MUL_C2/r_0/Q_reg[1]/CK (DFFR_X1)             0.00       4.20 r
-  library setup time                                     -0.04       4.16
-  data required time                                                 4.16
+  clock uncertainty                                      -0.07       4.13
+  i_DP/i_REG_MUL_C1/Q_reg[3]/CK (DFFR_X2)                 0.00       4.13 r
+  library setup time                                     -0.03       4.10
+  data required time                                                 4.10
   --------------------------------------------------------------------------
-  data required time                                                 4.16
-  data arrival time                                                 -1.01
+  data required time                                                 4.10
+  data arrival time                                                 -1.05
   --------------------------------------------------------------------------
-  slack (MET)                                                        3.15
+  slack (MET)                                                        3.05
 
 
 1
