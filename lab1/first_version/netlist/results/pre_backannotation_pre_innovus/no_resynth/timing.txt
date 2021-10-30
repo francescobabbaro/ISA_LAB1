@@ -1,3 +1,4 @@
+Warning: There are infeasible paths detected in your design that were ignored during optimization. Please run 'report_timing -attributes' and/or 'create_qor_snapshot/query_qor_snapshot -infeasible_paths' to identify these paths.  (OPT-1721)
  
 ****************************************
 Report : timing
@@ -6,13 +7,13 @@ Report : timing
         -max_paths 1
 Design : IIR
 Version: O-2018.06-SP4
-Date   : Wed Oct 20 21:21:34 2021
+Date   : Sat Oct 30 20:52:50 2021
 ****************************************
 
 Operating Conditions: typical   Library: NangateOpenCellLibrary
 Wire Load Model Mode: top
 
-  Startpoint: i_DP/i_reg_1/Q_reg[3]
+  Startpoint: i_DP/i_reg_1/Q_reg[5]
               (rising edge-triggered flip-flop clocked by MY_CLK)
   Endpoint: i_output_register_DOUT/Q_reg[8]
             (rising edge-triggered flip-flop clocked by MY_CLK)
@@ -27,94 +28,96 @@ Wire Load Model Mode: top
   --------------------------------------------------------------------------
   clock MY_CLK (rise edge)                                0.00       0.00
   clock network delay (ideal)                             0.00       0.00
-  i_DP/i_reg_1/Q_reg[3]/CK (DFFR_X1)                      0.00       0.00 r
-  i_DP/i_reg_1/Q_reg[3]/QN (DFFR_X1)                      0.06       0.06 f
-  i_DP/i_reg_1/U10/ZN (INV_X1)                            0.04       0.11 r
-  i_DP/i_reg_1/Q[3] (reg_en_rst_n_N10_1)                  0.00       0.11 r
-  i_DP/i_MULTIPLIER_A2/MULTIPLIER_IN_A[3] (MULTIPLIER_NBIT_N10_4)
-                                                          0.00       0.11 r
-  i_DP/i_MULTIPLIER_A2/mult_28/a[3] (MULTIPLIER_NBIT_N10_4_DW_mult_tc_2)
-                                                          0.00       0.11 r
-  i_DP/i_MULTIPLIER_A2/mult_28/U556/ZN (XNOR2_X1)         0.07       0.18 r
-  i_DP/i_MULTIPLIER_A2/mult_28/U402/Z (BUF_X2)            0.06       0.24 r
-  i_DP/i_MULTIPLIER_A2/mult_28/U681/ZN (OAI22_X1)         0.05       0.29 f
-  i_DP/i_MULTIPLIER_A2/mult_28/U164/CO (FA_X1)            0.10       0.40 f
-  i_DP/i_MULTIPLIER_A2/mult_28/U158/S (FA_X1)             0.13       0.53 r
-  i_DP/i_MULTIPLIER_A2/mult_28/U157/S (FA_X1)             0.12       0.65 f
-  i_DP/i_MULTIPLIER_A2/mult_28/U486/ZN (NAND2_X1)         0.04       0.69 r
-  i_DP/i_MULTIPLIER_A2/mult_28/U561/ZN (OAI21_X1)         0.03       0.72 f
-  i_DP/i_MULTIPLIER_A2/mult_28/U467/ZN (INV_X1)           0.03       0.74 r
-  i_DP/i_MULTIPLIER_A2/mult_28/U568/ZN (OAI21_X1)         0.03       0.77 f
-  i_DP/i_MULTIPLIER_A2/mult_28/U631/ZN (AOI21_X1)         0.06       0.82 r
-  i_DP/i_MULTIPLIER_A2/mult_28/U448/ZN (XNOR2_X1)         0.07       0.89 r
-  i_DP/i_MULTIPLIER_A2/mult_28/product[13] (MULTIPLIER_NBIT_N10_4_DW_mult_tc_2)
-                                                          0.00       0.89 r
-  i_DP/i_MULTIPLIER_A2/MULTIPLIER_OUT_P[13] (MULTIPLIER_NBIT_N10_4)
-                                                          0.00       0.89 r
-  i_DP/i_ADDER_1/ADDER_IN_B[3] (ADDER_NBIT_N8_0)          0.00       0.89 r
-  i_DP/i_ADDER_1/add_28/B[3] (ADDER_NBIT_N8_0_DW01_add_2)
-                                                          0.00       0.89 r
-  i_DP/i_ADDER_1/add_28/U73/ZN (NOR2_X1)                  0.03       0.93 f
-  i_DP/i_ADDER_1/add_28/U114/ZN (NOR2_X1)                 0.05       0.97 r
-  i_DP/i_ADDER_1/add_28/U102/ZN (AOI21_X2)                0.05       1.02 f
-  i_DP/i_ADDER_1/add_28/U83/ZN (XNOR2_X1)                 0.07       1.09 f
-  i_DP/i_ADDER_1/add_28/SUM[4] (ADDER_NBIT_N8_0_DW01_add_2)
-                                                          0.00       1.09 f
-  i_DP/i_ADDER_1/ADDER_OUT_S[4] (ADDER_NBIT_N8_0)         0.00       1.09 f
-  i_DP/i_ADDER_0/ADDER_IN_B[6] (ADDER_NBIT_N10)           0.00       1.09 f
-  i_DP/i_ADDER_0/add_28/B[6] (ADDER_NBIT_N10_DW01_add_2)
-                                                          0.00       1.09 f
-  i_DP/i_ADDER_0/add_28/U117/ZN (NAND2_X1)                0.04       1.13 r
-  i_DP/i_ADDER_0/add_28/U109/ZN (OAI21_X1)                0.03       1.16 f
-  i_DP/i_ADDER_0/add_28/U82/ZN (AOI21_X1)                 0.08       1.24 r
-  i_DP/i_ADDER_0/add_28/U73/ZN (XNOR2_X1)                 0.07       1.31 r
-  i_DP/i_ADDER_0/add_28/SUM[7] (ADDER_NBIT_N10_DW01_add_2)
-                                                          0.00       1.31 r
-  i_DP/i_ADDER_0/ADDER_OUT_S[7] (ADDER_NBIT_N10)          0.00       1.31 r
-  i_DP/U21/Z (BUF_X2)                                     0.05       1.36 r
-  i_DP/i_MULTIPLIER_B0/MULTIPLIER_IN_A[7] (MULTIPLIER_NBIT_N10_3)
-                                                          0.00       1.36 r
-  i_DP/i_MULTIPLIER_B0/mult_28/a[7] (MULTIPLIER_NBIT_N10_3_DW_mult_tc_2)
-                                                          0.00       1.36 r
-  i_DP/i_MULTIPLIER_B0/mult_28/U598/ZN (XNOR2_X1)         0.07       1.43 r
-  i_DP/i_MULTIPLIER_B0/mult_28/U649/ZN (OAI22_X1)         0.04       1.47 f
-  i_DP/i_MULTIPLIER_B0/mult_28/U149/S (FA_X1)             0.15       1.62 r
-  i_DP/i_MULTIPLIER_B0/mult_28/U148/S (FA_X1)             0.12       1.74 f
-  i_DP/i_MULTIPLIER_B0/mult_28/U583/ZN (NAND2_X1)         0.03       1.77 r
-  i_DP/i_MULTIPLIER_B0/mult_28/U382/ZN (OAI21_X1)         0.04       1.81 f
-  i_DP/i_MULTIPLIER_B0/mult_28/U424/ZN (AOI21_X1)         0.04       1.85 r
-  i_DP/i_MULTIPLIER_B0/mult_28/U657/ZN (OAI21_X1)         0.03       1.88 f
-  i_DP/i_MULTIPLIER_B0/mult_28/U611/ZN (XNOR2_X1)         0.06       1.95 f
-  i_DP/i_MULTIPLIER_B0/mult_28/product[13] (MULTIPLIER_NBIT_N10_3_DW_mult_tc_2)
-                                                          0.00       1.95 f
-  i_DP/i_MULTIPLIER_B0/MULTIPLIER_OUT_P[13] (MULTIPLIER_NBIT_N10_3)
-                                                          0.00       1.95 f
-  i_DP/i_ADDER_3/ADDER_IN_A[3] (ADDER_NBIT_N8_1)          0.00       1.95 f
-  i_DP/i_ADDER_3/add_28/A[3] (ADDER_NBIT_N8_1_DW01_add_2)
-                                                          0.00       1.95 f
-  i_DP/i_ADDER_3/add_28/U94/ZN (NAND2_X1)                 0.04       1.98 r
-  i_DP/i_ADDER_3/add_28/U108/ZN (OAI21_X1)                0.03       2.02 f
-  i_DP/i_ADDER_3/add_28/U99/ZN (AOI21_X1)                 0.07       2.09 r
-  i_DP/i_ADDER_3/add_28/U104/ZN (OAI21_X1)                0.04       2.13 f
-  i_DP/i_ADDER_3/add_28/U111/ZN (XNOR2_X1)                0.06       2.19 f
+  i_DP/i_reg_1/Q_reg[5]/CK (DFFR_X1)                      0.00       0.00 r
+  i_DP/i_reg_1/Q_reg[5]/Q (DFFR_X1)                       0.23       0.23 r
+  i_DP/i_reg_1/Q[5] (reg_en_rst_n_N10_1)                  0.00       0.23 r
+  i_DP/i_MULTIPLIER_A2/MULTIPLIER_IN_A[5] (MULTIPLIER_NBIT_N10_4)
+                                                          0.00       0.23 r
+  i_DP/i_MULTIPLIER_A2/mult_28/a[5] (MULTIPLIER_NBIT_N10_4_DW_mult_tc_3)
+                                                          0.00       0.23 r
+  i_DP/i_MULTIPLIER_A2/mult_28/U391/ZN (INV_X1)           0.05       0.28 f
+  i_DP/i_MULTIPLIER_A2/mult_28/U397/ZN (XNOR2_X1)         0.07       0.35 f
+  i_DP/i_MULTIPLIER_A2/mult_28/U433/ZN (OR2_X1)           0.06       0.42 f
+  i_DP/i_MULTIPLIER_A2/mult_28/U593/ZN (OAI22_X1)         0.05       0.47 r
+  i_DP/i_MULTIPLIER_A2/mult_28/U195/CO (HA_X1)            0.07       0.54 r
+  i_DP/i_MULTIPLIER_A2/mult_28/U191/S (FA_X1)             0.11       0.65 f
+  i_DP/i_MULTIPLIER_A2/mult_28/U190/S (FA_X1)             0.11       0.76 f
+  i_DP/i_MULTIPLIER_A2/mult_28/U618/ZN (AND2_X1)          0.04       0.81 f
+  i_DP/i_MULTIPLIER_A2/mult_28/U652/ZN (AOI21_X1)         0.06       0.87 r
+  i_DP/i_MULTIPLIER_A2/mult_28/U379/ZN (OAI21_X1)         0.04       0.91 f
+  i_DP/i_MULTIPLIER_A2/mult_28/U398/ZN (AOI21_X1)         0.04       0.96 r
+  i_DP/i_MULTIPLIER_A2/mult_28/U399/ZN (INV_X1)           0.03       0.99 f
+  i_DP/i_MULTIPLIER_A2/mult_28/U709/ZN (XNOR2_X1)         0.07       1.05 r
+  i_DP/i_MULTIPLIER_A2/mult_28/product[11] (MULTIPLIER_NBIT_N10_4_DW_mult_tc_3)
+                                                          0.00       1.05 r
+  i_DP/i_MULTIPLIER_A2/MULTIPLIER_OUT_P[11] (MULTIPLIER_NBIT_N10_4)
+                                                          0.00       1.05 r
+  i_DP/i_ADDER_1/ADDER_IN_B[1] (ADDER_NBIT_N8_0)          0.00       1.05 r
+  i_DP/i_ADDER_1/add_28/B[1] (ADDER_NBIT_N8_0_DW01_add_3)
+                                                          0.00       1.05 r
+  i_DP/i_ADDER_1/add_28/U88/ZN (NOR2_X1)                  0.03       1.08 f
+  i_DP/i_ADDER_1/add_28/U110/ZN (OAI21_X1)                0.06       1.14 r
+  i_DP/i_ADDER_1/add_28/U76/Z (BUF_X1)                    0.05       1.19 r
+  i_DP/i_ADDER_1/add_28/U75/ZN (XNOR2_X1)                 0.07       1.25 r
+  i_DP/i_ADDER_1/add_28/SUM[2] (ADDER_NBIT_N8_0_DW01_add_3)
+                                                          0.00       1.25 r
+  i_DP/i_ADDER_1/ADDER_OUT_S[2] (ADDER_NBIT_N8_0)         0.00       1.25 r
+  i_DP/i_ADDER_0/ADDER_IN_B[4] (ADDER_NBIT_N10)           0.00       1.25 r
+  i_DP/i_ADDER_0/add_28/B[4] (ADDER_NBIT_N10_DW01_add_2)
+                                                          0.00       1.25 r
+  i_DP/i_ADDER_0/add_28/U73/ZN (NOR2_X2)                  0.04       1.29 f
+  i_DP/i_ADDER_0/add_28/U111/ZN (OAI21_X1)                0.05       1.35 r
+  i_DP/i_ADDER_0/add_28/U89/ZN (INV_X1)                   0.02       1.37 f
+  i_DP/i_ADDER_0/add_28/U121/ZN (OAI21_X1)                0.04       1.41 r
+  i_DP/i_ADDER_0/add_28/U72/ZN (XNOR2_X1)                 0.08       1.49 r
+  i_DP/i_ADDER_0/add_28/SUM[6] (ADDER_NBIT_N10_DW01_add_2)
+                                                          0.00       1.49 r
+  i_DP/i_ADDER_0/ADDER_OUT_S[6] (ADDER_NBIT_N10)          0.00       1.49 r
+  i_DP/i_MULTIPLIER_B0/MULTIPLIER_IN_A[6] (MULTIPLIER_NBIT_N10_3)
+                                                          0.00       1.49 r
+  i_DP/i_MULTIPLIER_B0/mult_28/a[6] (MULTIPLIER_NBIT_N10_3_DW_mult_tc_2)
+                                                          0.00       1.49 r
+  i_DP/i_MULTIPLIER_B0/mult_28/U621/ZN (XNOR2_X1)         0.08       1.57 r
+  i_DP/i_MULTIPLIER_B0/mult_28/U356/ZN (OAI22_X1)         0.04       1.61 f
+  i_DP/i_MULTIPLIER_B0/mult_28/U536/ZN (NAND2_X1)         0.04       1.65 r
+  i_DP/i_MULTIPLIER_B0/mult_28/U539/ZN (NAND3_X1)         0.03       1.68 f
+  i_DP/i_MULTIPLIER_B0/mult_28/U140/S (FA_X1)             0.13       1.82 r
+  i_DP/i_MULTIPLIER_B0/mult_28/U139/S (FA_X1)             0.12       1.93 f
+  i_DP/i_MULTIPLIER_B0/mult_28/U551/ZN (NAND2_X1)         0.04       1.97 r
+  i_DP/i_MULTIPLIER_B0/mult_28/U597/ZN (OAI21_X1)         0.04       2.01 f
+  i_DP/i_MULTIPLIER_B0/mult_28/U365/ZN (AOI21_X2)         0.08       2.09 r
+  i_DP/i_MULTIPLIER_B0/mult_28/U376/ZN (XNOR2_X1)         0.07       2.16 r
+  i_DP/i_MULTIPLIER_B0/mult_28/product[12] (MULTIPLIER_NBIT_N10_3_DW_mult_tc_2)
+                                                          0.00       2.16 r
+  i_DP/i_MULTIPLIER_B0/MULTIPLIER_OUT_P[12] (MULTIPLIER_NBIT_N10_3)
+                                                          0.00       2.16 r
+  i_DP/i_ADDER_3/ADDER_IN_A[2] (ADDER_NBIT_N8_1)          0.00       2.16 r
+  i_DP/i_ADDER_3/add_28/A[2] (ADDER_NBIT_N8_1_DW01_add_2)
+                                                          0.00       2.16 r
+  i_DP/i_ADDER_3/add_28/U100/ZN (NAND2_X1)                0.04       2.20 f
+  i_DP/i_ADDER_3/add_28/U106/ZN (OAI21_X1)                0.06       2.26 r
+  i_DP/i_ADDER_3/add_28/U78/ZN (AOI21_X1)                 0.03       2.29 f
+  i_DP/i_ADDER_3/add_28/U90/ZN (OAI21_X1)                 0.05       2.34 r
+  i_DP/i_ADDER_3/add_28/U109/ZN (XNOR2_X1)                0.06       2.40 r
   i_DP/i_ADDER_3/add_28/SUM[6] (ADDER_NBIT_N8_1_DW01_add_2)
-                                                          0.00       2.19 f
-  i_DP/i_ADDER_3/ADDER_OUT_S[6] (ADDER_NBIT_N8_1)         0.00       2.19 f
-  i_DP/DOUT[8] (DATAPATH_IIR)                             0.00       2.19 f
-  i_output_register_DOUT/D[8] (REG_RST_N_N9_1)            0.00       2.19 f
-  i_output_register_DOUT/Q_reg[8]/D (DFFR_X1)             0.01       2.20 f
-  data arrival time                                                  2.20
+                                                          0.00       2.40 r
+  i_DP/i_ADDER_3/ADDER_OUT_S[6] (ADDER_NBIT_N8_1)         0.00       2.40 r
+  i_DP/DOUT[8] (DATAPATH_IIR)                             0.00       2.40 r
+  i_output_register_DOUT/D[8] (REG_RST_N_N9_1)            0.00       2.40 r
+  i_output_register_DOUT/Q_reg[8]/D (DFFR_X2)             0.01       2.41 r
+  data arrival time                                                  2.41
 
   clock MY_CLK (rise edge)                                8.96       8.96
   clock network delay (ideal)                             0.00       8.96
-  i_output_register_DOUT/Q_reg[8]/CK (DFFR_X1)            0.00       8.96 r
-  library setup time                                     -0.04       8.92
-  data required time                                                 8.92
+  clock uncertainty                                      -0.07       8.89
+  i_output_register_DOUT/Q_reg[8]/CK (DFFR_X2)            0.00       8.89 r
+  library setup time                                     -0.03       8.86
+  data required time                                                 8.86
   --------------------------------------------------------------------------
-  data required time                                                 8.92
-  data arrival time                                                 -2.20
+  data required time                                                 8.86
+  data arrival time                                                 -2.41
   --------------------------------------------------------------------------
-  slack (MET)                                                        6.72
+  slack (MET)                                                        6.44
 
 
 1
