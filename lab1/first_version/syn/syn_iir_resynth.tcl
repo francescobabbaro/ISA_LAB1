@@ -16,9 +16,10 @@ elaborate IIR -arch structural -lib WORK
 # clock creation
 create_clock -name MY_CLK -period 8.96 {CLK}
 set_dont_touch_network MY_CLK
-#set_clock_uncertainty 0.07 [get_clocks MY_CLK]
-#set_input_delay 0.5 -max -clock MY_CLK [remove_from_collection [all_inputs] CLK]
-#set_output_delay 0.5 -max -clock MY_CLK [all_outputs]
+set_fix_hold [get_clocks MY_CLK]
+set_clock_uncertainty 0.07 [get_clocks MY_CLK]
+set_input_delay 0.5 -max -clock MY_CLK [remove_from_collection [all_inputs] CLK]
+set_output_delay 0.5 -max -clock MY_CLK [all_outputs]
 set OLOAD [load_of NangateOpenCellLibrary/BUF_X4/A]
 set_load $OLOAD [all_outputs]
 
@@ -33,5 +34,5 @@ report_power > ../netlist/results/pre_backannotation_pre_innovus/resynth/power.t
 report_power -net > ../netlist/results/pre_backannotation_pre_innovus/resynth/power_net.txt
 report_power -hier > ../netlist/results/pre_backannotation_pre_innovus/resynth/power_hier.txt
 report_timing > ../netlist/results/pre_backannotation_pre_innovus/resynth/timing.txt
-report_area -hierarchy > ../netlist/pre_backannotation_pre_innovus/results/resynth/area.txt
+report_area -hierarchy > ../netlist/results/pre_backannotation_pre_innovus/resynth/area.txt
 
