@@ -7,7 +7,7 @@ Report : timing
         -max_paths 1
 Design : IIR_1lookahead
 Version: O-2018.06-SP4
-Date   : Thu Oct 28 19:22:11 2021
+Date   : Thu Nov  4 01:14:17 2021
 ****************************************
 
 Operating Conditions: typical   Library: NangateOpenCellLibrary
@@ -59,17 +59,17 @@ Wire Load Model Mode: top
   i_DP/i_REG_MUL_C1/Q_reg[3]/D (DFFR_X2)                  0.01       1.05 r
   data arrival time                                                  1.05
 
-  clock MY_CLK (rise edge)                                4.20       4.20
-  clock network delay (ideal)                             0.00       4.20
-  clock uncertainty                                      -0.07       4.13
-  i_DP/i_REG_MUL_C1/Q_reg[3]/CK (DFFR_X2)                 0.00       4.13 r
-  library setup time                                     -0.03       4.10
-  data required time                                                 4.10
+  clock MY_CLK (rise edge)                                4.60       4.60
+  clock network delay (ideal)                             0.00       4.60
+  clock uncertainty                                      -0.07       4.53
+  i_DP/i_REG_MUL_C1/Q_reg[3]/CK (DFFR_X2)                 0.00       4.53 r
+  library setup time                                     -0.03       4.50
+  data required time                                                 4.50
   --------------------------------------------------------------------------
-  data required time                                                 4.10
+  data required time                                                 4.50
   data arrival time                                                 -1.05
   --------------------------------------------------------------------------
-  slack (MET)                                                        3.05
+  slack (MET)                                                        3.45
 
 
 1

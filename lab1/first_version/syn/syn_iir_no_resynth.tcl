@@ -26,7 +26,7 @@ set_load $OLOAD [all_outputs]
 # compilation
 compile -exact_map
 # creating clock AFTER the synthesis
-create_clock -name MY_CLK -period 8.96 {CLK}
+create_clock -name MY_CLK -period 10.08 {CLK}
 
 # ddc file saving
 write -hierarchy -format ddc -output ../netlist/ddc_files/IIR_no_resynth.ddc

@@ -1,13 +1,13 @@
 Information: Updating design information... (UID-85)
 Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
-Warning: The derived toggle rate value (0.223214) for the clock net 'CLK' conflicts with the annotated value (0.250000). Using the annotated value. (PWR-12)
+Warning: The derived toggle rate value (0.199402) for the clock net 'CLK' conflicts with the annotated value (0.250000). Using the annotated value. (PWR-12)
  
 ****************************************
 Report : power
         -analysis_effort low
 Design : IIR
 Version: O-2018.06-SP4
-Date   : Wed Oct 20 22:56:49 2021
+Date   : Thu Nov  4 00:46:44 2021
 ****************************************
 
 
@@ -33,12 +33,12 @@ Power-specific unit information :
     Leakage Power Units = 1nW
 
 
-  Cell Internal Power  = 259.8212 uW   (57%)
-  Net Switching Power  = 198.5361 uW   (43%)
+  Cell Internal Power  = 254.6228 uW   (56%)
+  Net Switching Power  = 199.5298 uW   (44%)
                          ---------
-Total Dynamic Power    = 458.3572 uW  (100%)
+Total Dynamic Power    = 454.1526 uW  (100%)
 
-Cell Leakage Power     =  66.2651 uW
+Cell Leakage Power     =  64.8268 uW
 
 
                  Internal         Switching           Leakage            Total
@@ -48,9 +48,9 @@ io_pad             0.0000            0.0000            0.0000            0.0000 
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
 clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
-register          77.8912            5.3214        7.7296e+03           90.9422  (  17.33%)
+register          77.5124            9.0672        7.5987e+03           94.1783  (  18.15%)
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational    181.9303          193.2145        5.8535e+04          433.6807  (  82.67%)
+combinational    177.1104          190.4625        5.7228e+04          424.8007  (  81.85%)
 --------------------------------------------------------------------------------------------------
-Total            259.8215 uW       198.5359 uW     6.6265e+04 nW       524.6229 uW
+Total            254.6228 uW       199.5297 uW     6.4827e+04 nW       518.9790 uW
 1

@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version O-2018.06-SP4 for linux64 -- Nov 27, 2018
-#@ # Date:   Thu Oct 28 19:30:16 2021
+#@ # Date:   Thu Nov  4 01:21:00 2021
 #@ # Run by: isa04_2021_2022@localhost.localdomain
 #@ 
 
@@ -43003,7 +43003,7 @@ source syn_3_backannotation_no_resynth.tcl
 #@ # -- Starting source syn_3_backannotation_no_resynth.tcl
 
 #@ read_verilog -netlist ../netlist/backannotation/synopsys/IIR_no_resynth.v
-#@ create_clock -name MY_CLK -period 4.2 {CLK}
+#@ create_clock -name MY_CLK -period 4.6 {CLK}
 #@ read_saif -input ../saif/IIR_no_resynth.saif -instance tb_iir/DUT -unit ns -scale 1 > ../netlist/backannotation/backannotation_notes_no_resynth.txt
 #@ 
 #@ report_power > ../netlist/results/post_backannotation_pre_innovus/no_resynth/power.txt

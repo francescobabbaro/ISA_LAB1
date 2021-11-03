@@ -6,7 +6,7 @@ Report : timing
         -max_paths 1
 Design : IIR
 Version: O-2018.06-SP4
-Date   : Sat Oct 30 21:02:50 2021
+Date   : Thu Nov  4 00:33:08 2021
 ****************************************
 
 Operating Conditions: typical   Library: NangateOpenCellLibrary
@@ -106,17 +106,17 @@ Wire Load Model Mode: top
   i_output_register_DOUT/Q_reg[8]/D (DFFR_X1)             0.01       3.71 r
   data arrival time                                                  3.71
 
-  clock MY_CLK (rise edge)                                8.96       8.96
-  clock network delay (ideal)                             0.00       8.96
-  clock uncertainty                                      -0.07       8.89
-  i_output_register_DOUT/Q_reg[8]/CK (DFFR_X1)            0.00       8.89 r
-  library setup time                                     -0.03       8.86
-  data required time                                                 8.86
+  clock MY_CLK (rise edge)                               10.08      10.08
+  clock network delay (ideal)                             0.00      10.08
+  clock uncertainty                                      -0.07      10.01
+  i_output_register_DOUT/Q_reg[8]/CK (DFFR_X1)            0.00      10.01 r
+  library setup time                                     -0.03       9.98
+  data required time                                                 9.98
   --------------------------------------------------------------------------
-  data required time                                                 8.86
+  data required time                                                 9.98
   data arrival time                                                 -3.71
   --------------------------------------------------------------------------
-  slack (MET)                                                        5.15
+  slack (MET)                                                        6.27
 
 
 1

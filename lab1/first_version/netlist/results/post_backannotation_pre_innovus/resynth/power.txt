@@ -1,13 +1,13 @@
 Information: Updating design information... (UID-85)
 Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
-Warning: The derived toggle rate value (0.223214) for the clock net 'CLK' conflicts with the annotated value (0.250000). Using the annotated value. (PWR-12)
+Warning: The derived toggle rate value (0.199402) for the clock net 'CLK' conflicts with the annotated value (0.250000). Using the annotated value. (PWR-12)
  
 ****************************************
 Report : power
         -analysis_effort low
 Design : IIR
 Version: O-2018.06-SP4
-Date   : Wed Oct 20 23:05:53 2021
+Date   : Thu Nov  4 00:55:39 2021
 ****************************************
 
 
@@ -33,10 +33,10 @@ Power-specific unit information :
     Leakage Power Units = 1nW
 
 
-  Cell Internal Power  = 235.1734 uW   (57%)
+  Cell Internal Power  = 235.1619 uW   (57%)
   Net Switching Power  = 174.6402 uW   (43%)
                          ---------
-Total Dynamic Power    = 409.8137 uW  (100%)
+Total Dynamic Power    = 409.8021 uW  (100%)
 
 Cell Leakage Power     =  51.5152 uW
 
@@ -50,7 +50,7 @@ black_box          0.0000            0.0000            0.0000            0.0000 
 clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
 register          77.1448           14.5671        7.5149e+03           99.2267  (  21.51%)
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational    158.0287          160.0732        4.4000e+04          362.1024  (  78.49%)
+combinational    158.0172          160.0732        4.4000e+04          362.0909  (  78.49%)
 --------------------------------------------------------------------------------------------------
-Total            235.1735 uW       174.6403 uW     5.1515e+04 nW       461.3292 uW
+Total            235.1619 uW       174.6403 uW     5.1515e+04 nW       461.3176 uW
 1

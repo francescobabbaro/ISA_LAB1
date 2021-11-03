@@ -5,7 +5,7 @@ Report : power
         -analysis_effort low
 Design : IIR
 Version: O-2018.06-SP4
-Date   : Sat Oct 30 20:52:50 2021
+Date   : Thu Nov  4 00:26:37 2021
 ****************************************
 
 
@@ -35,63 +35,63 @@ Power-specific unit information :
                                        Switch   Int      Leak     Total
 Hierarchy                              Power    Power    Power    Power    %
 --------------------------------------------------------------------------------
-IIR                                      71.804  130.813 6.75e+04  270.137 100.0
+IIR                                      63.826  116.278 6.75e+04  247.624 100.0
   i_output_register_VOUT (flipflop_rst_n_1)
-                                       2.09e-02    0.726   83.865    0.831   0.3
+                                       1.86e-02    0.645   83.865    0.748   0.3
   i_output_register_DOUT (REG_RST_N_N9_1)
-                                          0.293    7.872  776.278    8.941   3.3
-  i_DP (DATAPATH_IIR)                    64.710   75.104 6.01e+04  199.921  74.0
-    i_ADDER_3 (ADDER_NBIT_N8_1)           1.439    1.676 1.25e+03    4.370   1.6
+                                          0.260    6.998  776.278    8.034   3.2
+  i_DP (DATAPATH_IIR)                    57.520   66.760 6.01e+04  184.387  74.5
+    i_ADDER_3 (ADDER_NBIT_N8_1)           1.279    1.489 1.25e+03    4.024   1.6
       add_28 (ADDER_NBIT_N8_1_DW01_add_2)
-                                          1.439    1.676 1.25e+03    4.370   1.6
-    i_ADDER_2 (ADDER_NBIT_N8_2)           0.455    0.718  384.644    1.558   0.6
+                                          1.279    1.489 1.25e+03    4.024   1.6
+    i_ADDER_2 (ADDER_NBIT_N8_2)           0.405    0.638  384.644    1.427   0.6
       add_28 (ADDER_NBIT_N8_2_DW01_add_0)
-                                          0.455    0.718  384.644    1.558   0.6
+                                          0.405    0.638  384.644    1.427   0.6
     i_MULTIPLIER_B2 (MULTIPLIER_NBIT_N10_1)
-                                          7.969    7.625 8.32e+03   23.913   8.9
+                                          7.084    6.777 8.32e+03   22.180   9.0
       mult_28 (MULTIPLIER_NBIT_N10_1_DW_mult_tc_0)
-                                          7.969    7.625 8.32e+03   23.913   8.9
+                                          7.084    6.777 8.32e+03   22.180   9.0
     i_MULTIPLIER_B1 (MULTIPLIER_NBIT_N10_2)
-                                          9.004    8.598 8.29e+03   25.894   9.6
+                                          8.003    7.643 8.29e+03   23.938   9.7
       mult_28 (MULTIPLIER_NBIT_N10_2_DW_mult_tc_0)
-                                          9.004    8.598 8.29e+03   25.894   9.6
+                                          8.003    7.643 8.29e+03   23.938   9.7
     i_MULTIPLIER_B0 (MULTIPLIER_NBIT_N10_3)
-                                         14.380   13.828 1.12e+04   39.387  14.6
+                                         12.783   12.292 1.12e+04   36.253  14.6
       mult_28 (MULTIPLIER_NBIT_N10_3_DW_mult_tc_2)
-                                         14.380   13.828 1.12e+04   39.387  14.6
-    i_ADDER_1 (ADDER_NBIT_N8_0)           1.558    1.578 1.46e+03    4.594   1.7
+                                         12.783   12.292 1.12e+04   36.253  14.6
+    i_ADDER_1 (ADDER_NBIT_N8_0)           1.385    1.403 1.46e+03    4.246   1.7
       add_28 (ADDER_NBIT_N8_0_DW01_add_3)
-                                          1.558    1.578 1.46e+03    4.594   1.7
+                                          1.385    1.403 1.46e+03    4.246   1.7
     i_MULTIPLIER_A2 (MULTIPLIER_NBIT_N10_4)
-                                         10.788   10.220 1.23e+04   33.308  12.3
+                                          9.589    9.085 1.23e+04   30.974  12.5
       mult_28 (MULTIPLIER_NBIT_N10_4_DW_mult_tc_3)
-                                         10.788   10.220 1.23e+04   33.308  12.3
+                                          9.589    9.085 1.23e+04   30.974  12.5
     i_MULTIPLIER_A1 (MULTIPLIER_NBIT_N10_0)
-                                         12.576   11.569 1.22e+04   36.353  13.5
+                                         11.179   10.284 1.22e+04   33.670  13.6
       mult_28 (MULTIPLIER_NBIT_N10_0_DW_mult_tc_3)
-                                         12.576   11.569 1.22e+04   36.353  13.5
-    i_reg_1 (reg_en_rst_n_N10_1)          1.585    8.619 1.37e+03   11.578   4.3
-    i_reg_0 (reg_en_rst_n_N10_0)          1.390    8.636 1.35e+03   11.379   4.2
-    i_ADDER_0 (ADDER_NBIT_N10)            2.683    1.722 1.81e+03    6.218   2.3
+                                         11.179   10.284 1.22e+04   33.670  13.6
+    i_reg_1 (reg_en_rst_n_N10_1)          1.409    7.661 1.37e+03   10.445   4.2
+    i_reg_0 (reg_en_rst_n_N10_0)          1.235    7.676 1.35e+03   10.265   4.1
+    i_ADDER_0 (ADDER_NBIT_N10)            2.385    1.531 1.81e+03    5.728   2.3
       add_28 (ADDER_NBIT_N10_DW01_add_2)
-                                          2.504    1.626 1.77e+03    5.897   2.2
-  i_input_register_B2 (REG_RST_N_N9_2)    0.783    7.358  771.280    8.912   3.3
-  i_input_register_B1 (REG_RST_N_N9_3)    0.790    7.340  771.313    8.901   3.3
-  i_input_register_B0 (REG_RST_N_N9_4)    1.495    7.380  771.262    9.647   3.6
-  i_input_register_A2 (REG_RST_N_N9_5)    1.106    7.665  809.017    9.579   3.5
-  i_input_register_A1 (REG_RST_N_N9_0)    1.159    7.571  771.214    9.500   3.5
+                                          2.226    1.445 1.77e+03    5.438   2.2
+  i_input_register_B2 (REG_RST_N_N9_2)    0.696    6.540  771.280    8.008   3.2
+  i_input_register_B1 (REG_RST_N_N9_3)    0.702    6.525  771.313    7.998   3.2
+  i_input_register_B0 (REG_RST_N_N9_4)    1.329    6.560  771.262    8.661   3.5
+  i_input_register_A2 (REG_RST_N_N9_5)    0.983    6.813  809.017    8.605   3.5
+  i_input_register_A1 (REG_RST_N_N9_0)    1.030    6.729  771.214    8.531   3.4
   i_two_complement_A2 (two_complement_Nbit_N9_1)
-                                          0.445    0.705  667.830    1.818   0.7
-    i_adder (ADDER_NBIT_N9_1)             0.199    0.606  538.651    1.343   0.5
+                                          0.396    0.626  667.830    1.690   0.7
+    i_adder (ADDER_NBIT_N9_1)             0.177    0.538  538.651    1.254   0.5
       add_28 (ADDER_NBIT_N9_1_DW01_add_0)
-                                          0.199    0.606  538.651    1.343   0.5
+                                          0.177    0.538  538.651    1.254   0.5
   i_two_complement_A1 (two_complement_Nbit_N9_0)
-                                          0.443    0.700  667.605    1.810   0.7
-    i_adder (ADDER_NBIT_N9_0)             0.196    0.600  538.427    1.335   0.5
+                                          0.394    0.622  667.605    1.683   0.7
+    i_adder (ADDER_NBIT_N9_0)             0.175    0.534  538.427    1.247   0.5
       add_28 (ADDER_NBIT_N9_0_DW01_add_0)
-                                          0.196    0.600  538.427    1.335   0.5
+                                          0.175    0.534  538.427    1.247   0.5
   i_input_register_VIN (flipflop_rst_n_0)
-                                       8.99e-03    0.817   85.695    0.912   0.3
+                                       7.99e-03    0.727   85.695    0.820   0.3
   i_input_register_DIN (reg_en_rst_n_N9)
-                                          0.551    7.574 1.24e+03    9.363   3.5
+                                          0.490    6.733 1.24e+03    8.460   3.4
 1

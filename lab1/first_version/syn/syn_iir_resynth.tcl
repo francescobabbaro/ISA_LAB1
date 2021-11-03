@@ -14,7 +14,7 @@ set power_preserve_rtl_hier_names true
 elaborate IIR -arch structural -lib WORK
 
 # clock creation
-create_clock -name MY_CLK -period 8.96 {CLK}
+create_clock -name MY_CLK -period 10.08 {CLK}
 set_dont_touch_network MY_CLK
 set_fix_hold [get_clocks MY_CLK]
 set_clock_uncertainty 0.07 [get_clocks MY_CLK]

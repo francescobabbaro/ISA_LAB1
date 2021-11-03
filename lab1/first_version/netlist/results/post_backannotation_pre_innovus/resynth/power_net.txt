@@ -6,7 +6,7 @@ Report : power
         -sort_mode net_switching_power
 Design : IIR
 Version: O-2018.06-SP4
-Date   : Wed Oct 20 23:05:53 2021
+Date   : Thu Nov  4 00:55:39 2021
 ****************************************
 
 
