@@ -8,8 +8,9 @@
 # //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
 # //  AND IS SUBJECT TO LICENSE TERMS.
 # //
-do sim_2_compile_post_place_and_route.tcl
-# ** Warning: (vlib-34) Library already exists at "work".
+source sim_2_compile_place_and_route.tcl
+# couldn't read file "sim_2_compile_place_and_route.tcl": no such file or directory
+source sim_2_compile_post_place_and_route.tcl
 # Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
 # -- Loading package standard
 # -- Loading package std_logic_1164
@@ -45,7 +46,7 @@ do sim_2_compile_post_place_and_route.tcl
 # Top level modules:
 # 	tb_iir
 # vsim -L /software/dk/nangate45/verilog/msim6.2g work.tb_iir 
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vsim-3812) Design is being optimized...
 # Loading work.tb_iir(fast)
 # Loading /software/dk/nangate45/verilog/msim6.2g.BUF_X1(fast)
 # Loading /software/dk/nangate45/verilog/msim6.2g.INV_X1(fast)
