@@ -1,3 +1,5 @@
+vlib work
+
 vcom -93 -work work ../tb/clk_gen.vhd
 vcom -93 -work work ../tb/data_maker.vhd
 vcom -93 -work work ../tb/data_sink.vhd

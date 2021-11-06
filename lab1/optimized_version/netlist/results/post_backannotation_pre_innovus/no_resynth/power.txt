@@ -1,13 +1,13 @@
 Information: Updating design information... (UID-85)
 Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
-Warning: The derived toggle rate value (0.434783) for the clock net 'CLK' conflicts with the annotated value (0.200000). Using the annotated value. (PWR-12)
+Warning: The derived toggle rate value (0.434783) for the clock net 'CLK' conflicts with the annotated value (0.499063). Using the annotated value. (PWR-12)
  
 ****************************************
 Report : power
         -analysis_effort low
 Design : IIR_1lookahead
 Version: O-2018.06-SP4
-Date   : Thu Nov  4 01:21:28 2021
+Date   : Sat Nov  6 16:01:30 2021
 ****************************************
 
 
@@ -33,12 +33,12 @@ Power-specific unit information :
     Leakage Power Units = 1nW
 
 
-  Cell Internal Power  = 309.3958 uW   (59%)
-  Net Switching Power  = 213.0954 uW   (41%)
+  Cell Internal Power  = 570.2861 uW   (63%)
+  Net Switching Power  = 332.7280 uW   (37%)
                          ---------
-Total Dynamic Power    = 522.4911 uW  (100%)
+Total Dynamic Power    = 903.0140 uW  (100%)
 
-Cell Leakage Power     =  92.0822 uW
+Cell Leakage Power     =  92.0765 uW
 
 
                  Internal         Switching           Leakage            Total
@@ -48,9 +48,9 @@ io_pad             0.0000            0.0000            0.0000            0.0000 
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
 clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
-register         122.4612           10.9088        1.5875e+04          149.2453  (  24.28%)
+register         275.9457           19.1220        1.5879e+04          310.9468  (  31.25%)
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational    186.9348          202.1863        7.6207e+04          465.3279  (  75.72%)
+combinational    294.3404          313.6060        7.6197e+04          684.1435  (  68.75%)
 --------------------------------------------------------------------------------------------------
-Total            309.3961 uW       213.0951 uW     9.2082e+04 nW       614.5731 uW
+Total            570.2861 uW       332.7280 uW     9.2076e+04 nW       995.0903 uW
 1

@@ -5,7 +5,7 @@ Report : power
         -analysis_effort low
 Design : IIR_1lookahead
 Version: O-2018.06-SP4
-Date   : Thu Nov  4 01:21:28 2021
+Date   : Sat Nov  6 16:01:30 2021
 ****************************************
 
 
@@ -35,5 +35,5 @@ Power-specific unit information :
                                        Switch   Int      Leak     Total
 Hierarchy                              Power    Power    Power    Power    %
 --------------------------------------------------------------------------------
-IIR_1lookahead                          213.095  309.396 9.21e+04  614.573 100.0
+IIR_1lookahead                          332.728  570.286 9.21e+04  995.091 100.0
 1
