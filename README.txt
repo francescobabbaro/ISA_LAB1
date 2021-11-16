@@ -1,11 +1,7 @@
 This is the main folder for the first Laboratory of the Integrated System Architecture course.
 The first LAB is based on the design and the implementation of a digital filter.
 
-We have two different folders here:
--  drawio_wavedrom_files_innovus is just a folder in which have been collected
-all the different .jpg and .gif files, representing the two different devices at the schematic and the layout level.
-Also waveform picture and VHDL sketch are here collected;
-
+We have one folder here:
 - lab1: this is subdivided in:
 	- first_version: the first version of the IIR fitler
 	- optimized_version: the optmized version of the IIR filter
